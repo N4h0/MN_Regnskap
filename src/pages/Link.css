@@ -1,0 +1,184 @@
+.container {
+    display: flex;
+    gap: 40px;
+}
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.box {
+    flex: 1;
+    height: 300px;
+    background-color: white;
+    text-align: left;
+}
+
+
+
+.box h2 {
+    font-weight: bold; /* Make the headings bold */
+}
+
+
+.box h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+/*Styling for link elementet*/
+.Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-top: 350px; 
+}
+    .Link ul {
+        list-style-type: disc; 
+        padding-left: 20px; 
+    }
+
+    .Link li {
+        margin-bottom: 5px; 
+    }
+
+    .Link a {
+        text-decoration: none; 
+        color: #000;
+    }
+
+        .Link a:hover {
+            text-decoration: underline; 
+        }
+
+
+/* Responsiv styling for mindre skjermer */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px; 
+    }
+
+    .box {
+        height: auto; 
+    }
+
+    .box h1 {
+        font-size: 22px;
+    }
+
+
+    .box h2 {
+        font-size: 19px;
+    }
+
+    .box h3,
+    .box ul,
+    .box ol,
+    .box li {
+        font-size: 15px;
+    }
+
+    .box p {
+        font-size: 15px; 
+        line-height: 1.8; 
+        margin-bottom: 15px; 
+    }
+    .Link {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Aligns child elements to the start (left) */
+    }
+
+    .Link h2 {
+        font-size: 19px;
+        font-weight: bold;
+        align-self: center;
+    }
+
+    .Link ul {
+        padding-left: 20px; /* Removes default padding */
+        list-style-type: none; /* Removes default list styles */
+    }
+}
+/* Responsiv styling for middels skjermer */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        gap: 50px; 
+    }
+
+    .box h1 {
+        font-size: 40px;
+    }
+
+    .box h2,
+    .Link h2 {
+        font-size: 30px;
+    }
+
+    .box h3,
+    .box p,
+    .box ul,
+    .box ol,
+    .box li,
+    .Link ul,
+    .Link li {
+        font-size: 25px;
+    }
+
+    .Link {
+        margin-top: 10px;
+    }
+
+
+/* Responsiv styling for store skjermer (f.eks. iPad Air) */
+    @media screen and (min-width: 1025px) {
+        .box h1 {
+            font-size: 40px;
+        }
+
+        .box h2 {
+            font-size: 32px;
+        }
+
+        .box h3,
+        .box p,
+        .box ul,
+        .box ol,
+        .box li {
+            font-size: 30px;
+        }
+
+        .Link {
+            margin-top: 10px;
+        }
+    }
+
+    /* Responsiv styling for større skjermer som 912 x 1368 */
+    @media screen and (min-width: 768px) {
+        .container {
+            gap: 30px;
+        }
+
+        .Link {
+            margin-top: 700px; 
+        }
+
+        .Link h2 {
+            font-size: 22px; 
+        }
+
+        .Link ul {
+            font-size: 16px; 
+        }
+    }
+}
+
+

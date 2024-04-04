@@ -1,0 +1,173 @@
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+/*TEAM SEKSJONEN */
+
+.section-white {
+    background:#fff;
+    padding: 70px 0;
+}
+
+.team-item {
+    background: #f4f5f6;
+    text-align: center;
+    margin: 20px 0;
+    padding: 50px 20px 40px 20px;
+    border-radius: 8px 8px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.team-item:hover {
+    background: black;
+    color: white;
+}
+
+.team-item h3 {
+    margin: 20px 0 1px 0 !important;
+    color: #454545;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.section-subtitle {
+    white-space: pre-line;
+}
+
+.team-item:hover {
+    color: #ddd;
+}
+
+.team-info {
+    display: block;
+    margin-bottom: 0;
+}
+
+.team-info p {
+    color: #acacac;
+    font-style: italic;
+}
+
+.team-info::after {
+    background: #008aff;
+    background: -webkit-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
+    background: -o-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
+    background: -moz-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
+    background: linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
+
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 50px;
+    height: 3px;
+    margin-top: -20px;
+}
+
+.team-img {
+    max-width: 140px;
+    padding: 6px 6px;
+    background-color: #dedede;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 10px;
+}
+
+
+
+
+/*OM OSS SEKSJONEN*/
+.aboutUs {
+    width: 100%;
+    margin-block: 5rem;
+}
+
+.aboutUs_box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aboutUs_box_hero {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.aboutUs_box_hero_right:hover, .aboutUs_box_hero_left:hover {
+    background-color: #e3f1f8;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(6px);
+}
+
+.aboutUs_box_hero_right {
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.aboutUs_box_hero_left {
+
+    transition: background-color 0.4s ease;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.aboutUs_box_hero_left h1, .aboutUs_box_hero_right h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+    line-height: .5;
+}
+
+.aboutUs_box_hero_left p, .aboutUs_box_hero_right p {
+    margin-top: 30px;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.aboutUs_box_title {
+    margin-top: 5rem;
+}
+
+.aboutUs_box_title h2 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.aboutUs_box_title p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    width: 40%;
+}
+
+.bilde-seksjon-img {
+    border-radius: 10px;
+}
+
+.bold-text {
+    font-weight: 1200;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .aboutUs_box_hero_left h1 {
+        font-size: 2rem;
+     
+    }
+}
+

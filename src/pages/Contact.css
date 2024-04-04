@@ -1,0 +1,283 @@
+h1 { /* overskrift*/
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 6000;
+    font-size: 3rem;
+    line-height: 1.25;
+}
+
+h4 {  /* overskrift*/
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 6000;
+    color: #2e475d;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+h5 {  /* overskrift*/
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 6000;
+    font-size: 18px;
+    line-height: 1.56;
+    margin: 1rem 0;
+}
+
+span {
+    margin-bottom: 24px;
+    color: #2e475d;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 6000;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contact-us-page {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.main-wrapper {
+    max-width: 1080px;
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero-content {
+    background-image: url(./background.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: max-content;
+    background-size: 100% 30rem;
+    /* background-position: center; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-body {
+    width: 100%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* skal egentlig bytte denne fargen til hvit senere */
+    color: #ffffff;
+    width: 52%;
+    padding: 6rem 1rem;
+    text-align: start;
+}
+
+.hero-text p {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 6000;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.supports { /* begge kortene på siden*/
+    width: 100%;
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+    margin-top: -60px;
+}
+
+.support-card { /* venstre kort*/
+    width: calc((100% - 20px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 540px;
+    padding: 32px 40px;
+    background-color: white;
+    border: 1px solid rgb(230, 238, 238);
+    border-radius: 20px;
+    border: 1px solid #5da6eb;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        width: 100%;
+    }
+
+    .supports {
+        display: block;
+    }
+
+    .support-card {
+        width: 100%;
+    }
+
+    .first {
+        margin-bottom: 4rem;
+    }
+}
+
+.support-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 24px;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(20, 112, 216);
+    font-weight: 1500;
+}
+
+.support-card a {
+    margin-bottom: 40px;
+}
+
+.btn-common { /* knappen for skjema*/
+    text-decoration: none;
+    color: white;
+    background-color: #5da6eb;
+    border-radius: 3px;
+    padding: 0.9em 1.388em;
+    font-size: .9375rem;
+    min-width: 8.555rem;
+    margin-top: 16px;
+}
+
+@media (max-width:768px) {
+    .hero-content {
+        background-position: start;
+    }
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-title {
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 1500;
+    line-height: 1.38;
+    color: #2e475d;
+}
+
+.connect-main {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.1875rem;
+    border: 1px solid rgb(213, 217, 223);
+    margin-bottom: 20rem;
+}
+
+.connect-body {
+    display: flex;
+    width: 100%;
+}
+
+.map-box {
+    width: calc(100% - 400px);
+}
+
+.map-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width:1024px) {
+    .connect-body {
+        display: block;
+    }
+
+    .map-box {
+        width: 100%;
+    }
+}
+
+.connect-body {
+    color: #2e475d;
+}
+
+.connect-detail {
+    width: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #f6f9fc;
+}
+
+@media (max-width:1024px) {
+    .connect-detail {
+        width: 100%;
+    }
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.detail-item span {
+    margin-bottom: 5px;
+}
+
+.fax {
+    display: flex;
+    flex-direction: row;
+}
+
+.connect-detail h3 {
+    font-size: 1.5rem;
+    font-weight: 1500;
+    line-height: 1.42;
+}
+
+.form-input { /* skjema*/
+    width: 100%;
+    margin-bottom: 8px;
+    width: 400px;
+    height: 60px;
+}
+
+.form-input input { /* skjema*/
+    width: 100%;
+    padding: 0.5625rem 0.625rem;
+}
+
+.form-input textarea { /* skjema*/
+    width: 100%;
+    padding: 0.5625rem 0.625rem;
+}
+
+.supports h4, .hero-heading {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 6000;
+}
+
+.support-card:hover { /* hover funksjon*/
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+

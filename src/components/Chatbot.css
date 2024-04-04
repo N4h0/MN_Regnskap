@@ -1,0 +1,139 @@
+
+/*Styling n�r chatten er lukka*/
+.Chat {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #fff;
+    z-index: 999;
+    border-radius: 70%;
+
+}
+
+.chatButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*Styling n�r chatten er �pen*/
+.chatDialog {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Chat-header */
+.chatHeader {
+    background-color: #000; /* Endret til svart */
+    color: #fff; /* Endret tekstfarge til hvit */
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatHeader h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.closeChat {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Chat-body */
+.chatBody {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    margin: 0 auto; /* Sentrer containeren */
+    display: flex;
+    flex-direction: column;
+}
+
+.chatMessage, .botMessage {
+    font-size: 14px;
+}
+
+.chatMessage {
+    background-color: #000; /* Endret til svart */
+    color: #fff; /* Endret tekstfarge til hvit */
+
+    align-self: flex-end;
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
+
+.botMessage {
+    background-color: #e9ecef;
+    align-self: flex-start;
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+}
+.botMessage, .chatMessage {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 9px 10px;
+
+    max-width: 65%;
+    font-size: 0.5rem;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%), 0rem 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+/*Chat-footer*/
+.chatFooter {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.messageInput {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.messageInput {
+    width: 100%;
+    height: 45px;
+    width: calc(100% - 58px);
+    font-size: 16px;
+    padding: 0 13px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.SendMessage {
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px; /* Optional for styling */
+}

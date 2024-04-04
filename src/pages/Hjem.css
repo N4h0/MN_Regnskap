@@ -1,0 +1,474 @@
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*STORE BILDET*/
+.img-style {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+.bildeSeksjon {
+    display: flex; /* Aktiver flexbox */
+    justify-content: center; /* Sentrer barn horisontalt */
+    align-items: center; /* Sentrer barn vertikalt */
+    position: relative; /* Beholder posisjonering */
+    width: 100%;
+    height: 100%; 
+}
+
+    .bildeSeksjon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Sørg for at bildet dekker containeren */
+        border-radius: inherit; /* Arv border-radius hvis nødvendig */
+    }
+
+
+.bildeSeksjon h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 60px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.bildeTekst {
+    position: absolute; /* Behold absolutt for å sikre teksten legger seg over bildet */
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}
+
+
+.bildeTekst h1, h4 {
+    margin: 0;
+}
+
+.bildeKnapp {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    background-color: transparent; /* Gj�r bakgrunnen gjennomsiktig */
+    color: black;
+    border: 2px solid black; /* Legg til en svart border */
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bildeKnapp:hover {
+    background-color: #e3f1f8; /* Endre bakgrunnsfargen ved hover til svart */
+}
+
+.bildeTekst h4 {
+    margin-bottom: 20px; /* Legg til mer margin under h4-elementet */
+    margin-top: 10px;
+}
+
+.bildeKnapp {
+    margin-top: 30px; /* Legg til margin over knappen */
+}
+
+/*REGNSKAP DELEN*/
+
+.regnskapsSeksjon h2 {
+    margin-top: 50px;
+}
+
+.regnskapsBoks {
+    background-color: #e3f1f8;
+    display: flex;
+    flex-wrap: wrap; /* Gjør det mulig for elementene å bryte til neste linje */
+    justify-content: center;
+}
+
+.regnskapsKort {
+    border-bottom-width: 4px;
+    border-color: #e9ecef;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-style: solid;
+    border-top-width: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 357px;
+    left: 435px;
+    top: 1092px;
+    width: 287px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Plasserer innholdet vertikalt sentrert */
+    align-items: center; /* Plasserer innholdet horisontalt sentrert */
+    text-align: center; /* S�rger for at teksten er sentrert */
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.regnskapsSeksjon img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.regnskapsKnapp {
+    background-color: #007bff; /* Bl� bakgrunnsfarge */
+    color: #fff; /* Hvit tekstfarge */
+    border: 2px solid #007bff; /* 2 piksler bred solid svart grense */
+    font-size: 100%;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    border-radius: 6px;
+    height: 44px;
+    line-height: 1.15;
+    padding: 30px 40px;
+    margin-bottom: 40px;
+    margin-left:25px;
+}
+    .regnskapsKnapp:hover {
+        color: white;
+    }
+
+.regnskapsKnappTekst {
+    color: #FFF;
+    text-align: center;
+}
+
+
+.siste-container {
+    margin-top: auto;
+    height: 80px;
+    width: auto;
+    background-color: #e3f1f8;
+}
+
+
+
+/*MØT OSS*/
+
+
+.m�tOssSeksjon h1 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.kontaktOssBoks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #e3f1f8;
+}
+
+.kontaktOssKort {
+    padding: 10px;
+    flex: 50%;
+}
+
+.kontaktOssKort img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.kontaktOssKort h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.kontaktOssKort p {
+    font-size: 0.75rem; /* St�rrelse til "STATSAUTORISERT REGNSKAPSF�RER" */
+}
+
+/*VÅRE PARTNERE*/
+
+.partnereBakgrunn {
+    padding: 40px;
+    
+}
+
+.partnerBakgrunn, h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bildet {
+    margin: 0 20px;
+}
+
+    .bildet img {
+        width: 100%;
+    }
+
+.slick-bilder {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.bildet {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+    .bildet img {
+        display: block;
+    }
+
+.slick-initialized .bildet {
+    display: block;
+}
+
+
+
+
+
+
+/*KONTAKT OSS*/
+
+.kontaktBilde {
+    display: flex; /* Aktiver flexbox */
+    justify-content: center; /* Dette vil nå bli ignorert for absolutt posisjonerte barn */
+    align-items: center; /* Dette vil også bli ignorert for absolutt posisjonerte barn */
+    position: relative; /* Beholder posisjonering */
+    height: 60vh; /* Juster høyden etter behov */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+    .kontaktBilde img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Sørg for at bildet dekker containeren */
+        border-radius: inherit; /* Arv border-radius hvis nødvendig */
+    }
+
+.kontaktTekstboks {
+    position: absolute; /* Behold absolutt for å sikre teksten legger seg over bildet */
+    transform: translateY(-50%);
+    left: 0%;
+    top: 50%;
+    text-align: center;
+    padding: 0 20px;
+    width: 50%;
+}
+
+
+.kontaktTekstboks h1 { /*Hovudtittel*/
+    font-family: 'Varela Round', sans-serif;
+    font-size: 23px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.kontaktTekstboks p { 
+    padding-top: 20px; /*Avstand til overskrift*/
+    padding-bottom: 15px;
+    color: black;
+    font-size: 17px;
+    line-height: 40.3px;
+    color: rgb(1, 1, 1);
+    font-family: 'Varela Round', sans-serif;
+
+}
+    .kontaktTekstboks a,p {
+        font-family: 'Varela Round', sans-serif;
+    }
+
+.kontaktKnapp { /*Kontakt oss-knapp*/
+    display: inline-block; /*Gjer at boksen ikkje tek meir plass enn innholdet + marg*/
+    border: 2.67px double #77b1e7;
+    border-radius: 2px;
+    background-color: #007bff;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 1000;
+    letter-spacing: 1.4px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 20px 20px;
+}
+
+
+
+/**RESPONSIVITET*/
+    @media (max-width:1026px) {
+        .kontaktOssBoks {
+            display: flex;
+            flex-direction: column;
+        }
+        .regnskapsBoks {
+            justify-content:center;
+        }
+      
+
+        .bildeKnapp {
+            margin-top: 5px;
+            
+        }
+
+        /*Bok*/
+        .kontaktTekstboks p{
+            padding-bottom:2px;
+            padding-top:1px;
+        }
+        .kontaktTekstboks {
+            padding-top: 0px;
+        }
+    }
+
+    @media (max-width:769px) {
+
+        .bildeKnapp {
+            margin-top: 5px;
+        }
+
+        .bildeTekst h2 {
+            font-size: 25px;
+        }
+
+
+
+    
+    }
+
+@media (max-width:717px) {
+    .bildeTekst h1 {
+        font-size: 50px;
+    }
+
+    .bildeTekst h2 {
+        font-size: 20px;
+    }
+ 
+
+  
+}
+
+
+@media (max-width: 529px) {
+
+    /*Om oss seksjonen */
+    .kontaktOssKort {
+        flex: 100%; /* Gjør at kortene tar full bredde av skjermen */
+    }
+
+        .kontaktOssKort img {
+            max-width: 150px; /* Reduserer maksbredde på bildet */
+        }
+
+        .kontaktOssKort h1{
+            font-size: 2rem; /* Justerer skriftstørrelsen ned */
+        }
+        .kontaktOssKort p {
+            font-size: 1rem; /* Justerer skriftstørrelsen ned */
+        }
+
+
+
+    /*Bok seksjonen*/
+
+    .kontaktKnapp{
+        font-size:20px;
+    }
+    .kontaktTekstboks {
+        transform: translateY(-55%);
+        padding-left: 10px;
+        width: 70%;
+    }
+
+        .kontaktTekstboks h1 {
+            font-size: 20px;
+        }
+
+    .kontaktKnapp {
+    
+        font-size: 15px;
+    }
+    }
+
+@media (max-width: 370px) {
+    .bildeTekst h2 {
+        padding: 10px
+    }
+    .bildeTekst h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 281px) {
+
+
+    /*Bilde seksjonen*/
+
+    .bildeTekst h1 {
+        font-size: 25px;
+    }
+
+    .bildeTekst h2 {
+        padding: 1px;
+    }
+    .bildeKnapp {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+
+        .bildeTekst h2 {
+        font-size: 15px;
+    }
+
+
+        /*Kort seksjoen*/
+
+    .regnskapsKnapp {
+      
+        font-size: 15px;
+       
+        padding: 30px 30px;
+    }
+    
+
+        /*Bok seksjonen*/
+
+        .kontaktTekstboks h1 {
+        font-size: 15px;
+    }
+    .kontaktTekstboks p {
+       
+        font-size: 15px;
+    }
+        .kontaktKnapp {
+        font-size: 10px;
+      
+    }
+}

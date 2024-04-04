@@ -1,0 +1,74 @@
+.footer {
+    margin-top: auto; /*Feste footeren til botn av sida (sjekk: https://www.youtube.com/watch?v=pggIVY5eOGM) */
+    font-family: 'Varela Round', sans-serif;
+    color: #FFFFFF;
+    background-color: #3a3a3a; /*Gr�-ish bakgrunn*/
+}
+
+.footer h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.footer a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.ikon {
+    fill: #ffffff;
+}
+
+.kontaktinfo h1{
+    margin-bottom: 40px
+}
+
+.kontaktinfo > div:not(:last-child) {
+    margin-bottom: 20px; /* Avstand mellom tekst */
+}
+
+.kontaktinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns children to the left */
+}
+
+.top-kontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.copyright {
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: #7a7a7a;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.copyright p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width:560px) {
+    .top-kontainer {
+        flex-direction:column;
+    }
+    .kontaktinfo {
+        width: 50%; /* or any specific width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .copyright {
+        flex-direction: column;
+    }
+}
