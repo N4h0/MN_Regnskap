@@ -21,6 +21,9 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
+                element: <Hjem />,
+            },
+            {
                 path: "/MN_Regnskap/hjem",
                 element: <Hjem />,
             },
