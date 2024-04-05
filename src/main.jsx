@@ -5,7 +5,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import Hjem from "./pages/hjem";
+import Hjem from "./pages/Hjem";
 import OmOss from "./pages/Team";
 import Frister from "./pages/Link";
 import Contact from "./pages/Contact";
