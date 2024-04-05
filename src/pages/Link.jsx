@@ -1,10 +1,16 @@
-import './Link.css';
-
+﻿import './Link.css';
+import en from '../languages/en.json'; // Engelsk språkdata
+import no from '../languages/no.json'; // Norsk språkdata
+import { useContext } from 'react';
+import { LanguageContext } from '../languages/LanguageContext';
 
 const PDF_FILE_URL = "https://localhost:5173/file_pdf.pdf";
-function Link() {
+
+function Link({ language }) {
+    // Bestemmer hvilket språkdata som skal brukes basert på den nåværende språkinnstillingen
+    const textData = language === 'no' ? no : en;
+
     const downloadFileAtURL = (url) => {
-        //funksjonen blob vil laste ned dokumentet i samme fane, istedet for enda en fane 
         fetch(url)
             .then(response => response.blob())
             .then(blob => {
@@ -21,46 +27,53 @@ function Link() {
 
     return (
         <>
-            <h1>Frister</h1>
-            <div className="container">
-                <div className="box">
-                    <h2>Sole Proprietorship</h2>
-                    <h3>Advance tax is paid to the bureau&rsquo;s office and is due for payment in four equal installments:</h3>
-                    <ul>
-                        <li>March 15</li>
-                        <li>May 15</li>
-                        <li>September 15</li>
-                        <li>November 15</li>
-                    </ul>
-                    <h3>Additional</h3>
-                    <p>If the preliminary tax calculation shows that the offset tax is greater than the paid advance tax, you can pay additional advance.</p>
-                    <p><strong>May 31</strong> is the deadline for payment of additional advances to avoid residual tax and interest rate surcharges on the residual tax.</p>
+            <article className="accounting-deadlines">
+                <h1>Frister</h1>
+                <div className="regnskap-boks">
+                    <h4>Årets regnskapsfrister</h4>
+                    <p>Det er viktig å holde styr på frister og innleveringer når det gjelder ulike regnskapsoppgaver.
+                        Å holde seg oppdatert med disse fristene er avgjørende. Du finner en fullstendig liste over alle
+                        aktuelle frister her.Nedenfor følger en oversikt over de viktigste og mest vanlige
+                        fristene som bedriftseiere må ta hensyn til!</p>
+
                 </div>
-                <div className="box">
-                    <h2>General </h2>
-                    <h3> Sales Tax:</h3>
-                    <ol>
-                        <li>term due 10th April</li>
-                        <li>term due 10th June</li>
-                        <li>term due 31st August</li>
-                        <li>term due 10th October</li>
-                        <li>term due 10th December</li>
-                        <li>term due 10th February</li>
-                    </ol>
-                    <h3>A message</h3>
-                    <p>Deadline for submission of the month salary payments is the 5th of the following month.</p>
-                    <h3>Social security and tax deductions:</h3>
-                    <ol>
-                        <li>term due 15th March</li>
-                        <li>term due 15th May</li>
-                        <li>term due 15th July</li>
-                        <li>term due 15th September</li>
-                        <li>term due 15th November</li>
-                        <li>term due 15th January</li>
-                    </ol>
+                <div className="regnskap-boks">
+                    <h4>Aksjonærregisteroppgaven</h4>
+                    <p><strong>Frist:</strong> 31. januar</p>
+                    <p><strong>Hvem:</strong> Alle AS.</p>
+
                 </div>
-            </div>
-            <div className="Link">
+
+                <div className="regnskap-boks">
+                    <h4>Mva-frister</h4>
+                    <p><strong>Mva (annenhver måned)</strong></p>
+                    <p><strong>Frist:</strong> 10. apr. / 10. jun. / 31. aug. / 10. okt. / 10. des. / 10. feb</p>
+                    <p><strong>Hvem:</strong> Alle mva-registrerte som ikke har årlig mva.</p>
+
+                    <p className="mva-avsnitt"><strong>Mva (årlig)</strong></p>
+                    <p><strong>Frist:</strong> 10. mars</p>
+                    <p><strong>Hvem:</strong> Alle som har årlig mva.</p>
+
+                    <p>Årlig mva er noe foretak med under 1 million i årlig omsetning kan søke om.</p>
+
+                </div>
+                <div className="regnskap-boks">
+                    <h4>A-melding</h4>
+                    <p><strong>Frist:</strong> Hver måned (innen den 5. påfølgende måned).</p>
+                    <p><strong>Hvem:</strong> Alle som utbetaler lønn.</p>
+                </div>
+
+                <div className="regnskap-boks">
+                    <h4>Forskuddsskatt</h4>
+                    <p><strong>Frist for ENK:</strong> 15. mar. / 15. jun. / 15. sept. / 15. des.</p>
+                    <p><strong>Frist for AS:</strong> 15. feb. / 15. apr.</p>
+                    <p><strong>Hvem:</strong> Alle skattepliktige.</p>
+                </div>
+
+
+
+            </article>
+            <div className="link">
                 <h2>Important links</h2>
                 <ul>
                     <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 1</a></li>
@@ -75,4 +88,13 @@ function Link() {
         </>
     );
 }
-export default Link;
+
+
+function Frist() {
+    const { language } = useContext(LanguageContext);
+    return <Link language={language} />;
+}
+
+
+
+export default Frist;

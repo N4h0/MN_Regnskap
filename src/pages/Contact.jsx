@@ -1,5 +1,4 @@
 import emailjs from '@emailjs/browser'; // Importer emailjs
-
 import './Contact.css';
 
 function Contact() {
@@ -38,7 +37,7 @@ function Contact() {
                 <div className="main-wrapper">
                     <div className="supports">
                         <div className="support-card first">
-                            <img src="./MN_Regnskap/phone.png" className="support-card-image" />
+                            <img src="./phone.png" className="support-card-image" />
                             <h4>Snakk med oss</h4>
                             <span>Din tilbakemelding er viktig for oss. Vi er klare til å lytte og finne løsninger sammen.</span>
                             <a>+0047 40 05 68 98</a>
@@ -46,7 +45,7 @@ function Contact() {
                             <span>.. trenger man litt hjelp fra venner... eller MN Regnskap support. Ikke overtenk... vi er her for deg.</span>
                         </div>
                         <div className="support-card second">
-                            <img src="./MN_Regnskap/message.png" className="support-card-image" />
+                            <img src="./message.png" className="support-card-image" />
                             <h4>Be om konsultasjon</h4>
                             <span>Konsentrer deg om det du er god på – Vi tar oss av regnskapet! Ta kontakt med oss for en uforpliktende samtale.</span>
                             {/* Form for å sende e-post */}
@@ -74,7 +73,7 @@ function Contact() {
                     <div className="connect-main">
                         <div className="connect-body">
                             <div className="map-box">
-                                <img src="./MN_Regnskap/map.png" alt="Global Offices Map" />
+                                <img src="./map.png" alt="Global Offices Map" />
                             </div>
                             <div className="connect-detail">
                                 <div className="detail-item">

@@ -189,13 +189,13 @@
 /*VÅRE PARTNERE*/
 
 .partnereBakgrunn {
-    padding: 40px;
+    padding: 80px;
     
 }
 
 .partnerBakgrunn, h2 {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-size: 40px;
     font-weight: bold;
 }
@@ -238,6 +238,7 @@
 
     .bildet img {
         display: block;
+        width: 50%; /* Gjør bildene halvparten så brede som sine konteinere */
     }
 
 .slick-initialized .bildet {

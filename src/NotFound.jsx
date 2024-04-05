@@ -1,7 +1,10 @@
-import React from 'react';
+import { useRouteError } from "react-router-dom";
 import './NotFound.css';
 
-const NotFound = () => {
+export default function ErrorPage() {
+    const error = useRouteError();
+    console.error(error);
+
   return (
     <div className="container">
       <div className="text-container">
@@ -24,8 +27,5 @@ const NotFound = () => {
         <img src="/MN_Regnskap/tyv.png" alt="tyv" className="tyv-picture" />
       </div>
     </div>
-    
   );
 };
-
-export default NotFound;

@@ -42,10 +42,10 @@ export default class NavBar extends Component {
                 </div>
 
                 <div className="right-aligned-items">
-                    <Link to="/hjem" className="navTekst">{labels.home}</Link>
-                    <Link to="/team" className="navTekst">{labels.about}</Link>
-                    <Link to="/link" className="navTekst">{labels.deadlines}</Link>
-                    <Link to="/contact" className="navTekst">{labels.contact_us}</Link>
+                    <Link to="/MN_Regnskap/hjem" className="navTekst">{labels.home}</Link>
+                    <Link to="/MN_Regnskap/om-oss" className="navTekst">{labels.about}</Link>
+                    <Link to="/MN_Regnskap/frister" className="navTekst">{labels.deadlines}</Link>
+                    <Link to="/MN_Regnskap/kontakt" className="navTekst">{labels.contact_us}</Link>
                     <div className="dropDown" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
                         <a className="navTekst">{language === 'norsk' ? 'Norsk' : 'Engelsk'} <FontAwesomeIcon icon={this.state.isMenuOpen ? faChevronUp : faChevronDown} /></a>
                         {this.state.isMenuOpen && (
