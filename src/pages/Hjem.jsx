@@ -71,7 +71,7 @@ function Regnskap({ language }) {
                     <p>{textData.tax_return_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="/regn3.png" alt="" loading="lazy" />
+                    <img src="./regn3.png" alt="" loading="lazy" />
                     <h3>{textData.budgeting}</h3>
                     <p>{textData.budgeting_description}</p>
                 </div>
