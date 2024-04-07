@@ -6,23 +6,20 @@
 .accounting-deadlines h1 {
     color: #244368;
     font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size:2rem;
+    margin-bottom:10px;
 }
-
 .accounting-deadlines {
-    margin: 0;
-    padding: 5.34em 6.67em;
+margin: 0;
+padding: 5.34em 6.67em;
 }
-
-    .accounting-deadlines p {
-        margin: 0;
-    }
+.accounting-deadlines p{
+    margin:0;
+}
 
 .mva-avsnitt {
     padding-top: 20px;
 }
-
 .regnskap-boks {
     display: flex;
     flex-direction: column;
@@ -35,10 +32,9 @@
     border-radius: 8px;
 }
 
-    .regnskap-boks h4 {
-        font-size: 20px;
-    }
-
+.regnskap-boks h4{
+    font-size:20px;
+}
     .regnskap-boks p {
         font-size: 15px;
     }
@@ -87,13 +83,13 @@
 }
 
 /* Responsiv styling for store skjermer (f.eks. iPad Air) */
-@media screen and (max-width: 430px) {
-    .accounting-deadlines p {
-        font-size: 10px
+    @media screen and (max-width: 430px) {
+        .accounting-deadlines p {
+          font-size:10px
+        }
     }
-}
 
-/* Responsiv styling for st�rre skjermer som 912 x 1368 */
+    /* Responsiv styling for st�rre skjermer som 912 x 1368 */
 @media screen and (max-width: 320px) {
     .regnskap-boks h4 {
         font-size: 15px;
@@ -104,11 +100,14 @@
     }
 
     .regnskap-boks {
+   
         padding: 10px;
     }
-
     .download-section {
+  
         max-width: 250px;
         font-size: 12px;
     }
-}
+    }
+
+
