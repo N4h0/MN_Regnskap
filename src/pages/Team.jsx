@@ -60,7 +60,7 @@ function Test({ language }) {
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
-                                <img src="./Moosa.png" className="team-img" alt="pic" />
+                                <img src="./Moosa.jpg" className="team-img" alt="pic" />
                                 <h3>Moosa Ali Rashid</h3>
                                 <div className="team-info">
                                     <p>Chartered accountant</p>
@@ -78,9 +78,9 @@ function Test({ language }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-4">
+                        <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Naila.png" className="team-img" alt="pic" />
+                                <img src="./Haseeb.png" className="team-img" alt="pic" />
                                 <h3>Haseeb Talib</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
@@ -88,20 +88,30 @@ function Test({ language }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-4">
+                        <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Naila.png" className="team-img" alt="pic" />
-                                <h3>Ibrahim Mughdal</h3>
+                                <img src="./Ibrahim.png" className="team-img" alt="pic" />
+                                <h3>Ibrahim Mughal</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-4">
+                        <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Naila.png" className="team-img" alt="pic" />
+                                <img src="./Asad.png" className="team-img" alt="pic" />
                                 <h3>Asad Haider Khan</h3>
+                                <div className="team-info">
+                                    <p>Accountant</p>
+                                    <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-12 col-md-3">
+                            <div className="team-item">
+                                <img src="./Nitasha.jpg" className="team-img" alt="pic" />
+                                <h3>Nitasha Khan</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
