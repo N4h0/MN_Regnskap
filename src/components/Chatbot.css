@@ -8,6 +8,7 @@
     z-index: 999;
     border-radius: 70%;
 
+
 }
 
 .chatButton {
@@ -35,24 +36,41 @@
 
 /* Chat-header */
 .chatHeader {
-    background-color: #000; /* Endret til svart */
-    color: #fff; /* Endret tekstfarge til hvit */
-    padding: 18px 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    justify-content: space-between;
+    justify-content: flex-start; /* Elementene starter fra venstre side */
 }
 
-.chatHeader h2 {
+.chatLogo {
+    /* Størrelse og plassering av logoen */
+    height: 70px; 
+}
+
+.chatHeaderText span{
+    font-size:14px;
+}
+.chatHeaderText {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+}
+
+.chatheader-overskrift {
+    font-size: 19px;
     margin: 0;
-    font-size: 18px;
+    font-weight: bold;
 }
 
 .closeChat {
-    background: none;
+    margin-left: auto; /* Skyver denne knappen til høyre kant av headeren */
+    background: transparent;
     border: none;
-    color: #fff;
+    color: black;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 /* Chat-body */
@@ -63,10 +81,17 @@
     margin: 0 auto; /* Sentrer containeren */
     display: flex;
     flex-direction: column;
+    background: #f7f7f7;
 }
 
 .chatMessage, .botMessage {
     font-size: 14px;
+}
+
+.messageTime {
+    font-size: 0.75rem; /* Adjust font size as needed */
+    color: #666; /* A neutral color for timestamps */
+    padding: 0 10px; /* Adjust padding as needed */
 }
 
 .chatMessage {
@@ -93,7 +118,7 @@
     padding: 9px 10px;
 
     max-width: 65%;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     box-shadow: 0 0 32px rgb(0 0 0 / 8%), 0rem 16px 16px -16px rgb(0 0 0 / 10%);
 }
 

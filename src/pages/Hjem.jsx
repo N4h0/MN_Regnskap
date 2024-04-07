@@ -1,11 +1,8 @@
 ﻿import { useContext, useEffect } from 'react';
 import { LanguageContext } from '../languages/LanguageContext'; 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './Hjem.css';
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function Homepage() {
     const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
@@ -36,7 +33,7 @@ function Bildet({ language }) {
 
     return (
         <>
-            <img src="./kontor.jpeg" alt="" className="img-style" />
+            <img src="/kontor.jpeg" alt="" className="img-style" />
             <div className="bildeTekst">
                 <h1>M&N</h1>
                 <h1>{textData.regnskap}</h1>
@@ -55,25 +52,26 @@ function Regnskap({ language }) {
 
     return (
         <>
-            <h2>{textData.ambitions_expertise}</h2>
+        
             <div className="regnskapsBoks">
+            <h2>{textData.ambitions_expertise}</h2>
                 <div className="regnskapsKort">
-                    <img src="./kalk.png" alt="" loading="lazy" />
+                    <img src="/kalk.png" alt="" loading="lazy" />
                     <h3>{textData.accounting}</h3>
                     <p>{textData.accounting_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="./regn1.jpg" alt="" loading="lazy" />
+                    <img src="/regn1.jpg" alt="" loading="lazy" />
                     <h3>{textData.advice}</h3>
                     <p>{textData.advice_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="./regn2.jpg" alt="" loading="lazy" />
+                    <img src="/regn2.jpg" alt="" loading="lazy" />
                     <h3>{textData.tax_return}</h3>
                     <p>{textData.tax_return_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="./regn3.png" alt="" loading="lazy" />
+                    <img src="/regn3.png" alt="" loading="lazy" />
                     <h3>{textData.budgeting}</h3>
                     <p>{textData.budgeting_description}</p>
                 </div>
@@ -126,7 +124,7 @@ function Partnere({ language }) {
 
 
     return (
-        <div className="partnereBakgrunn">
+        <div className="partnerBakgrunn">
             <h2 className="partner-tittel">{textData.our_partner}</h2>
             <section className="customer-logos bilder">
                 <div className="bildet"><img src="./new-dehli.png" alt="logo" /></div>
@@ -147,19 +145,22 @@ function Møtoss({ language }) {
 
     return (
     <>
-            <h1>{textData.meet_us }</h1>
-        <div className="kontaktOssBoks">
-            <div className="kontaktOssKort">
-                <img src="./Moosa.png" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
-                <h1>MOOSA ALI RASHID</h1>
-                    <p>{textData.charted_accountant}</p>
+            <div className="kontaktOssBoks">
+                <div className="kontaktOssHeader">
+                    <h1>{textData.meet_us }</h1>
+                </div>
+                <div className="kontaktOssKort">
+                        <img className="kontaktOssKort-img" src="./Moosa.jpg" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <h1>MOOSA ALI RASHID</h1>
+                        <p>{textData.charted_accountant}</p>
+                </div>
+                <div className="kontaktOssKort">
+                        <img className="kontaktOssKort-img" src="./Naila.png" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <h1>NAILA SOHAIL KHOKHAR</h1>
+                        <p>{textData.charted_accountant}</p>
+                </div>
             </div>
-            <div className="kontaktOssKort">
-                <img src="./Naila.png" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
-                <h1>NAILA SOHAIL KHOKHAR</h1>
-                    <p>{textData.charted_accountant}</p>
-            </div>
-        </div>
+
         </>
     );
 }

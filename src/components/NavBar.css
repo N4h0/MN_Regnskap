@@ -72,7 +72,17 @@ dropDown {
     z-index: 1;
 }
 
-.dropDown:hover .dropDownContent {
+    .dropDownContent img {
+        width: 20px; /* eller annen størrelse du ønsker */
+        height: auto; /* holder bildets proporsjoner */
+        margin-right: 5px; /* gir litt plass mellom bildet og teksten */
+    }
+
+    .dropDownContent button {
+        display: flex;
+        align-items: center;
+    }
+        .dropDown:hover .dropDownContent {
     display: block;
 }
 .dropDownContent a {

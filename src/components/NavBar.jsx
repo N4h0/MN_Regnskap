@@ -1,4 +1,4 @@
-import { Component } from 'react';
+﻿import { Component } from 'react';
 import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'; // Importerer ikoner fra Font Awesome
@@ -6,7 +6,6 @@ import { LanguageContext } from '../languages/LanguageContext';
 import { Link } from 'react-router-dom';
 import en from '../languages/en.json';
 import no from '../languages/no.json';
-
 export default class NavBar extends Component {
     static contextType = LanguageContext;
     state = {
@@ -17,6 +16,12 @@ export default class NavBar extends Component {
         this.setState((prevState) => ({
             isMenuOpen: !prevState.isMenuOpen,
         }));
+    };
+
+    closeMenu = () => {
+        this.setState({
+            isMenuOpen: false,
+        });
     };
 
     handleMouseEnter = () => {
@@ -38,25 +43,31 @@ export default class NavBar extends Component {
         return (
             <div className={`topnav ${this.state.isMenuOpen ? 'responsive' : ''}`}>
                 <div className="left-aligned-items">
-                    <img src="/MN_Regnskap/mn-regnskaplogo.png" alt="M&N Regnskap Logo" />
+                    <img src="/mn-regnskaplogo.png" alt="M&N Regnskap Logo" />
                 </div>
 
                 <div className="right-aligned-items">
-                    <Link to="/MN_Regnskap/hjem" className="navTekst">{labels.home}</Link>
-                    <Link to="/MN_Regnskap/om-oss" className="navTekst">{labels.about}</Link>
-                    <Link to="/MN_Regnskap/frister" className="navTekst">{labels.deadlines}</Link>
-                    <Link to="/MN_Regnskap/kontakt" className="navTekst">{labels.contact_us}</Link>
+                    <Link to="/hjem" className="navTekst" onClick={this.closeMenu}>{labels.home}</Link>
+                    <Link to="/team" className="navTekst" onClick={this.closeMenu}>{labels.about}</Link>
+                    <Link to="/link" className="navTekst" onClick={this.closeMenu}>{labels.deadlines}</Link>
+                    <Link to="/contact" className="navTekst" onClick={this.closeMenu}>{labels.contact_us}</Link>
                     <div className="dropDown" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-                        <a className="navTekst">{language === 'norsk' ? 'Norsk' : 'Engelsk'} <FontAwesomeIcon icon={this.state.isMenuOpen ? faChevronUp : faChevronDown} /></a>
+                        <a className="navTekst">
+                            <img src={language === 'norsk' ? "/norge.png" : "/usa.png"} alt={language === 'norsk' ? "Norwegian Flag" : "US Flag"} style={{ marginRight: '5px' }} />
+                            {language === 'norsk' ? 'Norsk' : 'Engelsk'} <FontAwesomeIcon icon={this.state.isMenuOpen ? faChevronUp : faChevronDown} />
+                        </a>
                         {this.state.isMenuOpen && (
                             <div className="dropDownContent">
-                                <button onClick={() => this.context.setLanguage('english')} className="text-dark nav-link">{labels.english}</button>
-                                <button onClick={() => this.context.setLanguage('norsk')} className="text-dark nav-link">{labels.norwegian}</button>
+                                <button onClick={() => { this.context.setLanguage('english'); this.closeMenu(); }} className="text-dark nav-link">
+                                    <img src="/usa.png" alt="US Flag" style={{ marginRight: '8px' }} /> {labels.english}
+                                </button>
+                                <button onClick={() => { this.context.setLanguage('norsk'); this.closeMenu(); }} className="text-dark nav-link">
+                                    <img src="/norge.png" alt="Norwegian Flag" style={{ marginRight: '8px' }} /> {labels.norwegian}
+                                </button>
+
                             </div>
                         )}
                     </div>
-
-
                 </div>
 
                 <a href="javascript:void(0);" className="icon" onClick={this.toggleMenu}>
