@@ -28,59 +28,54 @@ function Link({ language }) {
     return (
         <>
             <article className="accounting-deadlines">
-                <h1>Frister</h1>
+                <h1>{textData.deadlinesTitle}</h1>
                 <div className="regnskap-boks">
-                    <h4>Årets regnskapsfrister</h4>
-                    <p>Det er viktig å holde styr på frister og innleveringer når det gjelder ulike regnskapsoppgaver.
-                        Å holde seg oppdatert med disse fristene er avgjørende. Du finner en fullstendig liste over alle
-                        aktuelle frister her.Nedenfor følger en oversikt over de viktigste og mest vanlige
-                        fristene som bedriftseiere må ta hensyn til!</p>
+                    <h4>{textData.annualAccountingDeadlinesTitle}</h4>
+                    <p>{textData.annualAccountingDeadlinesText}</p>
 
                 </div>
                 <div className="regnskap-boks">
-                    <h4>Aksjonærregisteroppgaven</h4>
-                    <p><strong>Frist:</strong> 31. januar</p>
-                    <p><strong>Hvem:</strong> Alle AS.</p>
-
+                    <h4>{textData.shareholderDeclarationTitle}</h4>
+                    <p><strong>{textData.deadline}</strong> {textData.shareholderDeclarationDeadline}</p>
+                    <p><strong>{textData.who}</strong> {textData.shareholderDeclarationFor}</p>
                 </div>
+
 
                 <div className="regnskap-boks">
-                    <h4>Mva-frister</h4>
-                    <p><strong>Mva (annenhver måned)</strong></p>
-                    <p><strong>Frist:</strong> 10. apr. / 10. jun. / 31. aug. / 10. okt. / 10. des. / 10. feb</p>
-                    <p><strong>Hvem:</strong> Alle mva-registrerte som ikke har årlig mva.</p>
+                    <h4>{textData.VATDeadlinesTitle}</h4>
+                    <p><strong>{textData.VATDeadlineBiMonthly}</strong></p>
+                    <p><strong>{textData.deadline}</strong> {textData.VATDeadlineBiMonthlyDates}</p>
+                    <p><strong>{textData.who}</strong> {textData.VATDeadlineBiMonthlyFor}</p>
 
-                    <p className="mva-avsnitt"><strong>Mva (årlig)</strong></p>
-                    <p><strong>Frist:</strong> 10. mars</p>
-                    <p><strong>Hvem:</strong> Alle som har årlig mva.</p>
+                    <p className="mva-avsnitt"><strong>{textData.VATDeadlineAnnual}</strong></p>
+                    <p><strong>{textData.deadline}</strong> {textData.VATDeadlineAnnualDate}</p>
+                    <p><strong>{textData.who}</strong> {textData.VATDeadlineAnnualFor}</p>
 
-                    <p>Årlig mva er noe foretak med under 1 million i årlig omsetning kan søke om.</p>
-
+                    <p>{textData.VATAnnualNote}</p>
                 </div>
                 <div className="regnskap-boks">
-                    <h4>A-melding</h4>
-                    <p><strong>Frist:</strong> Hver måned (innen den 5. påfølgende måned).</p>
-                    <p><strong>Hvem:</strong> Alle som utbetaler lønn.</p>
+                    <h4>{textData.employmentDeclarationTitle}</h4>
+                    <p><strong>{textData.deadline}</strong> {textData.employmentDeclarationDeadline}</p>
+                    <p><strong>{textData.who}</strong> {textData.employmentDeclarationFor}</p>
                 </div>
-
                 <div className="regnskap-boks">
-                    <h4>Forskuddsskatt</h4>
-                    <p><strong>Frist for ENK:</strong> 15. mar. / 15. jun. / 15. sept. / 15. des.</p>
-                    <p><strong>Frist for AS:</strong> 15. feb. / 15. apr.</p>
-                    <p><strong>Hvem:</strong> Alle skattepliktige.</p>
+                    <h4>{textData.advanceTaxTitle}</h4>
+                    <p><strong>{textData.deadline} for ENK:</strong> {textData.advanceTaxDeadlineForSoleProprietorship}</p>
+                    <p><strong>{textData.deadline} for AS:</strong> {textData.advanceTaxDeadlineForCorporation}</p>
+                    <p><strong>{textData.who}</strong> {textData.advanceTaxFor}</p>
                 </div>
-
 
 
             </article>
-            <div className="link">
-                <h2>Important links</h2>
-                <ul>
-                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 1</a></li>
-                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 2</a></li>
-                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 3</a></li>
-                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 4</a></li>
-                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Download PDF file 5</a></li>
+
+            <div class="download-section">
+                <h3>{textData.formsforaccounting} </h3>
+                <ul class="download-links">
+                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Kasseoppgjør (pdf) </a></li>
+                    <li><a href={EXCEL_FILE_URL1} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL1); }}>Kassetelling (excel) </a></li>
+                    <li><a href={EXCEL_FILE_URL2} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL2); }}>Kassebok (excel) </a></li>
+                    <li><a href={EXCEL_FILE_URL3} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL3); }}>Firmabil beregning av fordel (excel) </a></li>
+                    <li><a href={EXCEL_FILE_URL4} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL4); }}>Omsetningsrapport (excel) </a></li>
                 </ul>
             </div>
 
