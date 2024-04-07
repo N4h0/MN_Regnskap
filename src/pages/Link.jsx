@@ -4,7 +4,13 @@ import no from '../languages/no.json'; // Norsk språkdata
 import { useContext } from 'react';
 import { LanguageContext } from '../languages/LanguageContext';
 
-const PDF_FILE_URL = "https://localhost:5173/file_pdf.pdf";
+
+const PDF_FILE_URL = "https://n4h0.github.io/MN_Regnskap/kasseoppgjor.pdf";
+const EXCEL_FILE_URL1 = "https://n4h0.github.io/MN_Regnskap/kassetelling.xlsx";
+const EXCEL_FILE_URL2 = "https://n4h0.github.io/MN_Regnskap/ny_kassebok.xlsx";
+const EXCEL_FILE_URL3 = "https://n4h0.github.io/MN_Regnskap/Firmabil_beregning_av_fordel.xlsx";
+const EXCEL_FILE_URL4 = "https://n4h0.github.io/MN_Regnskap/Omsetningsrapport.xlsx";
+
 
 function Link({ language }) {
     // Bestemmer hvilket språkdata som skal brukes basert på den nåværende språkinnstillingen
