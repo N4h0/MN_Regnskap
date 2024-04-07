@@ -1,4 +1,4 @@
-
+ï»¿
 * {
     font-family: 'Varela Round', sans-serif;
 }
@@ -6,169 +6,109 @@
 .accounting-deadlines h1 {
     color: #244368;
     font-weight: 600;
-    font-size:2rem;
-    margin-bottom:10px;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
+
 .accounting-deadlines {
-margin: 0;
-padding: 5.34em 6.67em;
+    margin: 0;
+    padding: 5.34em 6.67em;
 }
-.accounting-deadlines p{
-    margin:0;
-}
+
+    .accounting-deadlines p {
+        margin: 0;
+    }
 
 .mva-avsnitt {
     padding-top: 20px;
 }
+
 .regnskap-boks {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Justerer barna (innholdet) til venstre */
-    max-width: 800px; /* Setter maksimal bredde på boksen */
+    max-width: 800px; /* Setter maksimal bredde pï¿½ boksen */
     margin: 0 auto; /* Sentrerer boksen horisontalt */
-    padding: 20px; /* Legger til litt padding for å gi teksten plass innenfor boksen */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Legger til en enkel skyggeeffekt for å løfte boksen fra bakgrunnen */
-    background-color: #fff; /* Setter bakgrunnsfargen til hvit for å skille den fra siden */
+    padding: 20px; /* Legger til litt padding for ï¿½ gi teksten plass innenfor boksen */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Legger til en enkel skyggeeffekt for ï¿½ lï¿½fte boksen fra bakgrunnen */
+    background-color: #fff; /* Setter bakgrunnsfargen til hvit for ï¿½ skille den fra siden */
     border-radius: 8px;
 }
+
+    .regnskap-boks h4 {
+        font-size: 20px;
+    }
+
+    .regnskap-boks p {
+        font-size: 15px;
+    }
+
+
+.download-section {
+    background-color: #f4f4f4; /* Lys grÃ¥ bakgrunn */
+    padding: 20px; /* Litt plass rundt innholdet */
+    margin-bottom: 20px; /* Mellomrom mellom seksjoner */
+    margin-left: auto; /* Senterer seksjonen horisontalt */
+    margin-right: auto; /* Senterer seksjonen horisontalt */
+    border-radius: 5px; /* Avrundede hjÃ¸rner */
+    max-width: 600px; /* Maksimal bredde av seksjonen */
 }
 
+    .download-section h3 {
+        margin-top: 0;
+        color: #005B91; /* MÃ¸rk blÃ¥ farge for tittel */
+    }
 
-
-.link {
-    display: flex; /* Gjør containeren fleksibel */
-    flex-direction: column; /* Elementene organiseres i en kolonne */
-    align-items: flex-start; /* Justerer linkene til venstre */
-    max-width: 800px; /* Setter maksimal bredde på boksen */
-    margin: 0 auto 20px; /* Sentrerer boksen horisontalt og legger til margin på bunnen */
-    padding: 20px; /* Legger til litt padding for å gi teksten plass innenfor boksen */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Legger til en enkel skyggeeffekt for å løfte boksen fra bakgrunnen */
-    background-color: #fff; /* Setter bakgrunnsfargen til hvit for å skille den fra siden */
-    border-radius: 8px; /* Litt avrundede hjørner for et mykere utseende */
+.download-links {
+    list-style: none; /* Fjerner punkttegn */
+    padding: 0;
 }
 
-    .link h2 {
-        color: #244368; /* Setter farge på overskriften */
-        margin-bottom: 10px; /* Legger til litt avstand mellom overskriften og linkene */
+    .download-links li a {
+        text-decoration: none; /* Fjerner understreking */
+        background-color: white; /* Hvit bakgrunn for lenker */
+        display: block; /* Lenker tar opp hele bredden */
+        padding: 10px; /* Litt plass rundt lenketeksten */
+        border: 1px solid #ddd; /* Lett grense rundt lenkene */
+        margin-bottom: 5px; /* Mellomrom mellom lenkene */
+        border-radius: 5px; /* Avrundede hjÃ¸rner pÃ¥ lenkene */
     }
 
-    .link ul {
-        list-style: none; /* Fjerner standard listestyling */
-        padding: 0; /* Fjerner padding */
-    }
-
-    .link li {
-        margin-bottom: 10px; /* Legger til avstand mellom hver link */
-    }
-
-    .link a {
-        color: #000; /* Setter fargen på linkene */
-        text-decoration: none; /* Fjerner understrekingen fra linker */
-    }
-
-        .link a:hover {
-            text-decoration: underline; /* Legger til understreking når man holder musepekeren over */
+        .download-links li a:hover {
+            background-color: #e9ecef; /* Lysere grÃ¥ bakgrunn ved hover */
+            text-decoration: underline; /* Understrekning for Ã¥ vise aktivitet */
         }
 
 /* Responsiv styling for mindre skjermer */
-@media screen and (max-width: 768px) {
-   
-
-   
-    .box p {
-        font-size: 15px; 
-        line-height: 1.8; 
-        margin-bottom: 15px; 
-    }
-    .Link {
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Aligns child elements to the start (left) */
-    }
-
-    .Link h2 {
-        font-size: 19px;
-        font-weight: bold;
-        align-self: center;
-    }
-
-    .Link ul {
-        padding-left: 20px; /* Removes default padding */
-        list-style-type: none; /* Removes default list styles */
+@media screen and (max-width: 650px) {
+    .accounting-deadlines {
+        padding: 2em 2em;
     }
 }
-/* Responsiv styling for middels skjermer */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        gap: 50px; 
-    }
-
-    .box h1 {
-        font-size: 40px;
-    }
-
-    .box h2,
-    .Link h2 {
-        font-size: 30px;
-    }
-
-    .box h3,
-    .box p,
-    .box ul,
-    .box ol,
-    .box li,
-    .Link ul,
-    .Link li {
-        font-size: 25px;
-    }
-
-    .Link {
-        margin-top: 10px;
-    }
-
 
 /* Responsiv styling for store skjermer (f.eks. iPad Air) */
-    @media screen and (min-width: 1025px) {
-        .box h1 {
-            font-size: 40px;
-        }
-
-        .box h2 {
-            font-size: 32px;
-        }
-
-        .box h3,
-        .box p,
-        .box ul,
-        .box ol,
-        .box li {
-            font-size: 30px;
-        }
-
-        .Link {
-            margin-top: 10px;
-        }
-    }
-
-    /* Responsiv styling for større skjermer som 912 x 1368 */
-    @media screen and (min-width: 768px) {
-        .container {
-            gap: 30px;
-        }
-
-        .Link {
-            margin-top: 700px; 
-        }
-
-        .Link h2 {
-            font-size: 22px; 
-        }
-
-        .Link ul {
-            font-size: 16px; 
-        }
+@media screen and (max-width: 430px) {
+    .accounting-deadlines p {
+        font-size: 10px
     }
 }
 
+/* Responsiv styling for stï¿½rre skjermer som 912 x 1368 */
+@media screen and (max-width: 320px) {
+    .regnskap-boks h4 {
+        font-size: 15px;
+    }
 
+    .regnskap-boks p {
+        font-size: 9px;
+    }
+
+    .regnskap-boks {
+        padding: 10px;
+    }
+
+    .download-section {
+        max-width: 250px;
+        font-size: 12px;
+    }
+}
