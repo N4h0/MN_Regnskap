@@ -33,7 +33,7 @@ function Bildet({ language }) {
 
     return (
         <>
-            <img src="/kontor.jpeg" alt="" className="img-style" />
+            <img src="./kontor.jpeg" alt="" className="img-style" />
             <div className="bildeTekst">
                 <h1>M&N</h1>
                 <h1>{textData.regnskap}</h1>
@@ -56,17 +56,17 @@ function Regnskap({ language }) {
             <div className="regnskapsBoks">
             <h2>{textData.ambitions_expertise}</h2>
                 <div className="regnskapsKort">
-                    <img src="/kalk.png" alt="" loading="lazy" />
+                    <img src="./kalk.png" alt="" loading="lazy" />
                     <h3>{textData.accounting}</h3>
                     <p>{textData.accounting_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="/regn1.jpg" alt="" loading="lazy" />
+                    <img src="./regn1.jpg" alt="" loading="lazy" />
                     <h3>{textData.advice}</h3>
                     <p>{textData.advice_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="/regn2.jpg" alt="" loading="lazy" />
+                    <img src="./regn2.jpg" alt="" loading="lazy" />
                     <h3>{textData.tax_return}</h3>
                     <p>{textData.tax_return_description}</p>
                 </div>
