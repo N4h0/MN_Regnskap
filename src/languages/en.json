@@ -70,8 +70,56 @@
   "organization_number": "Organization number",
   "ok": "Approvals",
 
-  "Ta": "Contact"
+  "Ta": "Contact",
+  "deadlinesTitle": "Deadlines",
+  "annualAccountingDeadlinesTitle": "Annual Accounting Deadlines",
+  "annualAccountingDeadlinesText": "It's important to keep track of deadlines and submissions for various accounting tasks. Staying updated with these deadlines is crucial. You can find a complete list of all relevant deadlines here. Below is an overview of the most important and common deadlines that business owners need to be aware of!",
+  "shareholderDeclarationTitle": "Shareholder Register Statement",
+  " deadline": "Deadline:",
+  "shareholderDeclarationDeadline": "January 31",
+  "who": "Who:",
+  "shareholderDeclarationFor": " All AS (Corporations).",
+  "VATDeadlinesTitle": "VAT Deadlines",
+  "VATDeadlineBiMonthly": "VAT (bimonthly)",
+  "VATDeadlineBiMonthlyDates": "Apr. 10 / Jun. 10 / Aug. 31 / Oct. 10 / Dec. 10 / Feb. 10",
+  "VATDeadlineBiMonthlyFor": " All VAT-registered that do not have annual VAT.",
+  "VATDeadlineAnnual": "VAT (annual)",
+  "VATDeadlineAnnualDate": "March 10",
+  "VATDeadlineAnnualFor": " Everyone who has annual VAT.",
+  "VATAnnualNote": "Annual VAT is something enterprises with under 1 million in annual turnover can apply for.",
+  "employmentDeclarationTitle": "Employment Declaration",
+  "employmentDeclarationDeadline": " Every month (within the 5th of the following month).",
+  "employmentDeclarationFor": "Everyone who pays out salaries.",
+  "advanceTaxTitle": "Advance Tax",
+  "advanceTaxDeadlineForSoleProprietorship": " Mar. 15 / Jun. 15 / Sep. 15 / Dec. 15",
+  "advanceTaxDeadlineForCorporation": " Feb. 15 / Apr. 15",
+  "advanceTaxFor": " All taxpayers.",
+  "formsforaccounting": "Forms for accounting",
 
 
 
+
+  "contactPageTitle": "Got something on your mind?",
+  "contactPageDescription": "We make our job harder so it's easier for you. Our dedicated team is ready to listen to your needs and give you the best experience.",
+  "talkToUs": "Talk to Us",
+  "yourFeedbackIsImportant": "Your feedback is important to us. We're ready to listen and find solutions together.",
+  "phoneNumber": "+0047 40 05 68 98",
+  "whenInNeed": "When in need",
+  "helpFromFriends": "...one needs a little help from friends... or MN Accounting support. Don't overthink... we're here for you.",
+  "requestConsultation": "Request a Consultation",
+  "concentrateOnWhatYouDoBest": "Focus on what you do best – We'll take care of the accounting! Contact us for a non-binding conversation.",
+  "submit": "Submit",
+  "letsTalkOverCoffee": "Shall we talk it over a cup of coffee? ☕️",
+  "headOffice": "Head Office",
+  "address": "Vollaveien 20 A, Oslo, 0668, Norway",
+  "callUs": "Call Us",
+  "organizationNumber": "Organization Number",
+  "organizationNumberValue": "992 720 999",
+  "email": "mn@mnregnskap.no"
 }
+
+
+
+
+
+

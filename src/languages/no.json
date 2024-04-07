@@ -7,18 +7,18 @@
   "norwegian": "Norsk",
   "language": "Språk",
 
-  "omOssOverskrift1": "Historien vår",
+  "omOssOverskrift1": "Vår historie",
   "omOssOverskrift2": "Bak tallene står vi, din pålitelige partner for økonomisk suksess!",
   "omOssBrødtekst1": "M&N Regnskap har en sentral beliggenhet på Alna og har omfattende erfaring med regnskapsførsel, i ulike bransjer. Vi betjener kunder i Oslo, og andre deler av Norge.",
   "omOssBrødtekst2": "Vårt team består av høyt utdannede medarbeidere med lang erfaring innen feltet. Selskapet ble grunnlagt i 2008 av Moosa Ali Rashid og Naila Sohail Khokhar, begge med utdanning innen revisjon. Med årene har vi vokst i takt med vårt klientnettverk.",
   "omOssBrødtekst3": "M&N Regnskap har en høy faglig standard og gode rutiner for kvalitetssikring, da vi er oppmerksomme på at regnskapsføring er forbundet med strenge krav og stramme tidsfrister. Vi tilbyr tjenester fra A til Å og jobber i dag i stor grad digitalt, men vi tilpasser oss også klientenes ønsker om papirbaserte løsninger. La oss ta oss av regnskapet, slik at du kan fokusere på det du er best på!",
   "omOssBrødtekst4": "Konsentrer deg om det du er god på – Vi tar oss av regnskapet!",
-  "omOssTeam": "Ansatte i M&N regnskap",
+  "omOssTeam": "Møt teamet / Vårt team",
 
   "regnskap": "REGNSKAP",
   "home_page_text": "Vi tar vare på regnskapet ditt!",
   "more_info": "Mer Info",
-  "ambitions_expertise": "Dine Ambisjoner, V\u00E5r Ekspertise - Hvordan Kan Vi Støtte Deg?",
+  "ambitions_expertise": "Dine ambisjoner, v\u00E5r ekspertise - Hvordan kan vi støtte deg?",
   "accounting": "Regnskap",
   "accounting_description": "Løpende bokføring, årsoppgjør, Skattemelding og Rapportering til Altinn.",
   "advice": "Rådgivning",
@@ -67,7 +67,65 @@
   "organization_number": "Organisasjon nummer",
   "ok": "Godkjenninger",
 
-  "Ta": "Kontakt"
+  "Ta": "Kontakt",
+
+
+
+
+  "deadlinesTitle": "Frister",
+  "annualAccountingDeadlinesTitle": "Årets regnskapsfrister",
+  "annualAccountingDeadlinesText": "Det er viktig å holde styr på frister og innleveringer når det gjelder ulike regnskapsoppgaver. Å holde seg oppdatert med disse fristene er avgjørende. Du finner en fullstendig liste over alle aktuelle frister her. Nedenfor følger en oversikt over de viktigste og mest vanlige fristene som bedriftseiere må ta hensyn til!",
+  "shareholderDeclarationTitle": "Aksjonærregisteroppgaven",
+  " deadline": "frist:",
+  "shareholderDeclarationDeadline": "31. januar",
+  "who": "Hvem:",
+
+  "shareholderDeclarationFor": "Alle AS.",
+  "VATDeadlinesTitle": "Mva-frister",
+  "VATDeadlineBiMonthly": "Mva (annenhver måned)",
+  "VATDeadlineBiMonthlyDates": "Frist: 10. apr. / 10. jun. / 31. aug. / 10. okt. / 10. des. / 10. feb",
+  "VATDeadlineBiMonthlyFor": "Hvem: Alle mva-registrerte som ikke har årlig mva.",
+  "VATDeadlineAnnual": "Mva (årlig)",
+  "VATDeadlineAnnualDate": " 10. mars",
+  "VATDeadlineAnnualFor": "Alle som har årlig mva.",
+  "VATAnnualNote": "Årlig mva er noe foretak med under 1 million i årlig omsetning kan søke om.",
+  "employmentDeclarationTitle": "A-melding",
+  "employmentDeclarationDeadline": "Hver måned (innen den 5. påfølgende måned).",
+  "employmentDeclarationFor": " Alle som utbetaler lønn.",
+  "advanceTaxTitle": "Forskuddsskatt",
+  "advanceTaxDeadlineForSoleProprietorship": "Frist for ENK: 15. mar. / 15. jun. / 15. sept. / 15. des.",
+  "advanceTaxDeadlineForCorporation": "Frist for AS: 15. feb. / 15. apr.",
+  "advanceTaxFor": "Alle skattepliktige.",
+  "formsforaccounting": "Skjemaer for regnskap",
+
+
+
+
+  "contactPageTitle": "Har du noe på hjertet?",
+  "contactPageDescription": "Vi gjør jobben vår vanskeligere, slik at det er lettere for deg. Vårt dedikerte team er klare for å lytte til dine behov, og gi deg den beste opplevelsen.",
+  "talkToUs": "Snakk med oss",
+  "yourFeedbackIsImportant": "Din tilbakemelding er viktig for oss. Vi er klare til å lytte og finne løsninger sammen.",
+  "phoneNumber": "+0047 40 05 68 98",
+  "whenInNeed": "Når en er i nød",
+  "helpFromFriends": ".. trenger man litt hjelp fra venner... eller MN Regnskap support. Ikke overtenk... vi er her for deg.",
+  "requestConsultation": "Be om konsultasjon",
+  "concentrateOnWhatYouDoBest": "Konsentrer deg om det du er god på – Vi tar oss av regnskapet! Ta kontakt med oss for en uforpliktende samtale.",
+  "submit": "Send Inn",
+  "letsTalkOverCoffee": "Skal vi ta det over en kopp kaffe? ☕️",
+  "headOffice": "Hovedkontor",
+  "address": "Vollaveien 20 A, Oslo, 0668, Norge",
+  "callUs": "Ring oss",
+  "organizationNumber": "Organisasjons nummer",
+  "organizationNumberValue": "992 720 999",
+  "email": "mn@mnregnskap.no"
 }
+
+
+
+
+
+
+
+
 
 
