@@ -62,9 +62,11 @@
 
 
 /*SPRÅK DELEN*/
-dropDown {
+/* Generell kode justert for dropdown uten border og med subtil skyggeeffekt */
+
+.dropDown {
     position: relative;
-    display: inline-block; /* Eller 'block' avhengig av layouten din */
+    display: inline-block; /* Rettet til .dropDown */
 }
 
 .dropDownContent {
@@ -72,18 +74,17 @@ dropDown {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Mer subtil skygge */
+    padding: 12px 0; /* Justert padding for å fjerne vertikal padding */
     z-index: 1;
+    border: none; /* Sikrer at det ikke er noen border */
 }
 
-    .dropDownContent img {
-        width: 20px; /* eller annen størrelse du ønsker */
-        height: auto; /* holder bildets proporsjoner */
-        margin-right: 5px; /* gir litt plass mellom bildet og teksten */
-    }
-
     .dropDownContent button {
+        border: none; /* Fjerner border fra knapper */
+        background-color: transparent; /* Gjør bakgrunnen transparent */
+        padding: 8px 16px; /* Justerer padding for å matche designet */
+        margin: 0; /* Fjerner margin */
         display: flex;
         align-items: center;
     }
@@ -93,12 +94,17 @@ dropDown {
 }
 
 .dropDownContent a {
-    padding: 16px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 16px; /* Justert padding for å matche designet */
 }
 
     .dropDownContent a:hover {
         background-color: #ddd;
     }
+
+/* Resten av din eksisterende CSS */
 
 
 

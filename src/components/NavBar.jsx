@@ -53,16 +53,16 @@ export default class NavBar extends Component {
                     <Link to="/MN_Regnskap/kontakt" className="navTekst" onClick={this.closeMenu}>{labels.contact_us}</Link>
                     <div className="dropDown" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
                         <a className="navTekst">
-                            <img src={language === 'norsk' ? "/MN_Regnskap/norge.png" : "/MN_Regnskap/usa.png"} alt={language === 'norsk' ? "Norwegian Flag" : "US Flag"} style={{ marginRight: '5px' }} />
+                            <img src={language === 'norsk' ? "/MN_Regnskap/norge.png" : "/MN_Regnskap/usa.png"} alt={language === 'norsk' ? "Norwegian Flag" : "US Flag"}  />
                             {language === 'norsk' ? 'Norsk' : 'Engelsk'} <FontAwesomeIcon icon={this.state.isMenuOpen ? faChevronUp : faChevronDown} />
                         </a>
                         {this.state.isMenuOpen && (
                             <div className="dropDownContent">
                                 <button onClick={() => { this.context.setLanguage('english'); this.closeMenu(); }} className="text-dark nav-link">
-                                    <img src="/MN_Regnskap/usa.png" alt="US Flag" style={{ marginRight: '8px' }} /> {labels.english}
+                                    <img  src="/MN_Regnskap/usa.png" alt="US Flag"/> {labels.english}
                                 </button>
                                 <button onClick={() => { this.context.setLanguage('norsk'); this.closeMenu(); }} className="text-dark nav-link">
-                                    <img src="/MN_Regnskap/norge.png" alt="Norwegian Flag" style={{ marginRight: '8px' }} /> {labels.norwegian}
+                                    <img src="/MN_Regnskap/norge.png" alt="Norwegian Flag" /> {labels.norwegian}
                                 </button>
 
                             </div>
