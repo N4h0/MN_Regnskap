@@ -64,10 +64,6 @@
 /*SPRÅK DELEN*/
 /* Generell kode justert for dropdown uten border og med subtil skyggeeffekt */
 
-.dropDown {
-    position: relative;
-    display: inline-block; /* Rettet til .dropDown */
-}
 
 .dropDownContent {
     display: none;
