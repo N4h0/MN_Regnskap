@@ -63,7 +63,13 @@ function Test({ language }) {
                                 <h3>Moosa Ali Rashid</h3>
                                 <div className="team-info">
                                     <p>Chartered accountant</p>
-                                    <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
+                                    <p>Ferdig utdannet  revisor og statsautorisert regnskapsfører med over 19 års bransjeerfaring.
+                                        Han er også en anerkjent kontrollør i Regnskap Norge,'
+                                        ' og hans ekspertise og lidenskap for nøyaktighet gjenspeiles i hvert oppdrag han utfører.
+                                        Moosa leverer skreddersydde regnskapsløsninger med fokus   på kvalitet og etterlevelse av
+                                        gjeldende regelverk. Med hans unike bakgrunn og omfattende
+                                        kompetanse kan du være trygg på at dine regnskapsmessige behov blir håndtert profesjonelt og effektivt.
+ </p>
                                 </div>
                             </div>
                         </div>
