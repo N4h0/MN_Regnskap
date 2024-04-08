@@ -181,13 +181,21 @@
 
 @media (max-width: 480px) {
     .Chat {
-        right: 10px; /* Tilpass slik at det er konsistent med chatDialog */
-        bottom: 10px; /* Reduser avstanden til bunnen for å unngå overlapping */
+
+    right: 100px;
+    bottom: 10px;
     }
 
     .chatButton {
-        width: 40px; /* Reduserer størrelsen på knappen */
-        height: 40px; /* Reduserer størrelsen på knappen */
-        font-size: 20px; /* Tilpass størrelsen på ikonet hvis nødvendig */
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .Chat {
+        right: 150px;
+   
     }
 }
