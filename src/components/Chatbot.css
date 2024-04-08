@@ -162,3 +162,32 @@
     justify-content: center;
     border-radius: 4px; /* Optional for styling */
 }
+
+@media (max-width: 768px) {
+    .chatDialog {
+        width: 80%; /* Gjør dialogen bredere på små skjermer */
+        bottom: 10px; /* Juster plasseringen hvis nødvendig */
+        right: 10px; /* Juster plasseringen hvis nødvendig */
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .Chat {
+        right: 49px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Chat {
+        right: 10px; /* Tilpass slik at det er konsistent med chatDialog */
+        bottom: 10px; /* Reduser avstanden til bunnen for å unngå overlapping */
+    }
+
+    .chatButton {
+        width: 40px; /* Reduserer størrelsen på knappen */
+        height: 40px; /* Reduserer størrelsen på knappen */
+        font-size: 20px; /* Tilpass størrelsen på ikonet hvis nødvendig */
+    }
+}
