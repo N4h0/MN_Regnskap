@@ -413,7 +413,7 @@
     /* JEG FÅR IKKE DENNE KODEN TIL Å FUNGERE */
     .bildeTekst h1, h2 {
         color: black;
-        text-shadow: 10px 10px 20px #000000;
+        text-shadow: 10px 10px 10px #000000;
     }
   
 }
