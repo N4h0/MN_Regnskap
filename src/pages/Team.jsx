@@ -109,7 +109,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="/Nitasha.jpg" className="team-img" alt="pic" />
+                                <img src="./Nitasha.jpg" className="team-img" alt="pic" />
                                 <h3>Nitasha Khan</h3>
                                 <div className="team-info">
                                     <p>Accountant</p>

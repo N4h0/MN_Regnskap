@@ -4,7 +4,7 @@ import './Contact.css';
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
 import { useContext, useEffect } from 'react';
-import { LanguageContext } from '../languages/LanguageContext';
+import { LanguageContext } from '../languages/LanguageContext'; 
 
 function Contact() {
     const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
@@ -40,23 +40,23 @@ function Contact() {
 
     return (
         <>
-            <div className="contact-us-page">
-                <section className="hero-content">
-                    <div className="main-wrapper">
-                        <div className="hero-body">
-                            <div className="hero-text">
+        <div className="contact-us-page">
+            <section className="hero-content">
+                <div className="main-wrapper"> 
+                    <div className="hero-body">
+                        <div className="hero-text">
                                 <h1 className="hero-heading">{textData.contactPageTitle}</h1>
                                 <p>{textData.contactPageDescription}</p>
 
-                            </div>
                         </div>
                     </div>
-                </section>
-                <section className="contact">
-                    <div className="main-wrapper">
-                        <div className="supports">
-                            <div className="support-card first">
-                                <img src="phone.png" className="support-card-image" />
+                </div>
+            </section>
+            <section className="contact">
+                <div className="main-wrapper">
+                    <div className="supports">
+                        <div className="support-card first">
+                            <img src="./phone.png" className="support-card-image" />
                                 <h4>{textData.talkToUs}</h4>
                                 <span>{textData.yourFeedbackIsImportant}</span>
                                 <a href={`tel:${textData.phoneNumber}`}>{textData.phoneNumber}</a>
@@ -64,7 +64,7 @@ function Contact() {
                                 <span>{textData.helpFromFriends}</span>
                             </div>
                             <div className="support-card second">
-                                <img src="/message.png" className="support-card-image" alt="Melding" />
+                                <img src="./message.png" className="support-card-image" alt="Melding" />
                                 <h4>{textData.requestConsultation}</h4>
                                 <span>{textData.concentrateOnWhatYouDoBest}</span>
                                 <form onSubmit={sendEmail}>
@@ -91,7 +91,7 @@ function Contact() {
                         <div className="connect-main">
                             <div className="connect-body">
                                 <div className="map-box">
-                                    <img src="/map.png" alt="Global Offices Map" />
+                                    <img src="./map.png" alt="Global Offices Map" />
                                 </div>
                                 <div className="connect-detail">
                                     <div className="detail-item">
@@ -112,9 +112,9 @@ function Contact() {
                         </div>
                     </div>
                 </section>
-            </div>
-        </>
-    );
+                </div>
+            </>
+            );
 }
 
 export default Contact;
