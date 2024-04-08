@@ -17,31 +17,27 @@ function Test({ language }) {
     const data = language ==='norsk'? no:en
     return (
         <>
-            <div className='aboutIs_box'>
-                <div className='aboutUs_box_hero'>
-                    <div className='aboutUs_box_hero_left'>
-                        <h1>{data.omOssOverskrift1} </h1>
+            <div className='aboutUs_box'>
+                <div className='aboutUs_box_hero first'>
+                    <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
+                        <h1>{data.omOssOverskrift1}</h1>
                         <p>{data.omOssBrødtekst1}</p>
                         <p>{data.omOssBrødtekst2}</p>
                     </div>
-                    <div className='aboutUs_box_hero_right'>
-                        <div className="bilde-seksjon">
-                            <div className="bilde-seksjon-img">
-                                <img src="./teambilde.avif" alt="" className="img-style" />
-                            </div>
+                    <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
+                        <div className="bilde-seksjon-img">
+                            <img src="/teambilde.avif" alt="" className="img-style" />
                         </div>
                     </div>
                 </div>
 
-                <div className='aboutUs_box_hero'>
-                    <div className='aboutUs_box_hero_left'>
-                        <div className="bilde-seksjon">
-                            <div className="bilde-seksjon-img">
-                                <img src="./teambilde2.avif" alt="" className="img-style" />
-                            </div>
+                <div className='aboutUs_box_hero second'>
+                    <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
+                        <div className="bilde-seksjon-img">
+                            <img src="/teambilde2.avif" alt="" className="img-style" />
                         </div>
                     </div>
-                    <div className='aboutUs_box_hero_right'>
+                    <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
                         <h1>Oss</h1>
                         <p>{data.omOssBrødtekst3}</p>
                         <div className='bold-text'>
