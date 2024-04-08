@@ -76,17 +76,21 @@ function Link({ language }) {
 
             </article>
 
-            <div class="download-section">
-                <h3>{textData.formsforaccounting} </h3>
-                <ul class="download-links">
-                    <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Kasseoppgjør (pdf) </a></li>
-                    <li><a href={EXCEL_FILE_URL1} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL1); }}>Kassetelling (excel) </a></li>
-                    <li><a href={EXCEL_FILE_URL2} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL2); }}>Kassebok (excel) </a></li>
-                    <li><a href={EXCEL_FILE_URL3} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL3); }}>Firmabil beregning av fordel (excel) </a></li>
-                    <li><a href={EXCEL_FILE_URL4} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL4); }}>Omsetningsrapport (excel) </a></li>
-                </ul>
-            </div>
+            <div className="download-boks">
 
+                <h2>{textData.formsforaccounting} </h2>
+
+                <div class="download-section">
+
+                    <ul class="download-links">
+                        <li><a href={PDF_FILE_URL} onClick={(event) => { event.preventDefault(); downloadFileAtURL(PDF_FILE_URL); }}>Kasseoppgjør (pdf) </a></li>
+                        <li><a href={EXCEL_FILE_URL1} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL1); }}>Kassetelling (excel) </a></li>
+                        <li><a href={EXCEL_FILE_URL2} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL2); }}>Kassebok (excel) </a></li>
+                        <li><a href={EXCEL_FILE_URL3} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL3); }}>Firmabil beregning av fordel (excel) </a></li>
+                        <li><a href={EXCEL_FILE_URL4} onClick={(event) => { event.preventDefault(); downloadFileAtURL(EXCEL_FILE_URL4); }}>Omsetningsrapport (excel) </a></li>
+                    </ul>
+                </div>
+            </div>
 
 
 

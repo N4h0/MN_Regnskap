@@ -53,11 +53,14 @@
     border-radius: 5px; /* Avrundede hjørner */
     max-width: 600px; /* Maksimal bredde av seksjonen */
 }
+.download-boks h2 {
+    color: #244368;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
 
-    .download-section h3 {
-        margin-top: 0;
-        color: #005B91; /* Mørk blå farge for tittel */
-    }
+  
 
 .download-links {
     list-style: none; /* Fjerner punkttegn */
