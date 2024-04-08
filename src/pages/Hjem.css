@@ -330,7 +330,7 @@
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     letter-spacing: 2px;
-    line-height: 10px;
+    line-height: 20px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bolder;
@@ -399,10 +399,6 @@
         .bildeTekst h2 {
             font-size: 25px;
         }
-
-
-
-    
     }
 
 @media (max-width:717px) {
@@ -419,10 +415,6 @@
         color: black;
         text-shadow: 10px 10px 20px #000000;
     }
-
-
-
-
   
 }
 
@@ -555,7 +547,7 @@
         
         padding: 10px 10px;
     }
-
+}
  @media (max-width: 281px) {
 
 
@@ -599,4 +591,4 @@
                 .kontaktKnapp {
                     font-size: 10px;
                 }
-            }
+}
