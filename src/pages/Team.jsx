@@ -37,7 +37,7 @@ function Test({ language }) {
                     <div className='aboutUs_box_hero_left'>
                         <div className="bilde-seksjon">
                             <div className="bilde-seksjon-img">
-                                <img src="./teambilde.avif" alt="" className="img-style" />
+                                <img src="./teambilde2.avif" alt="" className="img-style" />
                             </div>
                         </div>
                     </div>
