@@ -18,7 +18,7 @@ function Test({ language }) {
     return (
         <>
             <div className='aboutUs_box'>
-                <div className='aboutUs_box_hero first'>
+                <div className= "aboutUs_box_hero first">
                     <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
                         <h1>{data.omOssOverskrift1}</h1>
                         <p>{data.omOssBrødtekst1}</p>
@@ -31,7 +31,7 @@ function Test({ language }) {
                     </div>
                 </div>
 
-                <div className='aboutUs_box_hero second'>
+                <div className="aboutUs_box_hero second">
                     <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
                         <div className="bilde-seksjon-img">
                             <img src="/teambilde2.avif" alt="" className="img-style" />
