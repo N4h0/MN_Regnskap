@@ -34,7 +34,7 @@ function Chatbot() {
 
             setMessage('');
 
-            fetch('http://127.0.0.1:5000/api/chatbot', {
+            fetch('https://n4h0.pythonanywhere.com/api/chatbot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
