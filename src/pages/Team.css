@@ -86,6 +86,14 @@
 
 
 /*OM OSS SEKSJONEN*/
+
+.aboutUs_box_hero_right:hover, .aboutUs_box_hero_left:hover {
+    background-color: #e3f1f8;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(6px);
+}
+
 .aboutUs {
     width: 100%;
     margin-block: 5rem;
@@ -107,7 +115,7 @@
         grid-template-areas: "tekst bilde";
     }
 
-    /* For den andre seksjonen hvor teksten er til høyre */
+    /* For den andre seksjonen hvor teksten er til hï¿½yre */
     .aboutUs_box_hero.second {
         grid-template-areas: "bilde tekst";
     }
