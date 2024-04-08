@@ -193,9 +193,30 @@
     }
 }
 
-@media (max-width: 380px) {
+/* Juster for små skjermer */
+@media (max-width: 600px) {
     .Chat {
-        right: 150px;
-   
+        right: 10px; /* Reduser margin for å spare plass */
+        bottom: 10px;
+    }
+
+    .chatButton {
+        width: 40px; /* Mindre knapp på små skjermer */
+        height: 40px;
+        font-size: 20px; /* Juster fontstørrelsen om nødvendig */
+    }
+}
+
+@media (max-width: 300px) {
+    .Chat {
+        right: 5px; /* Juster posisjonen til knappen nærmere kanten, men med litt margin */
+        bottom: 5px;
+    }
+
+    .chatButton {
+        width: 30px; /* Reduser størrelsen på knappen */
+        height: 30px; /* Behold den sirkulære formen med samme bredde og høyde */
+        font-size: 16px; /* Juster størrelsen på ikonet inne i knappen om nødvendig */
+        padding: 5px; /* Optimaliser padding for å sikre at ikonet sentreres */
     }
 }
