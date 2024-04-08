@@ -87,7 +87,7 @@
 
 /*OM OSS SEKSJONEN*/
 
-.aboutUs_box_hero_right:hover, .aboutUs_box_hero_left:hover {
+.aboutUs_box_hero_text:hover {
     background-color: #e3f1f8;
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
