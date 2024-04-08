@@ -5,11 +5,12 @@ import { useContext } from 'react';
 import { LanguageContext } from '../languages/LanguageContext';
 
 
-const PDF_FILE_URL = "https://localhost:5173/kasseoppgjor.pdf";
-const EXCEL_FILE_URL1 = "https://localhost:5173/kassetelling.xlsx";
-const EXCEL_FILE_URL2 = "https://localhost:5173/ny_kassebok.xlsx";
-const EXCEL_FILE_URL3 = "https://localhost:5173/Firmabil_beregning_av_fordel.xlsx";
-const EXCEL_FILE_URL4 = "https://localhost:5173/Omsetningsrapport.xlsx";
+const PDF_FILE_URL = "https://n4h0.github.io/MN_Regnskap/kasseoppgjor.pdf";
+const EXCEL_FILE_URL1 = "https://n4h0.github.io/MN_Regnskap/kassetelling.xlsx";
+const EXCEL_FILE_URL2 = "https://n4h0.github.io/MN_Regnskap/ny_kassebok.xlsx";
+const EXCEL_FILE_URL3 = "https://n4h0.github.io/MN_Regnskap/Firmabil_beregning_av_fordel.xlsx";
+const EXCEL_FILE_URL4 = "https://n4h0.github.io/MN_Regnskap/Omsetningsrapport.xlsx";
+
 
 
 
