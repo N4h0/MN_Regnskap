@@ -1,8 +1,13 @@
-/*Genell kode*/
+/*Generell kode*/
 
 /*Inspirasjon fra https://www.w3schools.com/css/css_navbar.asp og https://www.w3schools.com/css/css_dropdowns.asp*/
 * {
     font-family: 'Varela Round', sans-serif;
+}
+
+.left-aligned-items img {
+    width: 100px;
+    height: 70px;
 }
 
 .topnav a, .dropDownContent a {
