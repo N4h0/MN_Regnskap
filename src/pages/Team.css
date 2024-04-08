@@ -177,13 +177,31 @@
 
 
 
-@media (max-width: 729px) {
+
+
+@media (max-width:939px) {
+    .team-img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width:855px) {
+    .team-img {
+        max-width: 130px;
+    }
+}
+
+@media screen and (max-width: 729px) {
     .aboutUs_box_hero_left h1 {
         font-size: 2.5rem;
     }
 
     .aboutUs_box_hero {
         gap: 2.3rem;
+    }
+
+    .team-img {
+        max-width: 250px;
     }
 }
 

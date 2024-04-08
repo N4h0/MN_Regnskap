@@ -5,24 +5,24 @@
     background-color: #3a3a3a; /*Gr�-ish bakgrunn*/
 }
 
-.footer h1 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
-}
+    .footer h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: 'Varela Round', sans-serif;
+    }
 
-.footer a {
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 10px;
-}
+    .footer a {
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px;
+    }
 
 .ikon {
     fill: #ffffff;
 }
 
-.kontaktinfo h1{
+.kontaktinfo h1 {
     margin-bottom: 40px
 }
 
@@ -49,43 +49,47 @@
     border-top: 1px;
     border-top-style: solid;
     border-top-color: #7a7a7a;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.copyright p {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 14px;
-}
+    .copyright p {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 14px;
+    }
 
 @media (max-width:560px) {
     .top-kontainer {
-        flex-direction:column;
-    }
-    .kontaktinfo {
-        width: 50%;
-        margin-left: 35px;
-    }
-        .copyright {
         flex-direction: column;
     }
+
+    .kontaktinfo {
+        width: 55%;
+        margin-left: 20px;
+    }
+
+    .copyright {
+        flex-direction: column;
+    }
+
     .footer a {
         padding: 6px;
     }
 
+    .copyright {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
 }
-@media (max-width: 395){
+
+@media (max-width: 395) {
     .footer a {
         padding: 5px;
         font-size: 10px;
     }
     .kontaktinfo {
-        width: 60%;
-        margin-left: 20px;
+        width: 65%;
     }
- 
-
-   
-  
-}
+    }
