@@ -41,6 +41,9 @@
     text-align: center;
     
 }
+    .bildeTekst h1, h2 {
+        color: #f8f9fa;
+    }
 
 .bildeTekst h1, h4 {
     margin: 0;
@@ -51,7 +54,7 @@
     padding: 10px 30px;
     font-size: 0.9rem;
     background-color: transparent; /* Gj�r bakgrunnen gjennomsiktig */
-    color: black;
+    color: #f8f9fa;
     border: 2px solid black; /* Legg til en svart border */
     border-radius: 15px;
     cursor: pointer;
@@ -72,21 +75,26 @@
 }
 
 /* ------------------------REGNSKAP DELEN ---------------------------  */
-
-.regnskapsSeksjon h2 {
-    margin-top: 50px;
-    font-family: 'Lato', sans-serif;
-    font-size: 40px;
+.regnskapsSeksjon {
+    background-color: #eff6fa;
+    margin-top: 20px;
 }
 
- /* HELE BOKSEN MED KORTENE */
+    .regnskapsSeksjon h2 {
+        margin-top: 50px;
+        font-family: 'Lato', sans-serif;
+        font-size: 40px;
+        color: #000;
+    }
+
+/* HELE BOKSEN MED KORTENE */
 .regnskapsBoks {
-    background-color: #eff6fa;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
 }
+
 
 /* INNHOLD I KORTENE */
 .regnskapsKort {
@@ -207,8 +215,7 @@
     margin-top: 60px;
     padding: 10px;
     flex: 50%;
-    width: 570px;
-    height: 407px;
+ 
 }
 
     .kontaktOssKort-img {
@@ -491,7 +498,7 @@
     }
     }
 
-@media (max-width: 375px) {
+@media (max-width: 385px) {
     .bildeTekst h2 {
         padding: 0px
     }

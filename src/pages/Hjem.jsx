@@ -52,9 +52,8 @@ function Regnskap({ language }) {
 
     return (
         <>
-        
-            <div className="regnskapsBoks">
             <h2>{textData.ambitions_expertise}</h2>
+            <div className="regnskapsBoks">
                 <div className="regnskapsKort">
                     <img src="./kalk.png" alt="" loading="lazy" />
                     <h3>{textData.accounting}</h3>

@@ -42,7 +42,7 @@ function Frist() {
 
                 </div>
                 <div className="regnskap-boks">
-                    <h2>{textData.shareholderDeclarationTitle}</h2>
+                    <h3>{textData.shareholderDeclarationTitle}</h3>
                     <p><strong>{textData.deadline}</strong> {textData.shareholderDeclarationDeadline}</p>
                     <p><strong>{textData.who}</strong> {textData.shareholderDeclarationFor}</p>
                 </div>
