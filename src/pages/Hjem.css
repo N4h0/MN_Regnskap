@@ -205,11 +205,12 @@
     margin-top: 10px;
 }
 
-.kontaktOssHeader h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: bolder;
-    font-size: 40px;
-}
+    .kontaktOssHeader h2 {
+        font-family: Lato, sans-serif;
+        font-size: 40px;
+        padding: 30px;
+        color: #000;
+    }
 
 .kontaktOssKort {
     margin-top: 60px;
@@ -225,10 +226,11 @@
         
     }
 
-.kontaktOssKort h1 {
+.kontaktOssKort h2 {
     font-size: 30px;
     font-weight: bolder;
     margin-bottom: 10px;
+
 }
 
 .kontaktOssKort p {
@@ -244,7 +246,7 @@
 
 .partnerBakgrunn, h2 {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     font-size: 40px;
     font-weight: bold;
 }
@@ -295,17 +297,14 @@
 }
 
 .partner-tittel {
-    font-family: 'Lato', sans-serif;
-    font-weight: bolder;
+    font-family: Lato, sans-serif;
     font-size: 40px;
+    padding: 30px;
+    color: #000;
 }
+    /* --------------------------- KONTAKT OSS --------------------------- */
 
-
-
-
-/* --------------------------- KONTAKT OSS --------------------------- */
-
-.kontaktBilde {
+    .kontaktBilde {
     display: flex; /* Aktiver flexbox */
     justify-content: center; /* Dette vil nå bli ignorert for absolutt posisjonerte barn */
     align-items: center; /* Dette vil også bli ignorert for absolutt posisjonerte barn */
@@ -397,7 +396,10 @@
     }
 
     @media (max-width:769px) {
-
+        .kontaktOssBoks {
+            display: flex;
+            flex-direction: column;
+        }
         .bildeKnapp {
             margin-top: 5px;
         }
@@ -416,10 +418,7 @@
         font-size: 20px;
     }
  
-    /* SKYGGE PÅ HEADING */
-    .bildeTekst h1, h2 {
-        color: black;
-    }
+
   
 }
 
