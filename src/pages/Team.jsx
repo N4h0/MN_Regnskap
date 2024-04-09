@@ -29,7 +29,7 @@ function Test({ language }) {
                     </figure>
                 </article>
 
-                <article className='aboutUs_box_hero second'>y
+                <article className='aboutUs_box_hero second'>
                     <figure className='aboutUs_box_hero_image'>
                         <img src="./teambilde2.avif" alt="Et annet team bilde" className="img-style" />
                     </figure>
