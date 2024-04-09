@@ -25,13 +25,13 @@ function Test({ language }) {
                         <p>{data.omOssBrødtekst2}</p>
                     </div>
                     <figure className='aboutUs_box_hero_image'>
-                        <img src="/teambilde.avif" alt="Team bilde" className="img-style" />
+                        <img src="./teambilde.avif" alt="Team bilde" className="img-style" />
                     </figure>
                 </article>
 
                 <article className='aboutUs_box_hero second'>
                     <figure className='aboutUs_box_hero_image'>
-                        <img src="/teambilde2.avif" alt="Et annet team bilde" className="img-style" />
+                        <img src="./teambilde2.avif" alt="Et annet team bilde" className="img-style" />
                     </figure>
                     <div className='aboutUs_box_hero_text'>
                         <h1>{data.omOssOverskrift2}</h1>
