@@ -37,19 +37,19 @@ function Frist() {
             <article className="accounting-deadlines">
                 <h1>{textData.deadlinesTitle}</h1>
                 <div className="regnskap-boks">
-                    <h4>{textData.annualAccountingDeadlinesTitle}</h4>
+                    <h2>{textData.annualAccountingDeadlinesTitle}</h2>
                     <p>{textData.annualAccountingDeadlinesText}</p>
 
                 </div>
                 <div className="regnskap-boks">
-                    <h4>{textData.shareholderDeclarationTitle}</h4>
+                    <h2>{textData.shareholderDeclarationTitle}</h2>
                     <p><strong>{textData.deadline}</strong> {textData.shareholderDeclarationDeadline}</p>
                     <p><strong>{textData.who}</strong> {textData.shareholderDeclarationFor}</p>
                 </div>
 
 
                 <div className="regnskap-boks">
-                    <h4>{textData.VATDeadlinesTitle}</h4>
+                    <h2>{textData.VATDeadlinesTitle}</h2>
                     <p><strong>{textData.VATDeadlineBiMonthly}</strong></p>
                     <p><strong>{textData.deadline}</strong> {textData.VATDeadlineBiMonthlyDates}</p>
                     <p><strong>{textData.who}</strong> {textData.VATDeadlineBiMonthlyFor}</p>
@@ -61,12 +61,12 @@ function Frist() {
                     <p>{textData.VATAnnualNote}</p>
                 </div>
                 <div className="regnskap-boks">
-                    <h4>{textData.employmentDeclarationTitle}</h4>
+                    <h2>{textData.employmentDeclarationTitle}</h2>
                     <p><strong>{textData.deadline}</strong> {textData.employmentDeclarationDeadline}</p>
                     <p><strong>{textData.who}</strong> {textData.employmentDeclarationFor}</p>
                 </div>
                 <div className="regnskap-boks">
-                    <h4>{textData.advanceTaxTitle}</h4>
+                    <h2>{textData.advanceTaxTitle}</h2>
                     <p><strong>{textData.deadline} for ENK:</strong> {textData.advanceTaxDeadlineForSoleProprietorship}</p>
                     <p><strong>{textData.deadline} for AS:</strong> {textData.advanceTaxDeadlineForCorporation}</p>
                     <p><strong>{textData.who}</strong> {textData.advanceTaxFor}</p>
