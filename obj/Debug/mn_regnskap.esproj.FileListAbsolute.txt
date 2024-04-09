@@ -1,1 +1,2 @@
-C:\Users\Johan\source\repos\MN_Regnskap\obj\Debug\mn_regnskap.esproj.CoreCompileInputs.cache
+C:/Users/Johan/source/repos/MN_Regnskap/obj/Debug/mn_regnskap.esproj.CoreCompileInputs.cache
+/Users/amnadastgir/Documents/MN_Regnskap/obj/Debug/mn_regnskap.esproj.CoreCompileInputs.cache
