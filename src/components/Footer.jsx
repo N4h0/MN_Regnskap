@@ -19,10 +19,10 @@ const Footer = () => {
 };
 
 const Godkjenn = () => (
-    <div className="kontaktinfo">
+   <div className="kontaktinfo">
         <h1>Godkjenninger</h1>
         <div>
-            <img src="/footerlogo2.png" alt="" />
+            <img src="./footerlogo2.png" alt="" />
         </div>
     </div>
 );
