@@ -29,12 +29,12 @@ function Test({ language }) {
                     </figure>
                 </article>
 
-                <article className='aboutUs_box_hero second'>
+                <article className='aboutUs_box_hero second'>y
                     <figure className='aboutUs_box_hero_image'>
                         <img src="./teambilde2.avif" alt="Et annet team bilde" className="img-style" />
                     </figure>
                     <div className='aboutUs_box_hero_text'>
-                        <h1>{data.omOssOverskrift2}</h1>
+                        <h1>Oss</h1>
                         <p>{data.omOssBrødtekst3}</p>
                         <div className='bold-text'>
                             <p>{data.omOssBrødtekst4}</p>
