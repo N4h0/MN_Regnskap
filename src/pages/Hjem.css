@@ -245,8 +245,7 @@
 
 .partnerBakgrunn, h2 {
     text-align: center;
-    padding: 10px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -449,6 +448,7 @@
     .regnskapsSeksjon h2 {
         margin-top: 30px;
         font-size: 30px;
+        color: #000;
     }
     .regnskapsKort {
         margin-left:0px;
@@ -497,7 +497,7 @@
     }
     }
 
-@media (max-width: 385px) {
+@media (max-width: 429px) {
     .bildeTekst h2 {
         padding: 0px
     }
@@ -519,9 +519,6 @@
         padding: 20px;
     }
 
-    .partner-tittel {
-        font-size: 25px;
-    }
 
     .kontaktOssKort h1 {
         font-size: 15px;
