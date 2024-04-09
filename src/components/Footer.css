@@ -11,7 +11,7 @@
         font-family: 'Varela Round', sans-serif;
     }
 
-    .footer a {
+    .footer a, span{
         color: #FFFFFF;
         font-size: 14px;
         font-weight: normal;
@@ -73,7 +73,7 @@
         flex-direction: column;
     }
 
-    .footer a {
+    .footer a, span {
         padding: 6px;
     }
 
@@ -85,7 +85,7 @@
 }
 
 @media (max-width: 395) {
-    .footer a {
+    .footer a, span {
         padding: 5px;
         font-size: 10px;
     }
