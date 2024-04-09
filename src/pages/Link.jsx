@@ -49,7 +49,7 @@ function Frist() {
 
 
                 <div className="regnskap-boks">
-                    <h2>{textData.VATDeadlinesTitle}</h2>
+                    <h3>{textData.VATDeadlinesTitle}</h3>
                     <p><strong>{textData.VATDeadlineBiMonthly}</strong></p>
                     <p><strong>{textData.deadline}</strong> {textData.VATDeadlineBiMonthlyDates}</p>
                     <p><strong>{textData.who}</strong> {textData.VATDeadlineBiMonthlyFor}</p>
@@ -61,12 +61,12 @@ function Frist() {
                     <p>{textData.VATAnnualNote}</p>
                 </div>
                 <div className="regnskap-boks">
-                    <h2>{textData.employmentDeclarationTitle}</h2>
+                    <h3>{textData.employmentDeclarationTitle}</h3>
                     <p><strong>{textData.deadline}</strong> {textData.employmentDeclarationDeadline}</p>
                     <p><strong>{textData.who}</strong> {textData.employmentDeclarationFor}</p>
                 </div>
                 <div className="regnskap-boks">
-                    <h2>{textData.advanceTaxTitle}</h2>
+                    <h3>{textData.advanceTaxTitle}</h3>
                     <p><strong>{textData.deadline} for ENK:</strong> {textData.advanceTaxDeadlineForSoleProprietorship}</p>
                     <p><strong>{textData.deadline} for AS:</strong> {textData.advanceTaxDeadlineForCorporation}</p>
                     <p><strong>{textData.who}</strong> {textData.advanceTaxFor}</p>
@@ -76,7 +76,7 @@ function Frist() {
             </article>
             <div className="download-boks">
 
-                <h2>{textData.formsforaccounting} </h2>
+                <h3>{textData.formsforaccounting} </h3>
 
                 <div class="download-section">
 
