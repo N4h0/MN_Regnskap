@@ -35,8 +35,11 @@
     border-radius: 8px;
 }
 
-    .regnskap-boks h4 {
+    .regnskap-boks h3 {
         font-size: 20px;
+    }
+    .regnskap-boks h2 {
+        font-size: 30px;
     }
 
     .regnskap-boks p {
