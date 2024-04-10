@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\pages"
+    "\\src\\components",
+    "\\src\\languages",
+    "\\src\\pages",
+    "\\src\\routes"
   ],
-  "SelectedNode": "\\src\\pages",
+  "SelectedNode": "\\src\\pages\\Team.css",
   "PreviewInSolutionExplorer": false
 }

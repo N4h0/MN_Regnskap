@@ -12,7 +12,8 @@
 }
 
 .section-title {
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif;
+    color: #000;
 }
 
 .team-item {
@@ -93,6 +94,18 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translateX(6px);
 }
+.aboutUs_box_hero_image {
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+    .aboutUs_box_hero_image:hover {
+        background-color: #e3f1f8;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transform: translateX(6px);
+    }
 .bilde-seksjon-img {
     border-radius: 10px;
 }

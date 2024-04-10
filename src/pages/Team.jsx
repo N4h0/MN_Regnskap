@@ -26,7 +26,7 @@ function Test({ language }) {
                     </div>
                     <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
                         <div className="bilde-seksjon-img">
-                            <img src="/teambilde.avif" alt="" className="img-style" />
+                            <img src="./teambilde.avif" alt="" className="img-style" />
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ function Test({ language }) {
                 <div className="aboutUs_box_hero second">
                     <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
                         <div className="bilde-seksjon-img">
-                            <img src="/teambilde2.avif" alt="" className="img-style" />
+                            <img src="./teambilde2.avif" alt="" className="img-style" />
                         </div>
                     </div>
                     <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
