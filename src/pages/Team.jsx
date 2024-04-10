@@ -17,32 +17,35 @@ function Test({ language }) {
     const data = language ==='norsk'? no:en
     return (
         <>
-            <section className='aboutUs_box'>
-                <article className='aboutUs_box_hero first'>
-                    <div className='aboutUs_box_hero_text'>
+            <div className='aboutUs_box'>
+                <div className= "aboutUs_box_hero first">
+                    <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
                         <h1>{data.omOssOverskrift1}</h1>
                         <p>{data.omOssBrødtekst1}</p>
                         <p>{data.omOssBrødtekst2}</p>
                     </div>
-                    <figure className='aboutUs_box_hero_image'>
-                        <img src="./teambilde.avif" alt="Team bilde" className="img-style" />
-                    </figure>
-                </article>
+                    <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
+                        <div className="bilde-seksjon-img">
+                            <img src="/teambilde.avif" alt="" className="img-style" />
+                        </div>
+                    </div>
+                </div>
 
-                <article className='aboutUs_box_hero second'>
-                    <figure className='aboutUs_box_hero_image'>
-                        <img src="./teambilde2.avif" alt="Et annet team bilde" className="img-style" />
-                    </figure>
-                    <div className='aboutUs_box_hero_text'>
+                <div className="aboutUs_box_hero second">
+                    <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
+                        <div className="bilde-seksjon-img">
+                            <img src="/teambilde2.avif" alt="" className="img-style" />
+                        </div>
+                    </div>
+                    <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
                         <h1>Oss</h1>
                         <p>{data.omOssBrødtekst3}</p>
                         <div className='bold-text'>
                             <p>{data.omOssBrødtekst4}</p>
                         </div>
                     </div>
-                </article>
-            </section>
-
+                </div>
+            </div>
             <section className="section-white">
                 <h2 className="section-title">
                     {data.omOssTeam}
@@ -57,8 +60,8 @@ function Test({ language }) {
                                 <div className="team-info">
                                     <p>Chartered accountant</p>
                                     <p>Ferdig utdannet  revisor og statsautorisert regnskapsfører med over 19 års bransjeerfaring.
-                                        Han er også en anerkjent kontrollør i Regnskap Norge,
-                                        og hans ekspertise og lidenskap for nøyaktighet gjenspeiles i hvert oppdrag han utfører.
+                                        Han er også en anerkjent kontrollør i Regnskap Norge,'
+                                        ' og hans ekspertise og lidenskap for nøyaktighet gjenspeiles i hvert oppdrag han utfører.
                                         Moosa leverer skreddersydde regnskapsløsninger med fokus   på kvalitet og etterlevelse av
                                         gjeldende regelverk. Med hans unike bakgrunn og omfattende
                                         kompetanse kan du være trygg på at dine regnskapsmessige behov blir håndtert profesjonelt og effektivt.

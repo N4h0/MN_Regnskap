@@ -93,7 +93,9 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translateX(6px);
 }
-
+.bilde-seksjon-img {
+    border-radius: 10px;
+}
 .aboutUs_box_hero_text h1 {
     font-family: 'Lato', sans-serif;
     font-weight: bolder;
