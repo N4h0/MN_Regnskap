@@ -35,8 +35,12 @@
     border-radius: 8px;
 }
 
-    .regnskap-boks h4 {
+    .regnskap-boks h3 {
         font-size: 20px;
+    }
+    .regnskap-boks h2 {
+        font-size: 30px;
+        color:#000;
     }
 
     .regnskap-boks p {
@@ -97,9 +101,12 @@
 }
 
 /* Responsiv styling for st?rre skjermer som 912 x 1368 */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     .regnskap-boks h4 {
         font-size: 15px;
+    }
+    .regnskap-boks h2 {
+        font-size: 16px;
     }
 
     .regnskap-boks p {

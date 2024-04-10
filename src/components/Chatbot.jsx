@@ -76,7 +76,7 @@ function Chatbot() {
     return (
         <div className="Chat">
             {!isOpen && (
-                <button className="chatButton" onClick={toggleChat}>
+                <button className="chatButton" onClick={toggleChat} aria-label="Start chat">
                     <FontAwesomeIcon icon={faCommentDots} />
                 </button>
             )}

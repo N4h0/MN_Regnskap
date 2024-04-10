@@ -48,8 +48,9 @@
     height: 70px; 
 }
 
-.chatHeaderText span{
-    font-size:14px;
+.chatHeaderText span {
+    font-size: 14px;
+    color: #000;
 }
 .chatHeaderText {
     display: flex;

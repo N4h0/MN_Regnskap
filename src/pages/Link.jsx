@@ -1,22 +1,20 @@
 ﻿import './Link.css';
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
-import { useContext } from 'react';
+import { useContext} from 'react';
 import { LanguageContext } from '../languages/LanguageContext';
 
-
-const PDF_FILE_URL = "https://n4h0.github.io/MN_Regnskap/kasseoppgjor.pdf";
-const EXCEL_FILE_URL1 = "https://n4h0.github.io/MN_Regnskap/kassetelling.xlsx";
-const EXCEL_FILE_URL2 = "https://n4h0.github.io/MN_Regnskap/ny_kassebok.xlsx";
-const EXCEL_FILE_URL3 = "https://n4h0.github.io/MN_Regnskap/Firmabil_beregning_av_fordel.xlsx";
-const EXCEL_FILE_URL4 = "https://n4h0.github.io/MN_Regnskap/Omsetningsrapport.xlsx";
-
+const PDF_FILE_URL = "https://localhost:5173/kasseoppgjor.pdf";
+const EXCEL_FILE_URL1 = "https://localhost:5173/kassetelling.xlsx";
+const EXCEL_FILE_URL2 = "https://localhost:5173/ny_kassebok.xlsx";
+const EXCEL_FILE_URL3 = "https://localhost:5173/Firmabil_beregning_av_fordel.xlsx";
+const EXCEL_FILE_URL4 = "https://localhost:5173/Omsetningsrapport.xlsx";
 
 
 
-function Link({ language }) {
+function Frist() {
     // Bestemmer hvilket språkdata som skal brukes basert på den nåværende språkinnstillingen
-    const textData = language === 'no' ? no : en;
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
 
     const downloadFileAtURL = (url) => {
         fetch(url)
@@ -32,25 +30,26 @@ function Link({ language }) {
                 aTag.remove();
             });
     };
+    const textData = language === 'norsk' ? no : en;
 
     return (
         <>
             <article className="accounting-deadlines">
                 <h1>{textData.deadlinesTitle}</h1>
                 <div className="regnskap-boks">
-                    <h4>{textData.annualAccountingDeadlinesTitle}</h4>
+                    <h2>{textData.annualAccountingDeadlinesTitle}</h2>
                     <p>{textData.annualAccountingDeadlinesText}</p>
 
                 </div>
                 <div className="regnskap-boks">
-                    <h4>{textData.shareholderDeclarationTitle}</h4>
+                    <h3>{textData.shareholderDeclarationTitle}</h3>
                     <p><strong>{textData.deadline}</strong> {textData.shareholderDeclarationDeadline}</p>
                     <p><strong>{textData.who}</strong> {textData.shareholderDeclarationFor}</p>
                 </div>
 
 
                 <div className="regnskap-boks">
-                    <h4>{textData.VATDeadlinesTitle}</h4>
+                    <h3>{textData.VATDeadlinesTitle}</h3>
                     <p><strong>{textData.VATDeadlineBiMonthly}</strong></p>
                     <p><strong>{textData.deadline}</strong> {textData.VATDeadlineBiMonthlyDates}</p>
                     <p><strong>{textData.who}</strong> {textData.VATDeadlineBiMonthlyFor}</p>
@@ -62,12 +61,12 @@ function Link({ language }) {
                     <p>{textData.VATAnnualNote}</p>
                 </div>
                 <div className="regnskap-boks">
-                    <h4>{textData.employmentDeclarationTitle}</h4>
+                    <h3>{textData.employmentDeclarationTitle}</h3>
                     <p><strong>{textData.deadline}</strong> {textData.employmentDeclarationDeadline}</p>
                     <p><strong>{textData.who}</strong> {textData.employmentDeclarationFor}</p>
                 </div>
                 <div className="regnskap-boks">
-                    <h4>{textData.advanceTaxTitle}</h4>
+                    <h3>{textData.advanceTaxTitle}</h3>
                     <p><strong>{textData.deadline} for ENK:</strong> {textData.advanceTaxDeadlineForSoleProprietorship}</p>
                     <p><strong>{textData.deadline} for AS:</strong> {textData.advanceTaxDeadlineForCorporation}</p>
                     <p><strong>{textData.who}</strong> {textData.advanceTaxFor}</p>
@@ -75,10 +74,9 @@ function Link({ language }) {
 
 
             </article>
-
             <div className="download-boks">
 
-                <h2>{textData.formsforaccounting} </h2>
+                <h3>{textData.formsforaccounting} </h3>
 
                 <div class="download-section">
 
@@ -93,16 +91,11 @@ function Link({ language }) {
             </div>
 
 
-
         </>
     );
 }
 
 
-function Frist() {
-    const { language } = useContext(LanguageContext);
-    return <Link language={language} />;
-}
 
 
 

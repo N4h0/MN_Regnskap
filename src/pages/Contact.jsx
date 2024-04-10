@@ -4,7 +4,7 @@ import './Contact.css';
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
 import { useContext, useEffect } from 'react';
-import { LanguageContext } from '../languages/LanguageContext'; 
+import { LanguageContext } from '../languages/LanguageContext';
 
 function Contact() {
     const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
@@ -40,23 +40,23 @@ function Contact() {
 
     return (
         <>
-        <div className="contact-us-page">
-            <section className="hero-content">
-                <div className="main-wrapper"> 
-                    <div className="hero-body">
-                        <div className="hero-text">
+            <div className="contact-us-page">
+                <section className="hero-content">
+                    <div className="main-wrapper">
+                        <div className="hero-body">
+                            <div className="hero-text">
                                 <h1 className="hero-heading">{textData.contactPageTitle}</h1>
                                 <p>{textData.contactPageDescription}</p>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section className="contact">
-                <div className="main-wrapper">
-                    <div className="supports">
-                        <div className="support-card first">
-                            <img src="./phone.png" className="support-card-image" />
+                </section>
+                <section className="contact">
+                    <div className="main-wrapper">
+                        <div className="supports">
+                            <div className="support-card first">
+                                <img src="./phone.png" className="support-card-image" />
                                 <h4>{textData.talkToUs}</h4>
                                 <span>{textData.yourFeedbackIsImportant}</span>
                                 <a href={`tel:${textData.phoneNumber}`}>{textData.phoneNumber}</a>
@@ -91,7 +91,14 @@ function Contact() {
                         <div className="connect-main">
                             <div className="connect-body">
                                 <div className="map-box">
-                                    <img src="./map.png" alt="Global Offices Map" />
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.231473078393!2d10.841315276934159!3d59.92830116293287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416dd150a3273b%3A0xeb0005b15b49be33!2sM%20%26%20N%20Regnskap%20DA!5e0!3m2!1sno!2sno!4v1712682261082!5m2!1sno!2sno"
+                                        width="600"
+                                        height="450"
+                                        style={{ border: "0" }}
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                    ></iframe>
                                 </div>
                                 <div className="connect-detail">
                                     <div className="detail-item">
@@ -112,9 +119,9 @@ function Contact() {
                         </div>
                     </div>
                 </section>
-                </div>
-            </>
-            );
+            </div>
+        </>
+    );
 }
 
 export default Contact;

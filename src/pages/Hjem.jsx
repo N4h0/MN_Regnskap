@@ -52,9 +52,8 @@ function Regnskap({ language }) {
 
     return (
         <>
-        
-            <div className="regnskapsBoks">
             <h2>{textData.ambitions_expertise}</h2>
+            <div className="regnskapsBoks">
                 <div className="regnskapsKort">
                     <img src="./kalk.png" alt="" loading="lazy" />
                     <h3>{textData.accounting}</h3>
@@ -147,16 +146,16 @@ function Møtoss({ language }) {
     <>
             <div className="kontaktOssBoks">
                 <div className="kontaktOssHeader">
-                    <h1>{textData.meet_us }</h1>
+                    <h2>{textData.meet_us }</h2>
                 </div>
                 <div className="kontaktOssKort">
                         <img className="kontaktOssKort-img" src="./Moosa.jpg" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
-                        <h1>MOOSA ALI RASHID</h1>
+                        <h2>MOOSA ALI RASHID</h2>
                         <p>{textData.charted_accountant}</p>
                 </div>
                 <div className="kontaktOssKort">
                         <img className="kontaktOssKort-img" src="./Naila.png" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
-                        <h1>NAILA SOHAIL KHOKHAR</h1>
+                        <h2>NAILA SOHAIL KHOKHAR</h2>
                         <p>{textData.charted_accountant}</p>
                 </div>
             </div>
