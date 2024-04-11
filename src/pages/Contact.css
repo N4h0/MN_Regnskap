@@ -238,6 +238,10 @@ a {
     align-items: start;
 }
 
+.detail-item span {
+    color: black;
+}
+
     .detail-item span {
         margin-bottom: 5px;
     }

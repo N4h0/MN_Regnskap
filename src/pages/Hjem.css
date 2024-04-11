@@ -42,7 +42,9 @@
     
 }
     .bildeTekst h1, h2 {
-        color: #f8f9fa;
+        color: #edf3f7;
+        text-shadow: 1.5px 1.5px rgb(77, 76, 76), -2px -2px rgb(161, 160, 160);
+        
     }
 
 .bildeTekst h1, h4 {
@@ -54,22 +56,21 @@
     font-size: 27px;
 }
 
-.bildeTekst h1 {
-    border-bottom: 3px solid black;
-}
+
 
 .bildeKnapp {
     padding: 10px 30px;
     font-size: 0.9rem;
     background-color: transparent; /* Gj�r bakgrunnen gjennomsiktig */
-    color: #f8f9fa;
-    border: 2px solid black; /* Legg til en svart border */
-    border-radius: 15px;
+    color: #ccc;
+    border: 2px solid rgb(55, 54, 54); /* Legg til en svart border */
+    border-radius: 10px;
     cursor: pointer;
+    margin-top: 30px; /* Legg til margin over knappen */
 }
 
 .bildeKnapp:hover {
-    background-color: #e3f1f8; /* Endre bakgrunnsfargen ved hover til svart */
+    background-color: rgb(109, 107, 107); /* Endre bakgrunnsfargen ved hover til svart */
 }
 
 .bildeTekst h4 {
@@ -77,10 +78,6 @@
     margin-top: 10px;
 }
 
-/* Legg til margin over knappen */
-.bildeKnapp {
-    margin-top: 30px;
-}
 
 /* ------------------------REGNSKAP DELEN ---------------------------  */
 .regnskapsSeksjon {
