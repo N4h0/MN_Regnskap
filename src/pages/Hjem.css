@@ -41,7 +41,7 @@
     text-align: center;
     
 }
-    .bildeTekst h1, h2 {
+    .bildeTekst h1, .bildeTekst h2 {
         color: #edf3f7;
         text-shadow: 1.5px 1.5px rgb(77, 76, 76), -2px -2px rgb(161, 160, 160);
         
@@ -81,7 +81,7 @@
 
 /* ------------------------REGNSKAP DELEN ---------------------------  */
 .regnskapsSeksjon {
-    background-color: #eff6fa;
+    background-color: rgb(161, 160, 160);
     margin-top: 20px;
 }
 
@@ -104,8 +104,8 @@
 /* INNHOLD I KORTENE */
 .regnskapsKort {
     border-bottom-width: 4px;
-    border: 1px solid #b2bcc1;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #acb5ba;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
     border-left-width: 4px;
     border-right-width: 4px;
     border-style: solid;
@@ -150,18 +150,24 @@
 }
 
 .regnskapsKnapp {
-    background-color: #8a9095; /* Bl� bakgrunnsfarge */
-    color: rgb(0, 0, 0); /* Hvit tekstfarge */
+    color: #ccc;
     border: 2px solid #444749; /* 2 piksler bred solid svart grense */
     font-size: 100%;
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
-    border-radius: 6px;
+    border-radius: 10px;
     height: 44px;
     line-height: 1.15;
-    padding: 20px 30px;
+    padding: 15px 30px;
     margin-bottom: 40px;
     margin-left:25px;
+    border: 2px solid rgb(55, 54, 54);
+    background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
+    cursor: pointer;
+}
+
+.regnskapsKnapp:hover {
+    background-color: rgb(103, 102, 102);
 }
 
 
@@ -175,7 +181,7 @@
     margin-top: auto;
     height: 80px;
     width: auto;
-    background-color: #eff6fa;
+    background-color: rgb(161, 160, 160);
 }
 
 /* ------------------------------- MØT OSS ----------------------------- */
@@ -197,7 +203,7 @@
     justify-content: flex-start;
     padding-bottom: 20px;
     padding-top: 20px;
-    background-color: #eff6fa;
+    background-color: rgb(161, 160, 160);
 }
 
 
