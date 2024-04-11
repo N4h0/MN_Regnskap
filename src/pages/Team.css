@@ -42,8 +42,15 @@
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
+        text-align:center
     }
-
+.team-item-title {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
 .section-subtitle {
     white-space: pre-line;
 }
@@ -111,6 +118,13 @@
 .aboutUs_box_hero_text h1 {
     font-family: 'Lato', sans-serif;
     font-weight: bolder;
+}
+aboutUs_box_hero_text p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
 }
 
 .aboutUs {

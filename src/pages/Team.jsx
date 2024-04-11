@@ -59,14 +59,8 @@ function Test({ language }) {
                                     <img src="./Moosa.jpg" class="team-img" alt="pic" />
                                 </div>                                <h3>Moosa Ali Rashid</h3>
                                 <div className="team-info">
-                                    <p>Chartered accountant</p>
-                                    <p>Ferdig utdannet  revisor og statsautorisert regnskapsfører med over 19 års bransjeerfaring.
-                                        Han er også en anerkjent kontrollør i Regnskap Norge,'
-                                        ' og hans ekspertise og lidenskap for nøyaktighet gjenspeiles i hvert oppdrag han utfører.
-                                        Moosa leverer skreddersydde regnskapsløsninger med fokus   på kvalitet og etterlevelse av
-                                        gjeldende regelverk. Med hans unike bakgrunn og omfattende
-                                        kompetanse kan du være trygg på at dine regnskapsmessige behov blir håndtert profesjonelt og effektivt.
- </p>
+                                    <p className="team-item-title">{data.CharteredAccountant}</p>
+                                    <p>{data.moosa_text}</p>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +71,7 @@ function Test({ language }) {
                                 </div>
                                 <h3>Naila Sohail Khokhar</h3>
                                 <div className="team-info">
-                                    <p>Chartered accountant</p>
+                                    <p className="team-item-title">Chartered accountant</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
                                 </div>
                             </div>
@@ -87,7 +81,7 @@ function Test({ language }) {
                                 <img src="./Haseeb.png" className="team-img" alt="pic" />
                                 <h3>Haseeb Talib</h3>
                                 <div className="team-info">
-                                    <p>Accountant</p>
+                                    <p className="team-item-title">{data.CharteredAccountant}</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
                                 </div>
                             </div>
@@ -97,7 +91,7 @@ function Test({ language }) {
                                 <img src="./Ibrahim.png" className="team-img" alt="pic" />
                                 <h3>Ibrahim Mughal</h3>
                                 <div className="team-info">
-                                    <p>Accountant</p>
+                                    <p className="team-item-title">{data.CharteredAccountant}</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
                                 </div>
                             </div>
@@ -107,7 +101,7 @@ function Test({ language }) {
                                 <img src="./Asad.png" className="team-img" alt="pic" />
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
-                                    <p>Accountant</p>
+                                    <p className="team-item-title">{data.CharteredAccountant}</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
                                 </div>
                             </div>
@@ -117,7 +111,7 @@ function Test({ language }) {
                                 <img src="./Nitasha.jpg" className="team-img" alt="pic" />
                                 <h3>Nitasha Khan</h3>
                                 <div className="team-info">
-                                    <p>Accountant</p>
+                                    <p className="team-item-title">{data.CharteredAccountant}</p>
                                     <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
                                 </div>
                             </div>

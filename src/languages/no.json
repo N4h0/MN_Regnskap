@@ -50,6 +50,8 @@
   "join_us": "Ønsker du å samarbeide med oss?",
   "contact_us_conversation": "Konsentrer deg om det du er god på - Vi tar oss av regnskapet! Kontakt oss for en uforpliktende samtale.",
 
+
+
   "anything_on_heart": "Har du noe på hjertet?",
   "what_our_team_does": "Vi gjør jobben vår vanskeligere, slik at det er lettere for deg. Vårt dedikerte team er klare for å lytte til dine behov, og gi deg den beste opplevelsen.",
   "talk_to_us": "Snakk med oss",
@@ -66,6 +68,10 @@
   "call_us": "Ring oss",
   "organization_number": "Organisasjon nummer",
   "ok": "Godkjenninger",
+
+  "namePlaceholder": "Navn",
+  "emailPlaceholder": "Email",
+  "messagePlaceholder": "Skriv meldingen din her",
 
   "Ta": "Kontakt",
 
@@ -117,7 +123,21 @@
   "callUs": "Ring oss",
   "organizationNumber": "Organisasjons nummer",
   "organizationNumberValue": "992 720 999",
-  "email": "mn@mnregnskap.no"
+  "email": "mn@mnregnskap.no",
+
+
+
+
+
+  "CharteredAccountant": "Autorisert regnskapsfører",
+  "moosa_text": "Ferdig utdannet  revisor og statsautorisert regnskapsfører med over 19 års bransjeerfaring.Han er også en anerkjent kontrollør i Regnskap Norge,  og hans ekspertise og lidenskap for nøyaktighet gjenspeiles i hvert oppdrag han utfører. Moosa leverer skreddersydde regnskapsløsninger med fokus på kvalitet og etterlevelse av gjeldende regelverk. Med hans unike bakgrunn og omfattende kompetanse kan du være trygg på at dine regnskapsmessige behov blir håndtert profesjonelt og effektivt.",
+  "Accountant": "Regnskapfører"
+
+
+
+
+
+
 }
 
 

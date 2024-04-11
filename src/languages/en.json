@@ -70,6 +70,10 @@
   "organization_number": "Organization number",
   "ok": "Approvals",
 
+  "namePlaceholder": "Name",
+  "emailPlaceholder": "Email",
+  "messagePlaceholder": "write your message here",
+
   "Ta": "Contact",
   "deadlinesTitle": "Deadlines",
   "annualAccountingDeadlinesTitle": "Annual Accounting Deadlines",
@@ -115,8 +119,15 @@
   "callUs": "Call Us",
   "organizationNumber": "Organization Number",
   "organizationNumberValue": "992 720 999",
-  "email": "mn@mnregnskap.no"
+  "email": "mn@mnregnskap.no",
+
+  "CharteredAccountant": "Chartered accountant",
+  "moosa_text": "A fully qualified auditor and certified public accountant with over 19 years of industry experience. He is also a recognized auditor at Regnskap Norge, and his expertise and passion for accuracy are reflected in every assignment he undertakes. Moosa delivers customized accounting solutions with a focus on quality and compliance with current regulations. With his unique background and extensive expertise, you can be confident that your accounting needs are handled professionally and efficiently.",
+  "Accountant": "Accountant"
+
+
 }
+
 
 
 
