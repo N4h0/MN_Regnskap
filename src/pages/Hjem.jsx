@@ -40,7 +40,7 @@ function Bildet({ language }) {
                     { /* <h1>M&N</h1> */ }  
                 <h1>{textData.regnskap}</h1>
                 <h2>{textData.home_page_text}</h2>
-                <Link to="/om">
+                <Link tto="/MN_Regnskap/om-oss">
                     <button className="bildeKnapp">{textData.more_info}</button>
                 </Link>
             </div>
@@ -78,7 +78,7 @@ function Regnskap({ language }) {
                 </div>
             </div>
             <div className='siste-container'>
-                <Link className="regnskapsKnapp" to="/team">
+                <Link className="regnskapsKnapp" to="/MN_Regnskap/om-oss">
                     <span className="regnskapsKnappTekst">{textData.more_info}</span>
                 </Link>
             </div> 
@@ -176,7 +176,7 @@ function Kontakt({ language }) {
             <div className="kontaktTekstboks">
                     <h1>{textData.join_us}</h1>
                     <p>{textData.focus_on}</p>
-                    <Link to="/contact">
+                    <Link to="/MN_Regnskap/kontakt">
                         <button className="kontaktKnapp">{textData.contact_us}</button>
                     </Link>
             </div>
