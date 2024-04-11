@@ -149,7 +149,7 @@ a {
 .btn-common { /* knappen for skjema*/
     text-decoration: none;
     color: white;
-    background-color: #5da6eb;
+    background-color: rgb(161, 160, 160);
     border-radius: 3px;
     padding: 0.9em 1.388em;
     font-size: .9375rem;
@@ -191,6 +191,7 @@ a {
 .connect-body {
     display: flex;
     width: 100%;
+    border: 1px solid rgb(161, 160, 160);
 }
 
 .map-box {

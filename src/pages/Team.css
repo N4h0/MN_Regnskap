@@ -63,7 +63,7 @@
     }
 
     .team-info::after {
-        background: #008aff;
+        background: rgb(161, 160, 160);
         background: -webkit-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
         background: -o-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
         background: -moz-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
@@ -89,7 +89,7 @@
 /*OM OSS SEKSJONEN*/
 
 .aboutUs_box_hero_text:hover {
-    background-color: #e3f1f8;
+    background-color: rgb(161, 160, 160);
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translateX(6px);
@@ -101,7 +101,7 @@
     padding: 10px;
 }
     .aboutUs_box_hero_image:hover {
-        background-color: #e3f1f8;
+        background-color: rgb(161, 160, 160);
         transform: scale(1.1);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         transform: translateX(6px);
