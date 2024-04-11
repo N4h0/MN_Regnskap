@@ -14,7 +14,7 @@ function App() {
                     <Route index element={<HomePage />} />
                     <Route path="hjem" element={<HomePage />} />
                     <Route path="link" element={<LinkPage />} />
-                    <Route path="team" element={<TeamPage />} />
+                    <Route path="/MN_Regnskap/om-oss" element={<OmOss />} />
                     <Route path="contact" element={<ContactPage />} />
                 </Route>
             </Routes>
