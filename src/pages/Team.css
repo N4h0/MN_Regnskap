@@ -58,7 +58,7 @@
 }
 
     .team-info p {
-        color: #333; /* Oppdater også her for bedre kontrast */
+        color: rgb(148, 144, 144); /* Oppdater også her for bedre kontrast */
         font-style: italic;
     }
 

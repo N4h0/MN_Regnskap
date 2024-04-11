@@ -81,8 +81,9 @@
 
 /* ------------------------REGNSKAP DELEN ---------------------------  */
 .regnskapsSeksjon {
-    background-color: rgb(161, 160, 160);
+    /*background-color: rgb(161, 160, 160);*/
     margin-top: 20px;
+    background: linear-gradient(to bottom, rgb(161, 160, 160), rgb(255, 255, 255));
 }
 
     .regnskapsSeksjon h2 {
@@ -180,7 +181,7 @@
     margin-top: auto;
     height: 80px;
     width: auto;
-    background-color: rgb(161, 160, 160);
+    background-color: rgb(255, 255, 255);
 }
 
 /* ------------------------------- MØT OSS ----------------------------- */
@@ -202,7 +203,8 @@
     justify-content: flex-start;
     padding-bottom: 20px;
     padding-top: 20px;
-    background-color: rgb(161, 160, 160);
+    /*background-color: rgb(161, 160, 160);*/
+    background: linear-gradient(to top, rgb(161, 160, 160), rgb(255, 255, 255));
 }
 
 
