@@ -55,8 +55,9 @@ function Test({ language }) {
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
-                                <img src="./Moosa.jpg" className="team-img" alt="pic" />
-                                <h3>Moosa Ali Rashid</h3>
+                                <div class="text-center">
+                                    <img src="./Moosa.jpg" class="team-img" alt="pic" />
+                                </div>                                <h3>Moosa Ali Rashid</h3>
                                 <div className="team-info">
                                     <p>Chartered accountant</p>
                                     <p>Ferdig utdannet  revisor og statsautorisert regnskapsfører med over 19 års bransjeerfaring.
@@ -71,7 +72,9 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
-                                <img src="./Naila.png" className="team-img" alt="pic" />
+                                <div class="text-center">
+                                    <img src="./Naila.png" className="team-img" alt="pic" />
+                                </div>
                                 <h3>Naila Sohail Khokhar</h3>
                                 <div className="team-info">
                                     <p>Chartered accountant</p>

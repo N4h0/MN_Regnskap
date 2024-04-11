@@ -59,7 +59,6 @@
 
     .team-info p {
         color: rgb(148, 144, 144); /* Oppdater også her for bedre kontrast */
-        font-style: italic;
     }
 
     .team-info::after {
