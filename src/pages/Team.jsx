@@ -26,7 +26,7 @@ function Test({ language }) {
                     </div>
                     <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
                         <div className="bilde-seksjon-img">
-                            <img src="./teambilde.avif" alt="" className="img-style" loading="lazy" />
+                            <img src="./teambilde.avif" alt="" className="img-style" />
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
                                 <div class="text-center">
-                                    <img src="./Moosa.jpg" class="team-img" alt="pic" loading="lazy"/>
+                                    <img src="./Moosa.jpg" class="team-img" alt="pic" />
                                 </div>                                <h3>Moosa Ali Rashid</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
@@ -67,7 +67,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
                                 <div class="text-center">
-                                    <img src="./Naila.png" className="team-img" alt="pic" loading="lazy"/>
+                                    <img src="./Naila.png" className="team-img" alt="pic" />
                                 </div>
                                 <h3>Naila Sohail Khokhar</h3>
                                 <div className="team-info">
@@ -78,7 +78,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Haseeb.png" className="team-img" alt="pic" loading="lazy" />
+                                <img src="./Haseeb.png" className="team-img" alt="pic" />
                                 <h3>Haseeb Talib</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
@@ -88,7 +88,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Ibrahim.png" className="team-img" alt="pic" loading="lazy" />
+                                <img src="./Ibrahim.png" className="team-img" alt="pic" />
                                 <h3>Ibrahim Mughal</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
@@ -98,7 +98,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Asad.png" className="team-img" alt="pic" loading="lazy" />
+                                <img src="./Asad.png" className="team-img" alt="pic" />
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
@@ -108,7 +108,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Nitasha.jpg" className="team-img" alt="pic" loading="lazy" />
+                                <img src="./Nitasha.jpg" className="team-img" alt="pic" />
                                 <h3>Nitasha Khan</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>

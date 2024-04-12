@@ -23,7 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 /.vs/MN_Regnskap/FileContentIndex
-/.vs/MN_Regnskap/v17/DocumentLayout.json
-/.vs/MN_Regnskap/v17/.wsuo
-/.vs/slnx.sqlite
-/.vs/VSWorkspaceState.json

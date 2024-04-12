@@ -13,7 +13,6 @@ import Root from "./routes/root";
 import NotFound from "./NotFound";
 import { LanguageProvider } from './languages/LanguageContext'; // Adjust the path as necessary
 
-
 const router = createBrowserRouter([
     {
         path: "/MN_Regnskap/",
@@ -52,6 +51,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <LanguageProvider>
             <RouterProvider router={router} />
         </LanguageProvider>
-
     </React.StrictMode>,
 )
