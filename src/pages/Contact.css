@@ -150,7 +150,7 @@ a {
     margin-bottom: 40px;
 }
 
-
+/* ------------------ KNAPPEN TIL SEND SKJEMA ------------------ */
 .btn-common { 
     text-decoration: none;
     color: white;
@@ -168,6 +168,7 @@ a {
     }
 }
 
+/* ------------------ DIVEN NEDERST ------------------ */
 .connect {
     display: flex;
     justify-content: center;
@@ -263,19 +264,20 @@ a {
     line-height: 1.42;
 }
 
-.form-input { /* skjema*/
+/* ------------------ SKJEMA ------------------ */
+.form-input { 
     width: 100%;
     margin-bottom: 8px;
     width: 400px;
     height: 60px;
 }
 
-    .form-input input { /* skjema*/
+    .form-input input { 
         width: 100%;
         padding: 0.5625rem 0.625rem;
     }
 
-    .form-input textarea { /* skjema*/
+    .form-input textarea { 
         width: 100%;
         padding: 0.5625rem 0.625rem;
     }
@@ -285,7 +287,8 @@ a {
     font-weight: 6000;
 }
 
-.support-card:hover { /* hover funksjon*/
+/* ------------------ HOVER FOR BEGGE KORTENE ------------------ */
+.support-card:hover { 
     transform: scale(1.02);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
