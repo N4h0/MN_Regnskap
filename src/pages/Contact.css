@@ -1,4 +1,5 @@
-.hero-heading h1 { /* overskrift*/
+/* ------------------- OVERSKRIFTER ------------------ -*/
+.hero-heading h1 {
 
     font-size: 3rem;
     line-height: 1.25;
@@ -9,20 +10,21 @@
     font-weight: 6000;
 }
 
-h4 { /* overskrift*/
+h4 { 
 
     color: #2e475d;
     margin-top: 0;
     margin-bottom: 24px;
 }
 
-h5 { /* overskrift*/
+h5 {
 
     font-size: 18px;
     line-height: 1.56;
     margin: 1rem 0;
 }
 
+/* ------------------ VENSTRE KORT ------------------ */
 .support-card second span {
     margin-bottom: 24px;
     color: #2e475d;
@@ -38,7 +40,7 @@ p {
     margin-bottom: 1em;
 }
 
-
+/* ------------------ DIVEN HVOR BEGGE KORTENE ER INNI ------------------ */
 .main-wrapper {
     max-width: 1080px;
     margin: 0;
@@ -50,6 +52,7 @@ p {
     width: 100%;
 }
 
+/* ------------------ HOVEDTEKST OG HOVEDBILDE ------------------ */
 .hero-content {
     background-image: url(/background.png);
     background-repeat: no-repeat;
@@ -83,6 +86,7 @@ p {
         font-weight: 6000;
     }
 
+    /* ------------------ HØYRE KORT ------------------*/
 .contact {
     display: flex;
     align-items: center;
@@ -111,6 +115,7 @@ p {
     box-shadow: 0px 4px 10px rgba(64, 62, 62, 0.5);
 }
 
+/* ------------------ RESPONSIVITET ------------------ */
 @media (max-width: 768px) {
     .hero-text {
         width: 100%;
@@ -145,7 +150,8 @@ a {
     margin-bottom: 40px;
 }
 
-.btn-common { /* knappen for skjema*/
+
+.btn-common { 
     text-decoration: none;
     color: white;
     background-color: rgb(161, 160, 160);
