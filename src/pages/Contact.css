@@ -102,7 +102,7 @@ p {
     margin-top: -60px;
 }
 
-.support-card {
+.support-card { /* venstre kort*/
     width: calc((100% - 20px) / 2);
     display: flex;
     flex-direction: column;
