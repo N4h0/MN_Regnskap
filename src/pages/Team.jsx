@@ -71,8 +71,8 @@ function Test({ language }) {
                                 </div>
                                 <h3>Naila Sohail Khokhar</h3>
                                 <div className="team-info">
-                                    <p className="team-item-title">Chartered accountant</p>
-                                    <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
+                                    <p className="team-item-title">{data.CharteredAccountant}</p>
+                                    <p> {data.naila_text} </p>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ function Test({ language }) {
                                 <h3>Haseeb Talib</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
+                                    <p> {data.haseeb_text} </p>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ function Test({ language }) {
                                 <h3>Ibrahim Mughal</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
+                                    <p> {data.ibrahim_text} </p>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ function Test({ language }) {
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
+                                    <p> {data.asad_text} </p>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +112,7 @@ function Test({ language }) {
                                 <h3>Nitasha Khan</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p>Jeg trenger inspirasjon til hva jeg skal skrive her. Kom med ideer matess. :P </p>
+                                    <p> {data.nitasha_text} </p>
                                 </div>
                             </div>
                         </div>
