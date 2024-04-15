@@ -35,7 +35,7 @@ function Bildet({ language }) {
 
     return (
         <>
-            <img src="./kontor.jpeg" alt="" className="img-style" />
+            <img src="./HjemMain.WebP" alt="" className="img-style" />
             <div className="bildeTekst">
                     { /* <h1>M&N</h1> */ }  
                 <h1>{textData.regnskap}</h1>
@@ -57,22 +57,22 @@ function Regnskap({ language }) {
             <h2>{textData.ambitions_expertise}</h2>
             <div className="regnskapsBoks">
                 <div className="regnskapsKort">
-                    <img src="./kalk.png" alt="" loading="lazy" />
+                    <img src="./HjemKort1.WebP" alt="" loading="lazy" />
                     <h3>{textData.accounting}</h3>
                     <p>{textData.accounting_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="./regn1.jpg" alt="" loading="lazy" />
+                    <img src="./HjemKort2.WebP" alt="" loading="lazy" />
                     <h3>{textData.advice}</h3>
                     <p>{textData.advice_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="./regn2.jpg" alt="" loading="lazy" />
+                    <img src="./HjemKort3.WebP" alt="" loading="lazy" />
                     <h3>{textData.tax_return}</h3>
                     <p>{textData.tax_return_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="./regn3.png" alt="" loading="lazy" />
+                    <img src="./HjemKort4.WebP" alt="" loading="lazy" />
                     <h3>{textData.budgeting}</h3>
                     <p>{textData.budgeting_description}</p>
                 </div>
@@ -128,13 +128,13 @@ function Partnere({ language }) {
         <div className="partnerBakgrunn">
             <h2 className="partner-tittel">{textData.our_partner}</h2>
             <section className="customer-logos bilder">
-                <div className="bildet"><img src="./new-dehli.png" alt="logo" /></div>
-                <div className="bildet"><img src="./masala_politics_logo.png" alt="logo" /></div>
-                <div className="bildet"><img src="./snap.png" alt="logo" /></div>
-                <div className="bildet"><img src="./bull_logo.png" alt="logo" /></div>
-                <div className="bildet"><img src="./baljit-logo.png" alt="logo" /></div>
-                <div className="bildet"><img src="./baljiit.png" alt="logo" /></div>
-                <div className="bildet"><img src="./car.png" alt="logo" /></div>
+                <div className="bildet"><img src="./NewDelhi.WebP" alt="logo" /></div>
+                <div className="bildet"><img src="./MasalaPolitics.WebP" alt="logo" /></div>
+                <div className="bildet"><img src="./Snappys.WebP" alt="logo" /></div>
+                <div className="bildet"><img src="./BigHornSteak.WebP" alt="logo" /></div>
+                <div className="bildet"><img src="./Baljit2.WebP" alt="logo" /></div>
+                <div className="bildet"><img src="./Baljit.WebP" alt="logo" /></div>
+                <div className="bildet"><img src="./CarWash.WebP" alt="logo" /></div>
 
 
             </section>
@@ -151,12 +151,12 @@ function Møtoss({ language }) {
                     <h2>{textData.meet_us }</h2>
                 </div>
                 <div className="kontaktOssKort">
-                        <img className="kontaktOssKort-img" src="./moosa-hjemside.jpeg" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <img className="kontaktOssKort-img" src="./MoosaRund.WebP" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                         <h2>MOOSA ALI RASHID</h2>
                         <p>{textData.charted_accountant}</p>
                 </div>
                 <div className="kontaktOssKort">
-                        <img className="kontaktOssKort-img" src="./naila-hjemmeside.jpeg" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <img className="kontaktOssKort-img" src="./NailaRund.WebP" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                         <h2>NAILA SOHAIL KHOKHAR</h2>
                         <p>{textData.charted_accountant}</p>
                 </div>
@@ -172,7 +172,7 @@ function Kontakt({ language }) {
     return (
     <>
         <div className="kontaktBilde">
-            <img src="./bok-2.jpg" alt="Bakgrunnsbilde av noen regnskapsbøker som ligger oppå hverandre." />
+            <img src="./HjemsideKontaktOss.WebP" alt="Bakgrunnsbilde av noen regnskapsbøker som ligger oppå hverandre." />
             <div className="kontaktTekstboks">
                     <h1>{textData.join_us}</h1>
                     <p>{textData.focus_on}</p>

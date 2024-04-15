@@ -22,7 +22,7 @@ const Godkjenn = () => (
    <div className="kontaktinfo">
         <h1>Godkjenninger</h1>
         <div>
-            <img width="290" height="145" src="./footerlogo2.png" alt="logo til medlem av norge " />
+            <img width="290" height="145" src="./FooterLogo2.WebP" alt="logo til medlem av norge " />
          </div>
     </div>
 );

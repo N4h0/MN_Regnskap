@@ -54,7 +54,7 @@ p {
 
 /* ------------------ HOVEDTEKST OG HOVEDBILDE ------------------ */
 .hero-content {
-    background-image: url(/background.png);
+    background-image: url(/kontaktOss.WebP);
     background-repeat: no-repeat;
     object-fit: cover;
     height: max-content;
