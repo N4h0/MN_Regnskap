@@ -55,8 +55,8 @@ function Test({ language }) {
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
-                                <div class="text-center">
-                                    <img src="./Moosa.WebP" class="team-img" alt="pic" />
+                                <div className="text-center">
+                                    <img src="./Moosa.WebP" className="team-img" alt="pic" />
                                 </div>                                <h3>Moosa Ali Rashid</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
@@ -66,7 +66,7 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
-                                <div class="text-center">
+                                <div className="text-center">
                                     <img src="./Naila.WebP" className="team-img" alt="pic" />
                                 </div>
                                 <h3>Naila Sohail Khokhar</h3>
@@ -78,7 +78,9 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Haseeb.WebP" className="team-img" alt="pic" />
+                                <div className="text-center">
+                                    <img src="./Haseeb.WebP" className="team-img" alt="pic" />
+                                </div>
                                 <h3>Haseeb Talib</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
@@ -88,7 +90,9 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Ibrahim.WebP" className="team-img" alt="pic" />
+                                <div className="text-center">
+                                    <img src="./Ibrahim.WebP" className="team-img" alt="pic" />
+                                </div>
                                 <h3>Ibrahim Mughal</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
@@ -98,7 +102,9 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Asad.WebP" className="team-img" alt="pic" />
+                                <div className="text-center">
+                                    <img src="./Asad.WebP" className="team-img" alt="pic" />
+                                </div>
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
@@ -108,7 +114,9 @@ function Test({ language }) {
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
-                                <img src="./Nitasha.WebP" className="team-img" alt="pic" />
+                                <div className="text-center">
+                                    <img src="./Nitasha.WebP" className="team-img" alt="pic" />
+                                </div>
                                 <h3>Nitasha Khan</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
