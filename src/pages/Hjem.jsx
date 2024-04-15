@@ -35,7 +35,7 @@ function Bildet({ language }) {
 
     return (
         <>
-            <img src="./HjemMain.WebP" alt="" className="img-style" />
+            <img src="./HjemMainComp.jpeg" alt="" className="img-style" />
             <div className="bildeTekst">
                     { /* <h1>M&N</h1> */ }  
                 <h1>{textData.regnskap}</h1>
