@@ -17,9 +17,9 @@
 .team-item {
     color: #333; /* Mørkere for bedre kontrast mot lys bakgrunn */
     text-align: left;
-    margin: 20px 0;
-    padding: 50px 20px 40px 20px;
-    border-radius: 8px 8px;
+    margin: 40px 0;
+    padding: 60px 20px 50px 20px;
+    border-radius: 8px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -46,7 +46,7 @@
     font-size: 16px;
     line-height: 1.75;
     padding: 8px;
-    text-align: left;
+    text-align: center;
 }
 .section-subtitle {
     white-space: pre-line;

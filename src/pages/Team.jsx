@@ -57,9 +57,10 @@ function Test({ language }) {
                             <div className="team-item">
                                 <div className="text-center">
                                     <img src="./Moosa.WebP" className="team-img" alt="pic" />
-                                </div>                                <h3>Moosa Ali Rashid</h3>
+                                </div>
+                                <h3>Moosa Ali Rashid</h3>
                                 <div className="team-info">
-                                    <p className="team-item-title">{data.CharteredAccountant}</p>
+                                        <p className="team-item-title">{data.CharteredAccountant}</p>
                                     <p>{data.moosa_text}</p>
                                 </div>
                             </div>
