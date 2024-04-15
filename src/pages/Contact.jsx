@@ -56,7 +56,7 @@ function Contact() {
                     <div className="main-wrapper">
                         <div className="supports">
                             <div className="support-card first">
-                                <img src="./phone.png" className="support-card-image" />
+                                <img src="./KontaktOss1.WebP" className="support-card-image" />
                                 <h4>{textData.talkToUs}</h4>
                                 <span>{textData.yourFeedbackIsImportant}</span>
                                 <a href={`tel:${textData.phoneNumber}`}>{textData.phoneNumber}</a>
@@ -64,7 +64,7 @@ function Contact() {
                                 <span>{textData.helpFromFriends}</span>
                             </div>
                             <div className="support-card second">
-                                <img src="./message.png" className="support-card-image" alt="Melding" />
+                                <img src="./KontaktOss2.WebP" className="support-card-image" alt="Melding" />
                                 <h4>{textData.requestConsultation}</h4>
                                 <span>{textData.concentrateOnWhatYouDoBest}</span>
                                 <form onSubmit={sendEmail}>

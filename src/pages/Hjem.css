@@ -431,7 +431,6 @@
  
     /* SKYGGE/FARGE PÅ HEADING */
     .bildeTekst h1, h2, .kontaktOssHeader h1 {
-        color: rgb(0, 0, 0);
         font-weight: bolder;
     }
 
