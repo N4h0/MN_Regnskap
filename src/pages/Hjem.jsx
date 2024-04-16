@@ -67,7 +67,7 @@ function Regnskap({ language }) {
                     <p>{textData.advice_description}</p>
                 </div>
                 <div className="regnskapsKort">
-                    <img src="./HjemKort3.WebP" alt="" loading="lazy" />
+                    <img src="./HjemKort3.Webp" alt="" loading="lazy" />
                     <h3>{textData.tax_return}</h3>
                     <p>{textData.tax_return_description}</p>
                 </div>
