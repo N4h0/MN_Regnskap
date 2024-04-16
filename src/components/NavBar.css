@@ -35,7 +35,7 @@
         margin: 0 10px;
     }
 
-        .topnav a:hover {
+        .right-aligned-items a:hover {
             background-color: #ddd;
             color: black;
         }
