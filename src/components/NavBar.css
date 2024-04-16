@@ -56,8 +56,14 @@
 }
 
 
+
 .topnav .icon {
     display: none;
+}
+
+.dropDown img {
+  
+    margin-right: 5px;
 }
 
 
@@ -71,10 +77,11 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Mer subtil skygge */
-    padding: 12px 0; /* Justert padding for å fjerne vertikal padding */
+    padding: 10px 0; /* Justert padding for å fjerne vertikal padding */
     z-index: 1;
     border: none; /* Sikrer at det ikke er noen border */
 }
+
 
     .dropDownContent button {
         border: none; /* Fjerner border fra knapper */
@@ -99,8 +106,12 @@
     .dropDownContent a:hover {
         background-color: #ddd;
     }
+.dropDownContent button:hover {
+    background-color: #ddd;
+    color: black;
+}
 
-/* Resten av din eksisterende CSS */
+
 
 
 

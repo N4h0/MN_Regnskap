@@ -83,7 +83,7 @@ function Chatbot() {
             {isOpen && (
                 <div className="chatDialog">
                     <div className="chatHeader">
-                        <img src="mn-regnskap-logo.jpg" alt="Logo" className="chatLogo" />
+                        <img src="/MN_Regnskap/mn-regnskap-logo.webp" alt="Logo" className="chatLogo" />
                         <div className="chatHeaderText">
                             <h7 className="chatheader-overskrift">
                                 Chat med oss!
