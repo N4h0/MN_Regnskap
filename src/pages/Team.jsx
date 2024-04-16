@@ -26,7 +26,7 @@ function Test({ language }) {
                     </div>
                     <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
                         <div className="bilde-seksjon-img">
-                            <img src="./OmOss1.WebP" alt="" className="img-style" />
+                            <img src="./OmOss1Comp.webp" alt="" className="img-style" />
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ function Test({ language }) {
                 <div className="aboutUs_box_hero second">
                     <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
                         <div className="bilde-seksjon-img">
-                            <img src="./OmOss2.WebP" alt="" className="img-style" />
+                            <img src="./OmOss2Comp.webp" alt="" className="img-style" />
                         </div>
                     </div>
                     <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
@@ -56,7 +56,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
                                 <div className="text-center">
-                                    <img src="./Moosa.WebP" className="team-img" alt="pic" />
+                                    <img src="./MoosaComp.jpg" className="team-img" alt="pic" />
                                 </div>
                                 <h3>Moosa Ali Rashid</h3>
                                 <div className="team-info">
@@ -68,7 +68,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-6">
                             <div className="team-item">
                                 <div className="text-center">
-                                    <img src="./Naila.WebP" className="team-img" alt="pic" />
+                                    <img src="./NailaComp.jpg" className="team-img" alt="pic" />
                                 </div>
                                 <h3>Naila Sohail Khokhar</h3>
                                 <div className="team-info">
@@ -80,7 +80,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
                                 <div className="text-center">
-                                    <img src="./Haseeb.WebP" className="team-img" alt="pic" />
+                                    <img src="./HaseebComp.jpg" className="team-img" alt="pic" />
                                 </div>
                                 <h3>Haseeb Talib</h3>
                                 <div className="team-info">
@@ -92,7 +92,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
                                 <div className="text-center">
-                                    <img src="./Ibrahim.WebP" className="team-img" alt="pic" />
+                                    <img src="./IbrahimComp.jpg" className="team-img" alt="pic" />
                                 </div>
                                 <h3>Ibrahim Mughal</h3>
                                 <div className="team-info">
@@ -104,7 +104,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
                                 <div className="text-center">
-                                    <img src="./Asad.WebP" className="team-img" alt="pic" />
+                                    <img src="./AsadComp.webp" className="team-img" alt="pic" />
                                 </div>
                                 <h3>Asad Haider Khan</h3>
                                 <div className="team-info">
@@ -116,7 +116,7 @@ function Test({ language }) {
                         <div className="col-sm-12 col-md-3">
                             <div className="team-item">
                                 <div className="text-center">
-                                    <img src="./Nitasha.WebP" className="team-img" alt="pic" />
+                                    <img src="./NitashaComp.jpg" className="team-img" alt="pic" />
                                 </div>
                                 <h3>Nitasha Khan</h3>
                                 <div className="team-info">
