@@ -43,7 +43,9 @@ export default class NavBar extends Component {
         return (
             <div className={`topnav ${this.state.isMenuOpen ? 'responsive' : ''}`}>
                 <div className="left-aligned-items">
-                    <img src="/MN_Regnskap/FirmaLogo.WebP" alt="M&N Regnskap Logo" />
+                    <Link to="/MN_Regnskap/Hjem">
+                        <img src="/MN_Regnskap/FirmaLogo.WebP" alt="M&N Regnskap Logo" />
+                    </Link>
                 </div>
 
                 <div className="right-aligned-items">
