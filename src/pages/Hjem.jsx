@@ -151,12 +151,12 @@ function Møtoss({ language }) {
                     <h2>{textData.meet_us }</h2>
                 </div>
                 <div className="kontaktOssKort">
-                        <img className="kontaktOssKort-img" src="./MoosaRund.WebP" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <img className="kontaktOssKort-img" src="./MoosaRundComp.webp" alt="Bilde av Moosa, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                         <h2>MOOSA ALI RASHID</h2>
                         <p>{textData.charted_accountant}</p>
                 </div>
                 <div className="kontaktOssKort">
-                        <img className="kontaktOssKort-img" src="./NailaRund.WebP" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
+                        <img className="kontaktOssKort-img" src="./NailaRundComp.webp" alt="Bilde av Naila, en av grunnleggerne av M&N Regnskap (Statsautorisert regnskapsfører)" />
                         <h2>NAILA SOHAIL KHOKHAR</h2>
                         <p>{textData.charted_accountant}</p>
                 </div>
@@ -172,7 +172,7 @@ function Kontakt({ language }) {
     return (
     <>
         <div className="kontaktBilde">
-            <img src="./HjemsideKontaktOss.WebP" alt="Bakgrunnsbilde av noen regnskapsbøker som ligger oppå hverandre." />
+            <img src="./HjemsideKontaktOssComp.webp" alt="Bakgrunnsbilde av noen regnskapsbøker som ligger oppå hverandre." />
             <div className="kontaktTekstboks">
                     <h1>{textData.join_us}</h1>
                     <p>{textData.focus_on}</p>
