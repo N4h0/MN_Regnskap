@@ -6,6 +6,7 @@ import { LanguageContext } from '../languages/LanguageContext';
 import { Link } from 'react-router-dom';
 import en from '../languages/en.json';
 import no from '../languages/no.json';
+
 export default class NavBar extends Component {
     static contextType = LanguageContext;
     state = {
