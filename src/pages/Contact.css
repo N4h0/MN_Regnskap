@@ -162,6 +162,23 @@ a {
     margin-top: 16px;
 }
 
+.btn-common:hover{
+    background-color: rgb(109, 107, 107); /* Endre bakgrunnsfargen ved hover til svart */
+}
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
 @media (max-width:768px) {
     .hero-content {
         background-position: start;

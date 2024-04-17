@@ -40,6 +40,7 @@
 
 .with-line {
     position: relative;
+    font-size: 100px;
 }
 
     .with-line::after {
@@ -76,7 +77,7 @@
     display: flex;
     justify-content: space-around; /* Justerer innholdet horisontalt */
     align-items: center;
-    max-width: 1200px; /* Angi ønsket maksimal bredde for innholdet */
+    max-width: 1200px; /* Angi ï¿½nsket maksimal bredde for innholdet */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -87,8 +88,8 @@
 .full-page-wrapper {
     position: relative; /* Posisjonerer barna relativt til denne */
     width: 100vw; /* Fyller hele viewportens bredde */
-    height: 100vh; /* Fyller hele viewportens høyde */
-    overflow: hidden; /* Skjuler overflødig innhold som strekker seg utover viewporten */
+    height: 100vh; /* Fyller hele viewportens hï¿½yde */
+    overflow: hidden; /* Skjuler overflï¿½dig innhold som strekker seg utover viewporten */
 }
 
 .background-image {
@@ -97,7 +98,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Fyller hele foreldreelementet uten å endre proporsjonene */
+    object-fit: cover; /* Fyller hele foreldreelementet uten ï¿½ endre proporsjonene */
     z-index: -1; /* Plasserer bildet helt bakerst */
 }
 
