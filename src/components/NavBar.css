@@ -1,74 +1,67 @@
-/*Generell kode*/
-/*Inspirasjon fra https://www.w3schools.com/css/css_navbar.asp og https://www.w3schools.com/css/css_dropdowns.asp*/
+/* Generell kode */
+/* Inspirasjon fra https://www.w3schools.com/css/css_navbar.asp og https://www.w3schools.com/css/css_dropdowns.asp */
 * {
     font-family: 'Varela Round', sans-serif;
 }
 
 .left-aligned-items img {
-    width: 200px;
-    height: 90px;
+    width: 12.5rem;
+    height: 5.6rem;
 }
 
-.topnav a{
-    text-decoration: none; /* Fjerne strek under linkene */
-    display: block;
-    color: black;
-}
-
-/*NAVBAREN*/
+/* NAVBAREN */
 .topnav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; /* Sikrer at barna fordeles fra venstre til høyre */
+    justify-content: space-between; /* Fordeler elementene jevnt fra venstre til høyre */
     overflow: hidden;
 }
 
 .topnav a {
+    text-decoration: none; /* Fjerner understreking av linker */
+    display: block;
+    color: black;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 16px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
     font-weight: 400;
-    margin: 0 10px;
-    }
+    margin: 0 0.6rem;
+}
 
 .topnav .icon {
     display: none;
 }
 
-.dropDownContent, .navTekst:hover,.dropDownContent button:hover {
+/* Hover effekter */
+.navTekst:hover, .dropDownContent button:hover {
+    background-color: #ddd;
     color: black;
 }
 
-.navTekst:hover,.dropDownContent button:hover {
-    background-color: #ddd;
- }
- 
 .right-aligned-items {
     display: flex;
     flex-grow: 1;
     justify-content: flex-end; /* Justerer navigasjonselementene til høyre */
 }
 
-
-/*SPRÅK DELEN*/
+/* SPRÅK DELEN */
 .dropDownContent {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Mer subtil skygge */
-    padding: 10px 0; /* Justert padding for å fjerne vertikal padding */
+    padding: 0.6rem 0; /* Justert padding for å fjerne vertikal padding */
     z-index: 1;
-    border: none; /* Sikrer at det ikke er noen border */
+    border: none; /* Ingen ramme */
 }
 
-
 .dropDownContent button {
-    border: none; /* Fjerner border fra knapper */
-    background-color: transparent; /* Gjør bakgrunnen transparent */
-    padding: 8px 16px; /* Justerer padding for å matche designet */
-    margin: 0; /* Fjerner margin */
+    border: none; /* Ingen ramme på knapper */
+    background-color: transparent; /* Gjennomsiktig bakgrunn */
+    padding: 0.5rem 1rem; /* Justert padding */
+    margin: 0;
     display: flex;
     align-items: center;
 }
@@ -81,13 +74,16 @@
     margin-right: 5px;
 }
 
-
+/* Media Queries */
 @media screen and (max-width: 899px) {
-    .topnav {
+    .topnav, .topnav.responsive {
         justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .right-aligned-items .navTekst , .topnav .icon {
+    .right-aligned-items .navTekst, .topnav .icon,
+    .topnav a.icon, .topnav .icon {
         display: none;
     }
 
@@ -95,19 +91,11 @@
         display: block;
         position: absolute;
         right: 0;
-        top: 39px;
+        top: 2.4rem;
     }
 
     .topnav.responsive .right-aligned-items, .topnav.responsive a {
         display: block;
         text-align: left;
-    }
-
-    .topnav.responsive .right-aligned-items, .topnav.responsive  {
-        flex-direction: column;
-    }
-
-    .topnav.responsive {
-        align-items: flex-start;
     }
 }
