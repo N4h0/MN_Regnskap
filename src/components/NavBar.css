@@ -103,47 +103,43 @@
     padding: 8px 16px; /* Justert padding for å matche designet */
 }
 
-    .dropDownContent a:hover {
-        background-color: #ddd;
-    }
+.dropDownContent a:hover {
+    background-color: #ddd;
+}
+
 .dropDownContent button:hover {
     background-color: #ddd;
     color: black;
 }
-
-
-
-
-
 
 @media screen and (max-width: 769px) {
     .topnav {
         justify-content: space-between;
     }
 
-        .topnav a, .topnav .icon, .right-aligned-items a {
-            display: none;
-        }
+    .right-aligned-items a, .topnav .icon, .right-aligned-items a {
+        display: none;
+    }
 
-            .topnav a.icon, .topnav .icon {
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 19px;
-            }
+    .topnav a.icon, .topnav .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 19px;
+    }
 
-        .topnav.responsive .right-aligned-items, .topnav.responsive a {
-            display: block;
-            text-align: left;
-        }
+    .topnav.responsive .right-aligned-items, .topnav.responsive a {
+        display: block;
+        text-align: left;
+    }
 
-        .topnav.responsive .right-aligned-items {
-            flex-direction: column;
-        }
+    .topnav.responsive .right-aligned-items {
+        flex-direction: column;
+    }
 
 
-        .topnav.responsive {
-            flex-direction: column;
-            align-items: flex-start;
-        }
+    .topnav.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

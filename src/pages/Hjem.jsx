@@ -6,6 +6,12 @@ import './Hjem.css';
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
 
+function scrollToTop() {
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 10);
+}
+
 function Homepage() {
     const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
 
@@ -40,8 +46,8 @@ function Bildet({ language }) {
                     { /* <h1>M&N</h1> */ }  
                 <h1>{textData.regnskap}</h1>
                 <h2>{textData.home_page_text}</h2>
-                <Link tto="/MN_Regnskap/om-oss">
-                    <button className="bildeKnapp">{textData.more_info}</button>
+                <Link to="/MN_Regnskap/om-oss">
+                    <button className="bildeKnapp" onClick={scrollToTop}>{textData.more_info}</button>
                 </Link>
             </div>
         </>
@@ -79,7 +85,7 @@ function Regnskap({ language }) {
             </div>
             <div className='siste-container'>
                 <Link className="regnskapsKnapp" to="/MN_Regnskap/om-oss">
-                    <span className="regnskapsKnappTekst">{textData.more_info}</span>
+                    <span className="regnskapsKnappTekst" onClick={scrollToTop}>{textData.more_info}</span>
                 </Link>
             </div> 
         </>
@@ -135,8 +141,6 @@ function Partnere({ language }) {
                 <div className="bildet"><img src="./Baljit2.WebP" alt="logo" /></div>
                 <div className="bildet"><img src="./Baljit.WebP" alt="logo" /></div>
                 <div className="bildet"><img src="./CarWash.WebP" alt="logo" /></div>
-
-
             </section>
         </div>
     );
@@ -177,7 +181,7 @@ function Kontakt({ language }) {
                     <h1>{textData.join_us}</h1>
                     <p>{textData.focus_on}</p>
                     <Link to="/MN_Regnskap/kontakt">
-                        <button className="kontaktKnapp">{textData.contact_us}</button>
+                        <button className="kontaktKnapp" onClick={scrollToTop}>{textData.contact_us}</button>
                     </Link>
             </div>
         </div>

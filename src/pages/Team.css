@@ -26,22 +26,26 @@
     transition: all 0.25s ease-in-out;
 }
 
-    .team-item:hover {
-        background: black;
-        color: white;
-    }
+.team-item:hover {
+    background: black;
+    color: white;
+}
 
-    .team-item h3 {
-        margin: 20px 0 1px 0 !important;
-        color: #454545;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        -webkit-transition: all 0.25s ease-in-out;
-        -moz-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
-        text-align:center
-    }
+.team-item:hover h3 {
+    color: #e0e0e0;
+}
+
+.team-item h3 {
+    margin: 20px 0 1px 0 !important;
+    color: #454545;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    text-align:center
+}
 .team-item-title {
     font-size: 16px;
     line-height: 1.75;

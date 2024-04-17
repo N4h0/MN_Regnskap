@@ -230,13 +230,12 @@
  
 }
 
-    .kontaktOssKort-img {
-        border-radius: 50%;
-        margin-bottom: 20px;
-        height: 240px;
-        width: 240px;
-        
-    }
+.kontaktOssKort-img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    height: 240px;
+    width: 240px;
+}
 
 .kontaktOssKort h2 {
     font-size: 30px;
@@ -380,42 +379,42 @@
 }
 
 /* ---------------------------RESPONSIVITET ---------------------------*/
-    @media (max-width:1026px) {
+@media (max-width:1026px) {
       
-        .regnskapsBoks {
-            justify-content:center;
-        }
+    .regnskapsBoks {
+        justify-content:center;
+    }
       
 
-        .bildeKnapp {
-            margin-top: 5px;
+    .bildeKnapp {
+        margin-top: 5px;
             
-        }
-
-        /*Bok*/
-        .kontaktTekstboks p{
-            padding-bottom:2px;
-            padding-top:1px;
-        }
-        .kontaktTekstboks {
-            padding-top: 0px;
-           width:100%
-        }
     }
 
-    @media (max-width:769px) {
-        .kontaktOssBoks {
-            display: flex;
-            flex-direction: column;
-        }
-        .bildeKnapp {
-            margin-top: 5px;
-        }
-
-        .bildeTekst h2 {
-            font-size: 25px;
-        }
+    /*Bok*/
+    .kontaktTekstboks p{
+        padding-bottom:2px;
+        padding-top:1px;
     }
+    .kontaktTekstboks {
+        padding-top: 0px;
+        width:100%
+    }
+}
+
+@media (max-width:769px) {
+    .kontaktOssBoks {
+        display: flex;
+        flex-direction: column;
+    }
+    .bildeKnapp {
+        margin-top: 5px;
+    }
+
+    .bildeTekst h2 {
+        font-size: 25px;
+    }
+}
 
 @media (max-width:717px) {
     .kontaktOssBoks {
@@ -471,23 +470,23 @@
         margin-left:0px;
     }
 
-        /*Om oss seksjonen */
-        .kontaktOssKort {
+    /*Om oss seksjonen */
+    .kontaktOssKort {
         flex: 100%; /* Gjør at kortene tar full bredde av skjermen */
     }
-            .kontaktOssKort img {
-                max-width: 250px;
-            }
+    .kontaktOssKort img {
+        max-width: 250px;
+    }
 
-        .kontaktOssKort p {
-            font-size: 1rem; /* Justerer skriftstørrelsen ned */
-        }
+    .kontaktOssKort p {
+        font-size: 1rem; /* Justerer skriftstørrelsen ned */
+    }
 
-        /* PARTNER SEKSJONEN */
+    /* PARTNER SEKSJONEN */
 
-        .partnerBakgrunn{
-            padding:30px;
-        }
+    .partnerBakgrunn{
+        padding:30px;
+    }
 
     .partner-tittel {
  
@@ -495,7 +494,7 @@
     }
         /*Bok seksjonen*/
 
-        .kontaktKnapp{
+    .kontaktKnapp{
         font-size:20px;
     }
     .kontaktTekstboks {
@@ -504,9 +503,9 @@
         width: 90%;
     }
 
-        .kontaktTekstboks h1 {
-            font-size: 14px;
-        }
+    .kontaktTekstboks h1 {
+        font-size: 14px;
+    }
 
     .kontaktKnapp {
     
@@ -543,6 +542,7 @@
 
     .kontaktOssKort-img {
         height: 200px;
+        width: 200px;
     }
 
     .kontaktOssKort p {
@@ -552,14 +552,14 @@
     .kontaktTekstboks {
         padding-top: 50px;
     }
-        .kontaktTekstboks p {
+    .kontaktTekstboks p {
        
-            font-size: 14px;
-        }
-        .kontaktTekstboks h1 {
-            font-size: 15px;
-            line-height: 1;
-        }
+        font-size: 14px;
+    }
+    .kontaktTekstboks h1 {
+        font-size: 15px;
+        line-height: 1;
+    }
 
     .kontaktKnapp {
         
