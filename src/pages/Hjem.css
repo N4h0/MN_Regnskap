@@ -1,3 +1,21 @@
+/* ------------------- OVERSKRIFTER ------------------ -*/
+
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+}
+
+p, a{
+    font-family: Varela Round, sans-serif;
+}
+
+.picture-h1,.picture-h2{
+    color:#edf3f7;
+    font-weight: bold;
+}
+.partner-tittel,.contact-header-h2{
+    color: #000;
+    font-weight: bold;
+}
 
 /* ------------------- STORE BILDET --------------------- */
 .img-style {
@@ -11,134 +29,114 @@
 }
 
 .bildeSeksjon {
-    display: flex; /* Aktiver flexbox */
-    justify-content: center; /* Sentrer barn horisontalt */
-    align-items: center; /* Sentrer barn vertikalt */
-    position: relative; /* Beholder posisjonering */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
     width: 100%;
     height: 100%; 
 }
 
-    .bildeSeksjon img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Sørg for at bildet dekker containeren */
-        border-radius: inherit; /* Arv border-radius hvis nødvendig */
-    }
+.bildeSeksjon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit; 
+ }
 
-
-.bildeSeksjon h1 {
-    font-size: 60px;
-    line-height: 55px;
-    text-align: center;
-}
-
-.bildeTekst {
-    position: absolute; /* Behold absolutt for å sikre teksten legger seg over bildet */
+.picture-text {
+    position: absolute; 
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     text-align: center;
 }
-    .bildeTekst h1, .bildeTekst h2 {
-        color: #edf3f7;
-        /* USIKKER PÅ Å HA DETTE MED I HEADER
-        text-shadow: 1.5px 1.5px rgb(77, 76, 76), -2px -2px rgb(161, 160, 160);
-        */
-        
-    }
-
-.bildeTekst h1, h4 {
+   
+.picture-h1 {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-size: 3.75rem;
+    line-height: 3.4rem;
+    text-align: center;
 }
 
-.bildeTekst h2 {
-    font-size: 27px;
+.picture-h2 {
+    font-size: 1.68rem;
 }
 
-
-
-.bildeKnapp {
-    padding: 10px 30px;
+.picture-button {
+    padding: 0.62rem 1.8rem;
     font-size: 0.9rem;
-    background-color: transparent; /* Gj�r bakgrunnen gjennomsiktig */
+    background-color: transparent; 
     color: #ccc;
-    border: 2px solid rgb(55, 54, 54); /* Legg til en svart border */
-    border-radius: 10px;
+    border: 2px solid rgb(55, 54, 54); 
+    border-radius: 0.62rem;
     cursor: pointer;
-    margin-top: 30px; /* Legg til margin over knappen */
+    margin-top: 1.8rem;
 }
 
-.bildeKnapp:hover {
-    background-color: rgb(109, 107, 107); /* Endre bakgrunnsfargen ved hover til svart */
+.picture-button:hover {
+    background-color: rgb(109, 107, 107); 
 }
 
-.bildeTekst h4 {
-    margin-bottom: 20px; /* Legg til mer margin under h4-elementet */
-    margin-top: 10px;
-}
 
 
 /* ------------------------REGNSKAP DELEN ---------------------------  */
 .regnskapsSeksjon {
-    /*background-color: rgb(161, 160, 160);*/
-    margin-top: 20px;
+    margin-top: 1.25rem;
     background: linear-gradient(to bottom, rgb(161, 160, 160), rgb(255, 255, 255));
 }
 
-    .regnskapsSeksjon h2 {
-        margin-top: 50px;
-        font-family: 'Lato', sans-serif;
-        font-size: 40px;
-        color: #000;
-    }
+.regnskapsSeksjon h2 {
+    margin-top: 3.1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
 
 /* HELE BOKSEN MED KORTENE */
 .regnskapsBoks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 1.8rem;
 }
 
 
 /* INNHOLD I KORTENE */
 .regnskapsKort {
-    border-bottom-width: 4px;
-    border: 1px solid #62686b;
+    background-color: #edf0f2;
+    border: 4px solid #62686b; /* Consolidated border properties */
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
     border-left-width: 4px;
     border-right-width: 4px;
     border-style: solid;
     border-top-width: 4px;
-    background-color: #edf0f2;
-    border-radius: 5px;
-    height: 357px;
-    left: 435px;
-    top: 1092px;
-    width: 287px;
+    height: 22.3rem;
+    left: 27.1rem;
+    top: 68.25rem;
+    width: 17.93rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Plasserer innholdet vertikalt sentrert */
-    align-items: left; /* Plasserer innholdet horisontalt ventre */
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: left; /* Venstrestiller teksten */
-    margin-left: 40px;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    justify-content: center;
+    align-items: left;
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
+    text-align: left;
+    margin-left: 2.5rem;
+    margin-top: 3.12rem;
+    margin-bottom: 4.37rem;
 }
-
 /* OVERSKRIFT I KORTENE */
-.regnskapsKort h3 {
-    margin-top: 20px;
+.regnskapsKort-h3{
+    margin-top: 1.87rem;
     font-weight: bolder;
 }
 
 /* TEKSTEN I KORTENE OG HOVER */
-.regnskapsKort p {
-    font-size: 14px;
+.regnskapsKort-p{
+    font-size: 0.87rem;
 }
 
 .regnskapsKort:hover {
@@ -147,30 +145,26 @@
 
 /* BILDENE I KORTENE */
 .regnskapsSeksjon img {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 3.75rem;
+    max-height: 3.75rem;
 }
 
 .regnskapsKnapp {
     color: rgb(127, 126, 126);
-    font-size: 100%;
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
-    border-radius: 10px;
-    height: 44px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+    border-radius: 0.62rem;
+    height: 2.75rem;
     line-height: 1.15;
-    padding: 15px 30px;
-    margin-bottom: 40px;
-    margin-left:25px;
+    padding: 0.93rem 1.87rem;
+    margin: 0 1.56rem 2.5rem 0;
     border: 2px solid rgb(55, 54, 54);
-    background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
-    cursor: pointer;
+    background-color: transparent;
 }
 
 .regnskapsKnapp:hover {
     background-color: rgb(103, 102, 102);
 }
-
 
 .regnskapsKnappTekst {
     color: rgb(0, 0, 0);
@@ -180,94 +174,27 @@
 
 .siste-container {
     margin-top: auto;
-    height: 80px;
+    height: 5rem;
     width: auto;
 }
 
-/* ------------------------------- MØT OSS ----------------------------- */
-
-
-.m�tOssSeksjon h1 {
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: 'Lato', sans-serif;
-}
-
-.kontaktOssBoks {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    /*background-color: rgb(161, 160, 160);*/
-    background: linear-gradient(to top, rgb(161, 160, 160), rgb(255, 255, 255));
-}
-
-
-.kontaktOssHeader {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; /* Plasser headeren øverst */
-    margin-top: 10px;
-}
-
-    .kontaktOssHeader h2 {
-        font-family: Lato, sans-serif;
-        font-size: 40px;
-        color: #000;
-    }
-
-.kontaktOssKort {
-    margin-top: 60px;
-    padding: 10px;
-    flex: 50%;
- 
-}
-
-.kontaktOssKort-img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-    height: 240px;
-    width: 240px;
-}
-
-.kontaktOssKort h2 {
-    font-size: 30px;
-    font-weight: bolder;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.kontaktOssKort p {
-    font-size: 0.75rem; /* St�rrelse til "STATSAUTORISERT REGNSKAPSF�RER" */
-}
-
 /* --------------------------- VÅRE PARTNERE --------------------------- */
-
 .partnerBakgrunn {
-    padding: 80px;
+    padding: 5rem;
 }
 
-
-.partnerBakgrunn, h2 {
+.partnerBakgrunn, .partner-tittel{
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 1.87rem;
+  
 }
-
 .bildet {
-    margin: 0 20px;
+    margin: 0 1.25rem;
 }
 
-    .bildet img {
-        width: 100%;
-    }
+.bildet img {
+     width: 100%;
+}
 
 .slick-bilder {
     position: relative;
@@ -294,319 +221,232 @@
     display: none;
     float: left;
     height: 100%;
-    min-height: 1px;
+    min-height: 0.063rem;
 }
 
-    .bildet img {
-        display: block;
-        width: 50%; /* Gjør bildene halvparten så brede som sine konteinere */
-    }
+.bildet img {
+    display: block;
+    width: 50%; 
+ }
 
 .slick-initialized .bildet {
     display: block;
 }
 
 .partner-tittel {
-    font-family: Lato, sans-serif;
-    font-size: 40px;
-    padding: 30px;
+    font-size: 2.5rem;
+    padding: 1.87rem;
+}
+/* ------------------------------- MØT OSS ----------------------------- */
+
+.teamSeksjon h1 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.contact-box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    background: linear-gradient(to top, rgb(161, 160, 160), rgb(255, 255, 255));
+}
+.contact-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    margin-top: 0.62rem;
+}
+
+.contact-header-h2{
+    font-size: 2.5rem;
+}
+
+.contact-card {
+    margin-top: 3.75rem;
+    padding: 0.62rem;
+    flex: 50%;
+
+}
+
+.contact-img {
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+    height: 240px;
+    width: 240px;
+}
+
+.contact-card-h2 {
+    font-size: 1.87rem;
+    font-weight: bolder;
+    margin-bottom: 0.625rem;
     color: #000;
 }
-    /* --------------------------- KONTAKT OSS --------------------------- */
 
-    .kontaktBilde {
-    display: flex; /* Aktiver flexbox */
-    justify-content: center; /* Dette vil nå bli ignorert for absolutt posisjonerte barn */
-    align-items: center; /* Dette vil også bli ignorert for absolutt posisjonerte barn */
-    position: relative; /* Beholder posisjonering */
-    height: 60vh; /* Juster høyden etter behov */
-    margin-bottom: 20px;
-    margin-top: 20px;
+.contact-card-p {
+    font-size: 0.8rem; 
 }
 
-    .kontaktBilde img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Sørg for at bildet dekker containeren */
-        border-radius: inherit; /* Arv border-radius hvis nødvendig */
+/* --------------------------- KONTAKT OSS --------------------------- */
+
+.contact-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    height: 60vh; 
+    margin: 1.25rem 0;
+}
+
+.contact-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: inherit; 
     }
 
-.kontaktTekstboks {
-    position: absolute; /* Behold absolutt for å sikre teksten legger seg over bildet */
+.contact-pic-text {
+    position: absolute; 
     transform: translateY(-50%);
     top: 50%;
     text-align: center;
-    padding: 0 20px;
-    width: 50%;
+    padding: 0 1.25rem;
+    width: 70%;
 }
 
 
-.kontaktTekstboks h1 { /*Hovudtittel*/
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    letter-spacing: 2px;
-    line-height: 20px;
+.contact-pic-text h1 { /*Hovudtittel*/
+    font-size: 1.56rem;
+    letter-spacing: 0.125rem;
+    line-height: 1.25rem;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bolder;
 }
 
-.kontaktTekstboks p { 
-    padding-top: 20px; /*Avstand til overskrift*/
-    padding-bottom: 15px;
+.contact-pic-text p { 
+    padding-top:1.25rem; 
+    padding-bottom: 0.93rem;
     color: rgb(255, 255, 255);
-    font-size: 15px;
-    line-height: 40.3px;
-    font-family: 'Varela Round', sans-serif;
-
+    font-size: 0.93rem;
+    line-height: 2.519rem;
 }
-    .kontaktTekstboks a,p {
-        font-family: 'Varela Round', sans-serif;
-    }
-
+    
 .kontaktKnapp { /*Kontakt oss-knapp*/
-    display: inline-block; /*Gjer at boksen ikkje tek meir plass enn innholdet + marg*/
+    display: inline-block; 
     border: 2.67px double #444749;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #9ea6aa;
     box-shadow: 0 0 0 1px rgb(0, 0, 0);
-    font-size: 17px;
+    font-size: 1.06rem;
     font-weight: bolder;
-    line-height: 32px;
+    line-height: 2rem;
     text-align: center;
     color: rgb(0, 0, 0);
-    padding: 15px 14px;
+    padding: 0.93rem 0.87rem;
 }
+
 
 /* ---------------------------RESPONSIVITET ---------------------------*/
-@media (max-width:1026px) {
-      
-    .regnskapsBoks {
-        justify-content:center;
-    }
-      
-
-    .bildeKnapp {
-        margin-top: 5px;
-            
+@media (max-width: 790px) {
+    /*Meet us*/
+    .contact-card-h2 {
+        font-size: 1.5rem;
     }
 
-    /*Bok*/
-    .kontaktTekstboks p{
-        padding-bottom:2px;
-        padding-top:1px;
-    }
-    .kontaktTekstboks {
-        padding-top: 0px;
-        width:100%
+    /*CONTACT*/
+    .contact-pic-text {
+        width: 80%;
     }
 }
 
-@media (max-width:769px) {
-    .kontaktOssBoks {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 675px) {
+    .picture-text{
+        top: 55%;
     }
-    .bildeKnapp {
-        margin-top: 5px;
+    .picture-h1 {
+        font-size:  2.5rem;
+        line-height: 3rem;
     }
-
-    .bildeTekst h2 {
-        font-size: 25px;
+    .picture-h2 {
+        font-size: 1.2rem;
     }
-}
-
-@media (max-width:717px) {
-    .kontaktOssBoks {
-        display: flex;
-        flex-direction: column;
-    }
-    .bildeTekst h1 {
-        font-size: 50px;
+    .picture-button {
+        margin-top: 0.5rem;
     }
 
-    .bildeTekst h2 {
-        font-size: 18px;
-    }
- 
-    /* SKYGGE/FARGE PÅ HEADING */
-    .bildeTekst h1, h2, .kontaktOssHeader h1 {
-        font-weight: bolder;
-    }
-
-  
-}
-
-@media (max-width:653){
-    .regnskapsKort {
-        margin-left:20px;
-}
-    .regnskapsKnapp {
-     margin-left:0px;
-    }
-
-}
-
-@media (max-width: 529px) {
-
-
-    /*Bilde seksjon*/
-
-    .bildeTekst h2 {
-        padding: 0px;
-        font-size: 15px;
-    }
-    .bildeKnapp {
-        margin-top: 0px;
-    }
-
-    /*kort*/
+    /*Kort*/
     .regnskapsSeksjon h2 {
-        margin-top: 30px;
-        font-size: 30px;
-        color: #000;
+  
+        font-size: 2rem;
     }
-    .regnskapsKort {
-        margin-left:0px;
+    .regnskapsKort{
+        margin-left: 0.5rem;
     }
-
-    /*Om oss seksjonen */
-    .kontaktOssKort {
-        flex: 100%; /* Gjør at kortene tar full bredde av skjermen */
-    }
-    .kontaktOssKort img {
-        max-width: 250px;
-    }
-
-    .kontaktOssKort p {
-        font-size: 1rem; /* Justerer skriftstørrelsen ned */
-    }
-
-    /* PARTNER SEKSJONEN */
-
-    .partnerBakgrunn{
-        padding:30px;
-    }
-
-    .partner-tittel {
- 
-        font-size: 34px;
-    }
-        /*Bok seksjonen*/
-
-    .kontaktKnapp{
-        font-size:20px;
-    }
-    .kontaktTekstboks {
-        transform: translateY(-55%);
-        padding-left: 10px;
-        width: 90%;
-    }
-
-    .kontaktTekstboks h1 {
-        font-size: 14px;
-    }
-
-    .kontaktKnapp {
     
-        font-size: 15px;
+    /*Møt oss*/
+    .contact-box {
+        display: flex;
+        flex-direction: column;
     }
-    }
-
-@media (max-width: 429px) {
-    .bildeTekst h2 {
-        padding: 0px
-    }
-
-    .bildeTekst h1 {
-        font-size: 35px;
-    }
-
-    .bildeKnapp {
-        padding: 5px 20px;
-        font-size: 0.7rem;
-    }
-
-    .bildeSeksjon img {
-        height: 200px;
-    }
-
-    .partnerBakgrunn {
-        padding: 20px;
-    }
-
-
-    .kontaktOssKort h1 {
-        font-size: 15px;
-    }
-
-    .kontaktOssKort-img {
-        height: 200px;
-        width: 200px;
-    }
-
-    .kontaktOssKort p {
-        font-size: 0.7rem;
-    }
-
-    .kontaktTekstboks {
-        padding-top: 50px;
-    }
-    .kontaktTekstboks p {
-       
-        font-size: 14px;
-    }
-    .kontaktTekstboks h1 {
-        font-size: 15px;
-        line-height: 1;
-    }
-
-    .kontaktKnapp {
-        
-        padding: 10px 10px;
+    .contact-card-p{
+        font-size: 1rem;
     }
 }
- @media (max-width: 281px) {
+@media (max-width: 495px) {
+    .picture-h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .picture-h2 {
+        font-size: 1rem;
+    }
 
+    /*Kort*/
+    .regnskapsSeksjon h2 {
+        font-size: 1.5rem;
+    }
+    
+    .partner-tittel {
+        font-size: 2rem;
+        padding: 1rem;
+    }
 
-/*Bilde seksjonen*/
-
-     .bildeTekst h1 {
-         font-size: 25px;
-       }
-      bildeTekst h2 {
-       padding: 0px;
-      }
-
-       .bildeKnapp {
-         padding: 5px 10px;
-          font-size: 0.7rem;
-      }
-
-    .bildeTekst h2 {
-     font-size: 15px;
-                }
-
-
-                /*Kort seksjoen*/
-
-                .regnskapsKnapp {
-                    font-size: 15px;
-                    padding: 30px 30px;
-                }
-
-
-                /*Bok seksjonen*/
-
-                .kontaktTekstboks h1 {
-                    font-size: 15px;
-                }
-
-                .kontaktTekstboks p {
-                    font-size: 15px;
-                }
-
-                .kontaktKnapp {
-                    font-size: 10px;
-                }
+    /*Kontakt*/
+    .contact-pic-text h1{
+        font-size: 1.3rem;
+    }
+    .contact-header-h2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 395px) {
+    .picture-text {
+        top: 49%;
+    }
+    .picture-h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .picture-h2 {
+        font-size: 0.8rem;
+    }
+    .picture-button {
+        padding: .4rem 1rem;
+        margin-top: .1rem;
+        font-size: .5rem;
+    }
+    .contact-pic-text h1 {
+        font-size: 1rem;
+    }
+    .contact-pic-text p { 
+        font-size: 0.9rem;
+    }
 }
