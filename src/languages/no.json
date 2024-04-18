@@ -147,11 +147,12 @@
   
 "approvals":"Godkjenninger",
 "get_in_touch":"Ta kontakt",
-"copyright":"M&N regnskap. Opphavsrett ©"
+"copyright":"M&N regnskap. Opphavsrett ©",
 
-
-
-
+"welcome_message":"Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.",
+ "chat":"Chat med oss!",
+ "answer":"Vi svarer så fort vi kan.",
+ "message_placeholder":"Skriv inn meldingen din ..."
 }
 
 

@@ -132,7 +132,17 @@
 
   "approvals":"Approvals",
   "get_in_touch":"Get in touch",
-  "copyright":"M&N Accounting. Copyright ©"
+  "copyright":"M&N Accounting. Copyright ©",
+
+
+  "welcome_message": "Hello there 👋! Welcome to the page. Let me know if you have any questions.",
+  "chat": "Chat with us!",
+  "answer": "We'll respond as soon as we can.",
+  "message_placeholder": "Enter your message..."
+
+
+
+
 
 
 
