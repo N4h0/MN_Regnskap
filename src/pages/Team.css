@@ -1,99 +1,17 @@
-* {
-    font-family: 'Varela Round', sans-serif;
-}
 
-/*TEAM SEKSJONEN */
-
-.section-white {
-    background: #fff;
-    padding: 70px 0;
-}
-
-.section-title {
+/* ------------------- OVERSKRIFTER ------------------ -*/
+.section-title,.team-item-heading,.aboutUs-title {
     font-family: Lato, sans-serif;
-    color: #000;
+  
 }
-
-.team-item {
-    color: #333; /* Mørkere for bedre kontrast mot lys bakgrunn */
-    text-align: left;
-    margin: 40px 0;
-    padding: 60px 20px 50px 20px;
-    border-radius: 8px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-.team-item:hover {
-    background: black;
-    color: white;
-}
-
-.team-item:hover h3 {
-    color: #e0e0e0;
-}
-
-.team-item h3 {
-    margin: 20px 0 1px 0 !important;
-    color: #454545;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    text-align:center
-}
-.team-item-title {
-    font-size: 16px;
-    line-height: 1.75;
-    padding: 8px;
-    text-align: center;
-}
-.section-subtitle {
-    white-space: pre-line;
-}
-
-.team-item:hover {
-    color: #ddd;
-}
-
-.team-info {
-    display: block;
-    margin-bottom: 0;
-}
-
-    .team-info p {
-        color: rgb(148, 144, 144); /* Oppdater også her for bedre kontrast */
-    }
-
-    .team-info::after {
-        background: rgb(161, 160, 160);
-        background: -webkit-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
-        background: -o-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
-        background: -moz-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
-        background: linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
-        display: inline-block;
-        vertical-align: middle;
-        content: "";
-        width: 50px;
-        height: 3px;
-        margin-top: -20px;
-    }
-
-.team-img {
-    max-width: 200px;
-    padding: 6px 6px;
-    background-color: #dedede;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 10px;
+.aboutUs-text, .team-item-title, .team-info-text{
+    font-family: 'Varela Round', sans-serif;
 }
 
 
 /*OM OSS SEKSJONEN*/
+
+/* ------------------ HOVER FOR BEGGE KORTENE ------------------ */
 
 .aboutUs_box_hero_text:hover {
     background-color: rgb(161, 160, 160);
@@ -101,37 +19,26 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translateX(6px);
 }
-.aboutUs_box_hero_image {
+.aboutUs_box_hero_image,.aboutUs_box_hero_right  {
     transition: background-color 0.3s ease;
-    border-radius: 10px;
-    margin-right: 10px;
-    padding: 10px;
+    border-radius: 0.62rem;
+    margin-right: 0.62rem;;
+    padding: 0.62rem;
 }
-    .aboutUs_box_hero_image:hover {
-        background-color: rgb(161, 160, 160);
-        transform: scale(1.1);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        transform: translateX(6px);
-    }
+
+.aboutUs_box_hero_image:hover {
+    background-color: rgb(161, 160, 160);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(6px);
+}
+
+/* ------------------ BILDET BOKS ------------------ */
 .bilde-seksjon-img {
-    border-radius: 10px;
+    border-radius: 0.62rem;
 }
 
-.aboutUs_box_hero_text {
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.aboutUs_box_hero_text h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: bolder;
-}
-.aboutUs_box_hero_text p {
-    font-size: 16px;
-    line-height: 1.75;
-    text-align: left;
-    border-radius: 10px;
-}
+/* ------------------ TEXT BOKS ------------------ */
 
 .aboutUs {
     width: 100%;
@@ -150,87 +57,132 @@
     gap: 3rem;
 }
 
-    .aboutUs_box_hero.first {
-        grid-template-areas: "tekst bilde";
-    }
-
-    /* For den andre seksjonen hvor teksten er til h�yre */
-    .aboutUs_box_hero.second {
-        grid-template-areas: "bilde tekst";
-    }
-
-.aboutUs_box_hero_right:hover, .aboutUs_box_hero_left:hover {
-    background-color: #e3f1f8;
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: translateX(6px);
-}
-
-.aboutUs_box_hero_right {
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
-    margin-right: 10px;
-    padding: 10px;
-}
-
 .aboutUs_box_hero_left {
     transition: background-color 0.4s ease;
-    border-radius: 10px;
-    margin-left: 10px;
-    padding: 10px;
-    margin-top: 40px;
+    border-radius: 0.62rem;
+    margin-left: 0.62rem;
+    padding: 0.62rem;
+    margin-top: 2.5rem;
 }
 
-    .aboutUs_box_hero_left h1, .aboutUs_box_hero_right h1 {
-        margin-top: 20px;
-        font-size: 3rem;
-        line-height: .5;
-        font-family: 'Lato', sans-serif;
-        font-weight: bolder;
-    }
-
-    .aboutUs_box_hero_left p, .aboutUs_box_hero_right p {
-        margin-top: 30px;
-        font-size: 1rem;
-        line-height: 1.5;
-        text-align: left;
-        padding: 10px;
-        line-height: 28px;
-    }
-
-.aboutUs_box_title {
-    margin-top: 5rem;
+.aboutUs-title {
+     margin-top: 1.25rem;
+     font-size: 3rem;
+     line-height: .5;
+     font-weight: bolder;
 }
 
-    .aboutUs_box_title h2 {
-        font-size: 3rem;
-        line-height: 1;
-    }
+ .aboutUs-text {
+     margin-top:1.8rem;
+     font-size: 1rem;
+     line-height: 1.7;
+     text-align: left;
+     padding: 0.62rem;
+}
 
-    .aboutUs_box_title p {
-        font-size: 1.5rem;
-        line-height: 1.2;
-        width: 40%;
-    }
 
 .bilde-seksjon-img {
-    border-radius: 10px;
+    border-radius: 0.62rem;
 }
 
-.bold-text {
-    font-weight: 1200;
+.aboutUs_box_hero.first {
+    grid-template-areas: "tekst bilde";
+ }
+
+.aboutUs_box_hero.second {
+    grid-template-areas: "bilde tekst";
+ }
+
+/*TEAM SEKSJONEN */
+
+.section-white {
+    background: #fff;
+    padding: 70px 0;
 }
 
+.section-title {
+    color: #000;
+}
+
+.team-item {
+    color: #333; /* Mørkere for bedre kontrast mot lys bakgrunn */
+    text-align: left;
+    margin: 40px 0;
+    padding: 60px 20px 50px 20px;
+    border-radius: 8px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.team-item:hover {
+    background: #000;
+    color: #fff;
+}
+
+.team-item-heading {
+    margin: 1.25rem 0 0.063rem 0;
+    color: #454545;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    text-align:center
+}
+.team-item-title {
+    font-size: 1rem;
+    line-height: 1.75;
+    padding: 0.5rem;
+    text-align: center;
+}
+.section-subtitle {
+    white-space: pre-line;
+}
+
+.team-info {
+    display: block;
+    margin-bottom: 0;
+}
+
+.team-item-title,.team-info-text{
+    color: #949090;
+    
+}
+
+.team-info::after {
+    background: rgb(161, 160, 160);
+    background: -webkit-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
+    background: -o-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
+    background: -moz-linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
+    background: linear-gradient( 135deg, #6B02FF 0%, #985BEF 100% );
+    display: inline-block;
+    vertical-align: middle;
+    width: 4.12rem;
+    height:0.2rem;
+    margin-top: -1.25rem;
+}
+
+.team-img {
+    max-width: 12.5rem;
+    padding: 0.375rem 0.375rem;;
+    background-color: #dedede;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 0.62rem;
+}
 
 @media (max-width:939px) {
     .team-img {
-        max-width: 150px;
+        max-width: 9.3rem;
     }
 }
 
 @media (max-width:855px) {
     .team-img {
-        max-width: 130px;
+        max-width: 8.1rem;
     }
 }
 
@@ -244,7 +196,7 @@
     }
 
     .team-img {
-        max-width: 250px;
+        max-width: 15.6rem;
     }
 }
 

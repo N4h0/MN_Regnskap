@@ -20,9 +20,9 @@ function Test({ language }) {
             <div className='aboutUs_box'>
                 <div className= "aboutUs_box_hero first">
                     <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
-                        <h1>{data.omOssOverskrift1}</h1>
-                        <p>{data.omOssBrødtekst1}</p>
-                        <p>{data.omOssBrødtekst2}</p>
+                        <h1 className='aboutUs-title'>{data.omOssOverskrift1}</h1>
+                        <p className='aboutUs-text'>{data.omOssBrødtekst1}</p>
+                        <p className='aboutUs-text'>{data.omOssBrødtekst2}</p>
                     </div>
                     <div className='aboutUs_box_hero_image' style={{ gridArea: 'bilde' }}>
                         <div className="bilde-seksjon-img">
@@ -38,10 +38,10 @@ function Test({ language }) {
                         </div>
                     </div>
                     <div className='aboutUs_box_hero_text' style={{ gridArea: 'tekst' }}>
-                        <h1>Oss</h1>
-                        <p>{data.omOssBrødtekst3}</p>
+                        <h1  className='aboutUs-title'>{data.about}</h1>
+                        <p className='aboutUs-text'>{data.omOssBrødtekst3}</p>
                         <div className='bold-text'>
-                            <p>{data.omOssBrødtekst4}</p>
+                            <p className='aboutUs-text'>{data.omOssBrødtekst4}</p>
                         </div>
                     </div>
                 </div>
@@ -58,10 +58,10 @@ function Test({ language }) {
                                 <div className="text-center">
                                     <img src="./MoosaComp.jpg" className="team-img" alt="pic" />
                                 </div>
-                                <h3>Moosa Ali Rashid</h3>
+                                <h3 className='team-item-heading'>Moosa Ali Rashid</h3>
                                 <div className="team-info">
-                                        <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p>{data.moosa_text}</p>
+                                        <p className="team-item-title">{data.charted_accountant}</p>
+                                    <p className='team-info-text'>{data.moosa_text}</p>
                                 </div>
                             </div>
                         </div>
@@ -70,10 +70,10 @@ function Test({ language }) {
                                 <div className="text-center">
                                     <img src="./NailaComp.jpg" className="team-img" alt="pic" />
                                 </div>
-                                <h3>Naila Sohail Khokhar</h3>
+                                <h3 className='team-item-heading'>Naila Sohail Khokhar</h3>
                                 <div className="team-info">
-                                    <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p> {data.naila_text} </p>
+                                    <p className="team-item-title">{data.charted_accountant}</p>
+                                    <p className='team-info-text'> {data.naila_text} </p>
                                 </div>
                             </div>
                         </div>
@@ -82,10 +82,10 @@ function Test({ language }) {
                                 <div className="text-center">
                                     <img src="./HaseebComp.jpg" className="team-img" alt="pic" />
                                 </div>
-                                <h3>Haseeb Talib</h3>
+                                <h3 className='team-item-heading'>Haseeb Talib</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p> {data.haseeb_text} </p>
+                                    <p className='team-info-text'> {data.haseeb_text} </p>
                                 </div>
                             </div>
                         </div>
@@ -94,10 +94,10 @@ function Test({ language }) {
                                 <div className="text-center">
                                     <img src="./IbrahimComp.jpg" className="team-img" alt="pic" />
                                 </div>
-                                <h3>Ibrahim Mughal</h3>
+                                <h3 className='team-item-heading'>Ibrahim Mughal</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p> {data.ibrahim_text} </p>
+                                    <p className='team-info-text'> {data.ibrahim_text} </p>
                                 </div>
                             </div>
                         </div>
@@ -106,10 +106,10 @@ function Test({ language }) {
                                 <div className="text-center">
                                     <img src="./AsadComp.webp" className="team-img" alt="pic" />
                                 </div>
-                                <h3>Asad Haider Khan</h3>
+                                <h3 className='team-item-heading'>Asad Haider Khan</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p> {data.asad_text} </p>
+                                    <p className='team-info-text'> {data.asad_text} </p>
                                 </div>
                             </div>
                         </div>
@@ -118,10 +118,10 @@ function Test({ language }) {
                                 <div className="text-center">
                                     <img src="./NitashaComp.jpg" className="team-img" alt="pic" />
                                 </div>
-                                <h3>Nitasha Khan</h3>
+                                <h3 className='team-item-heading'>Nitasha Khan</h3>
                                 <div className="team-info">
                                     <p className="team-item-title">{data.CharteredAccountant}</p>
-                                    <p> {data.nitasha_text} </p>
+                                    <p className='team-info-text'> {data.nitasha_text} </p>
                                 </div>
                             </div>
                         </div>
