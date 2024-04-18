@@ -9,8 +9,6 @@ import { LanguageContext } from '../languages/LanguageContext';
 function Contact() {
     const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
 
-    // const [showSuccessMessage, setShowSuccessMessage] = useState(false); 
-
     // Funksjon for å sende e-post via emailjs
     const sendEmail = (e) => {
         e.preventDefault();
@@ -46,7 +44,7 @@ function Contact() {
                         <div className="hero-body">
                             <div className="hero-text">
                                 <h1 className="hero-heading">{textData.contactPageTitle}</h1>
-                                <p>{textData.contactPageDescription}</p>
+                                <p className="hero-p">{textData.contactPageDescription}</p>
 
                             </div>
                         </div>

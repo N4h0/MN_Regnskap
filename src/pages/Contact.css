@@ -1,11 +1,10 @@
 /* ------------------- OVERSKRIFTER ------------------ -*/
-.hero-heading h1 {
-
+.hero-heading {
     font-size: 3rem;
     line-height: 1.25;
 }
 
-.hero-heading h1, .support-card h4, h5, p, .contact-us-page {
+.hero-heading, .support-card h4, h5, p, .contact-us-page {
     font-family: 'Lato', sans-serif;
     font-weight: 6000;
 }
@@ -14,27 +13,27 @@ h4 {
 
     color: #2e475d;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 h5 {
 
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.56;
     margin: 1rem 0;
 }
 
 /* ------------------ VENSTRE KORT ------------------ */
 .support-card second span {
-    margin-bottom: 24px;
+    margin-bottom: 1rem;
     color: #2e475d;
 }
 .support-card span, a {
     color: #000;
 }
 
-p {
-    font-size: 16px;
+.hero-p {
+    font-size: 1rem;
     line-height: 1.75;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -42,7 +41,7 @@ p {
 
 /* ------------------ DIVEN HVOR BEGGE KORTENE ER INNI ------------------ */
 .main-wrapper {
-    max-width: 1080px;
+    max-width: 67.5rem;
     margin: 0;
     padding: 0 1rem;
     display: flex;
@@ -81,7 +80,7 @@ p {
     text-align: start;
 }
 
-    .hero-text p {
+    .hero-p {
         font-family: 'Varela Round', sans-serif;
         font-weight: 6000;
     }
@@ -99,7 +98,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -60px;
+    margin-top: -3.75rem;
 }
 
 .support-card { /* venstre kort*/
@@ -107,10 +106,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 540px;
-    padding: 32px 40px;
+    height: 33.75rem;
+    padding: 2rem 2.5rem;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: 1px solid #80868c;
     box-shadow: 0px 4px 10px rgba(64, 62, 62, 0.5);
 }
@@ -147,7 +146,7 @@ a {
 }
 
 .support-card a {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 /* ------------------ KNAPPEN TIL SEND SKJEMA ------------------ */
@@ -155,11 +154,11 @@ a {
     text-decoration: none;
     color: white;
     background-color: rgb(161, 160, 160);
-    border-radius: 3px;
+    border-radius: 0.188rem;
     padding: 0.9em 1.388em;
     font-size: .9375rem;
     min-width: 8.555rem;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 .btn-common:hover{
@@ -167,13 +166,13 @@ a {
 }
 .alert {
     position: fixed;
-    top: 20px;
+    top: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: #4caf50;
     color: white;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 0.938rem;
+    border-radius: 0.313rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
@@ -243,7 +242,7 @@ a {
 }
 
 .connect-detail {
-    width: 400px;
+    width: 25rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -267,7 +266,7 @@ a {
 }
 
     .detail-item span {
-        margin-bottom: 5px;
+        margin-bottom: 0.313rem;
     }
 
 .fax {
@@ -285,8 +284,8 @@ a {
 .form-input { 
     width: 100%;
     margin-bottom: 8px;
-    width: 400px;
-    height: 60px;
+    width: 25rem;
+    height: 3.75rem;
 }
 
     .form-input input { 
@@ -330,14 +329,14 @@ a {
 
     .btn-common {
         font-size: .7rem;
-        margin-top: 13px;
+        margin-top: 0.813rem;
     }
 
     .connect-title {
         margin-bottom: 2rem;
     }
 
-    h1 {
+    .hero-heading {
         font-size: 2rem;
     }
 }
