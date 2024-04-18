@@ -101,7 +101,7 @@ function Chatbot() {
                     <div className="chatBody" ref={chatBodyRef}>
                         {combinedMessages.map((msg, index) => (
                             <div key={index} className={msg.type === 'user' ? "chatMessage" : "botMessage"}>
-                                <div className="messageContent">{msg.content}</div>
+                                <p className="messageContent">{msg.content}</p>
                                 <div className="messageTime">{msg.time}</div>
                             </div>
                         ))}
