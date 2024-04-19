@@ -54,6 +54,7 @@ export default class NavBar extends Component {
                     <NavLink to="/MN_Regnskap/om-oss" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.about}</NavLink>
                     <NavLink to="/MN_Regnskap/frister" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.deadlines}</NavLink>
                     <NavLink to="/MN_Regnskap/kontakt" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.contact_us}</NavLink>
+                    <NavLink to="/MN_Regnskap/tjenester" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.tjenester}</NavLink>
                     <div className="dropDown" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
                         <a className="navTekst">
                             <img src={language === 'norsk' ? "/MN_Regnskap/norge.png" : "/MN_Regnskap/usa.png"} alt={language === 'norsk' ? "Norwegian Flag" : "US Flag"}  />
@@ -61,13 +62,12 @@ export default class NavBar extends Component {
                         </a>
                         {this.state.isMenuOpen && (
                             <div className="dropDownContent">
-                                <button onClick={() => { this.context.setLanguage('english'); this.closeMenu(); }} className="text-dark nav-link">
+                                <button onClick={() => { this.context.setLanguage('english'); this.closeMenu();}}>
                                     <img  src="/MN_Regnskap/usa.png" alt="US Flag"/> {labels.english}
                                 </button>
-                                <button onClick={() => { this.context.setLanguage('norsk'); this.closeMenu(); }} className="text-dark nav-link">
+                                <button onClick={() => { this.context.setLanguage('norsk'); this.closeMenu();}}>
                                     <img src="/MN_Regnskap/norge.png" alt="Norwegian Flag" /> {labels.norwegian}
                                 </button>
-
                             </div>
                         )}
                     </div>

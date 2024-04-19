@@ -35,6 +35,11 @@
 .navTekst.active {
     color: #4064d7;
 }
+/*Gjør at endre-språk-knappene fyller ut hele boksen*/
+.dropDownContent button { 
+    display: block;
+    width: 100%;
+}
 
 /* Hover effekter */
 .navTekst:hover, .dropDownContent button:hover {
@@ -56,6 +61,8 @@
     min-width: 160px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Mer subtil skygge */
     padding: 0.6rem 0; /* Justert padding for å fjerne vertikal padding */
+    right: 0; /*Gjør at den ikke overflower til høgre*/
+    left: auto;
     z-index: 1;
     border: none; /* Ingen ramme */
 }
@@ -77,24 +84,29 @@
     margin-right: 5px;
 }
 
+
 /* Media Queries */
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 1031px) {
     .topnav, .topnav.responsive {
         justify-content: space-between;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .right-aligned-items .navTekst, .topnav .icon,
-    .topnav a.icon, .topnav .icon {
-        display: none;
-    }
+        .right-aligned-items .navTekst, .topnav .icon,
+        .topnav a.icon, .topnav .icon {
+            display: none;
+        }
 
-    .topnav a.icon, .topnav .icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 2.4rem;
+        .topnav a.icon, .topnav .icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 2.4rem;
+        }
+
+    .dropDownContent {
+        left: 0; /*Siden vi har right:0 når den er stor må vi endre til left her*/
     }
 
     .topnav.responsive .right-aligned-items, .topnav.responsive a {
