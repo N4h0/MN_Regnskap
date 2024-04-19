@@ -1,38 +1,112 @@
-﻿import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots, faTimes, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import './Chatbot.css';
 
 function Chatbot() {
-    const chatBodyRef = React.useRef(null);
+    const chatBodyRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
+    const [messages, setMessages] = useState([]);
+
+    const WELCOME_MESSAGE = {
+        type: 'bot',
+        content: 'Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.',
+        time: new Date().toLocaleTimeString('nb-NO', { hour: '2-digit', minute: '2-digit' })
+    };
+    
+
+    const sendMessage = (content, type = 'user') => {
+        if (content.trim()) {
+            const time = new Date().toLocaleTimeString('nb-NO', { hour: '2-digit', minute: '2-digit' });
+            setMessages(prev => [...prev, { type, content, time }]);
+        }
+    };
+    useEffect(() => {
+        if (isOpen && messages.length === 0) {
+            setMessages([WELCOME_MESSAGE]);
+        }
+        if (chatBodyRef.current) {
+            chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
+        }
+    }, [isOpen, messages]);
+
+
+    return (
+        <div className="Chat">
+            {!isOpen && (
+                <button className="chatButton" onClick={() => setIsOpen(true)} aria-label="Start chat">
+                    <FontAwesomeIcon icon={faCommentDots} />
+                </button>
+            )}
+            {isOpen && (
+                <ChatDialog onSend={sendMessage} onClose={() => setIsOpen(false)} messages={messages} />
+            )}
+        </div>
+    );
+}
+
+function ChatDialog({ onSend, onClose, messages }) {
+    return (
+        <div className="chatDialog">
+            <ChatHeader onClose={onClose} />
+            <ChatBody messages={messages} />
+            <ChatFooter onSend={onSend} />
+        </div>
+    );
+}
+
+function ChatHeader({ onClose }) {
+    return (
+        <div className="chatHeader">
+            <img src="/MN_Regnskap/mn-regnskap-logo.webp" alt="Logo" className="chatLogo" />
+            <div className="chatHeaderText">
+                <h7 className="chatheader-overskrift">Chat med oss!</h7>
+                <span>Vi svarer så fort vi kan.</span>
+            </div>
+            <button className="closeChat" onClick={onClose}>
+                <FontAwesomeIcon icon={faTimes} />
+            </button>
+        </div>
+    );
+}
+
+function ChatBody({ messages }) {
+    const chatBodyRef = useRef(null);
+    useEffect(() => {
+        if (chatBodyRef.current) {
+            chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
+        }
+    }, [messages]);
+
+    return (
+        <div className="chatBody" ref={chatBodyRef}>
+            {messages.map((msg, index) => (
+                <div key={index} className={msg.type === 'user' ? "chatMessage" : "botMessage"}>
+                    <p className="messageContent">{msg.content}</p>
+                    <div className="messageTime">{msg.time}</div>
+                </div>
+            ))}
+        </div>
+    );
+}
+
+function ChatFooter({ onSend }) {
     const [message, setMessage] = useState('');
-    const [combinedMessages, setCombinedMessages] = useState([]);
 
-    const toggleChat = () => {
-        setIsOpen(!isOpen);
-    };
+    const handleInputChange = e => setMessage(e.target.value);
 
-    const handleInputChange = (e) => {
-        setMessage(e.target.value);
-    };
-
-    const sendWelcomeMessage = () => {
-        if (combinedMessages.length === 0) { // Sjekk at det ikke allerede er meldinger
-            const welcomeMessage = { type: 'bot', content: 'Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.', time: new Date().toLocaleTimeString('nb-NO', { hour: '2-digit', minute: '2-digit' }) };
-            setCombinedMessages([welcomeMessage]);
+    const handleKeyPress = event => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            sendMessage();
         }
     };
 
-
     const sendMessage = () => {
         if (message.trim() !== '') {
-            const currentDate = new Date();
-            const formattedTime = currentDate.toLocaleTimeString('nb-NO', {hour: '2-digit', minute: '2-digit'});
-            const newUserMessage = { type: 'user', content: message, time: formattedTime };
-            setCombinedMessages(prev => [...prev, newUserMessage]);
-
+            onSend(message);
             setMessage('');
+            const formattedTime = new Date().toLocaleTimeString('nb-NO', {hour: '2-digit', minute: '2-digit'});
 
             fetch('https://n4h0.pythonanywhere.com/api/chatbot', {
                 method: 'POST',
@@ -44,81 +118,29 @@ function Chatbot() {
                 .then(response => response.json())
                 .then(data => {
                     const newBotResponse = { type: 'bot', content: data, time: formattedTime };
-                    setCombinedMessages(prev => [...prev, newBotResponse]);
+                    onSend(newBotResponse.content, 'bot');
                 })
                 .catch((error) => {
-                    console.error('Feil med returnering av melding fra robot:', error);
+                    console.error('Error fetching response from server:', error);
                     const errorMessage = { type: 'bot', content: "Det skjedde en feil, kjører serveren?", time: formattedTime };
-                    setCombinedMessages(prev => [...prev, errorMessage]);
+                    onSend(errorMessage.content, 'bot');
                 });
         }
     };
 
-    useEffect(() => {
-        if (chatBodyRef.current) {
-            chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
-        }
-    }, [combinedMessages]);
-    useEffect(() => {
-        if (isOpen) {
-            sendWelcomeMessage();
-        }
-        // Fjern avhengighet til combinedMessages for å unngå re-kjøring når de endres
-    }, [isOpen]);
-
-    const handleKeyPress = (event) => {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            sendMessage();
-        }
-    };
-
     return (
-        <div className="Chat">
-            {!isOpen && (
-                <button className="chatButton" onClick={toggleChat} aria-label="Start chat">
-                    <FontAwesomeIcon icon={faCommentDots} />
-                </button>
-            )}
-            {isOpen && (
-                <div className="chatDialog">
-                    <div className="chatHeader">
-                        <img src="/MN_Regnskap/mn-regnskap-logo.webp" alt="Logo" className="chatLogo" />
-                        <div className="chatHeaderText">
-                            <h7 className="chatheader-overskrift">
-                                Chat med oss!
-                            </h7> 
-                            <span>
-                                Vi svarer så fort vi kan
-
-                            </span>
-                        </div>
-                        <button className="closeChat" onClick={toggleChat}>
-                            <FontAwesomeIcon icon={faTimes} />
-                        </button>
-                    </div>
-
-                    <div className="chatBody" ref={chatBodyRef}>
-                        {combinedMessages.map((msg, index) => (
-                            <div key={index} className={msg.type === 'user' ? "chatMessage" : "botMessage"}>
-                                <div className="messageContent">{msg.content}</div>
-                                <div className="messageTime">{msg.time}</div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="chatFooter">
-                        <input type="text"
-                            className="messageInput"
-                            placeholder="Skriv inn meldingen din ..."
-                            value={message}
-                            onChange={handleInputChange}
-                            onKeyDown={handleKeyPress} />
-                        <button className="SendMessage" onClick={sendMessage}>
-                            <FontAwesomeIcon icon={faPaperPlane} />
-                        </button>
-                    </div>
-                </div>
-            )}
+        <div className="chatFooter">
+            <input
+                type="text"
+                className="messageInput"
+                placeholder="Skriv inn meldingen din ..."
+                value={message}
+                onChange={handleInputChange}
+                onKeyDown={handleKeyPress}
+            />
+            <button className="SendMessage" onClick={sendMessage}>
+                <FontAwesomeIcon icon={faPaperPlane} />
+            </button>
         </div>
     );
 }

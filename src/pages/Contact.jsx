@@ -9,8 +9,6 @@ import { LanguageContext } from '../languages/LanguageContext';
 function Contact() {
     const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
 
-    // const [showSuccessMessage, setShowSuccessMessage] = useState(false); 
-
     // Funksjon for å sende e-post via emailjs
     const sendEmail = (e) => {
         e.preventDefault();
@@ -46,7 +44,7 @@ function Contact() {
                         <div className="hero-body">
                             <div className="hero-text">
                                 <h1 className="hero-heading">{textData.contactPageTitle}</h1>
-                                <p>{textData.contactPageDescription}</p>
+                                <p className="hero-p">{textData.contactPageDescription}</p>
 
                             </div>
                         </div>
@@ -57,15 +55,15 @@ function Contact() {
                         <div className="supports">
                             <div className="support-card first">
                                 <img src="./KontaktOss1.WebP" className="support-card-image" />
-                                <h4>{textData.talkToUs}</h4>
+                                <h2 className='support-card-h2'>{textData.talkToUs}</h2>
                                 <span>{textData.yourFeedbackIsImportant}</span>
-                                <a href={`tel:${textData.phoneNumber}`}>{textData.phoneNumber}</a>
-                                <h4>{textData.whenInNeed}</h4>
+                                <a className="support-card-a" href={`tel:${textData.phoneNumber}`}>{textData.phoneNumber}</a>
+                                <h2 className='support-card-h2'>{textData.whenInNeed}</h2>
                                 <span>{textData.helpFromFriends}</span>
                             </div>
                             <div className="support-card second">
                                 <img src="./KontaktOss2.WebP" className="support-card-image" alt="Melding" />
-                                <h4>{textData.requestConsultation}</h4>
+                                <h2 className='support-card-h2'>{textData.requestConsultation}</h2>
                                 <span>{textData.concentrateOnWhatYouDoBest}</span>
                                 <form onSubmit={sendEmail}>
                                     <div className="form-input">
@@ -102,18 +100,18 @@ function Contact() {
                                 </div>
                                 <div className="connect-detail">
                                     <div className="detail-item">
-                                        <h3>{textData.headOffice}</h3>
+                                        <h3 className='detail-item-h3'>{textData.headOffice}</h3>
                                         <span>{textData.officeAddress}</span>
                                     </div>
                                     <div className="detail-item">
-                                        <h5>{textData.callUs}</h5>
+                                        <h4 className='detail-item-h4'>{textData.callUs}</h4>
                                         <span>{textData.phoneNumber}</span>
                                     </div>
                                     <div className="detail-item fax">
                                         <span>{textData.email}</span>
                                     </div>
-                                    <h5>{textData.organizationNumber}</h5>
-                                    <a href={`mailto:${textData.email}`}>{textData.organizationNumberValue}</a>
+                                    <h4  className='detail-item-h4' >{textData.organizationNumber}</h4>
+                                    <a  className="support-card-a" href={`mailto:${textData.email}`}>{textData.organizationNumberValue}</a>
                                 </div>
                             </div>
                         </div>

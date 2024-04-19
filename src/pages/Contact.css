@@ -1,40 +1,42 @@
 /* ------------------- OVERSKRIFTER ------------------ -*/
-.hero-heading h1 {
 
-    font-size: 3rem;
+.hero-heading, .support-card-h2 , .detail-item-h3 {
+    font-family: 'Lato', sans-serif;
+}
+.hero-p, .section-subtitle,.team-item-title{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.hero-heading {
+    font-size: 2.5rem;
     line-height: 1.25;
 }
 
-.hero-heading h1, .support-card h4, h5, p, .contact-us-page {
-    font-family: 'Lato', sans-serif;
-    font-weight: 6000;
-}
-
-h4 { 
-
+.support-card-h2 { 
     color: #2e475d;
-    margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;  
+    font-size: 1.5rem;
+    font-weight: lighter;
+    
 }
 
-h5 {
-
-    font-size: 18px;
+.detail-item-h3{
+    font-size: 1.125rem;
     line-height: 1.56;
     margin: 1rem 0;
 }
+.detail-item-h4{
+  
+        font-size: 1.125rem;
+        line-height: 1.56;
+        margin: 1rem 0;
+}
 
 /* ------------------ VENSTRE KORT ------------------ */
-.support-card second span {
-    margin-bottom: 24px;
-    color: #2e475d;
-}
-.support-card span, a {
-    color: #000;
-}
 
-p {
-    font-size: 16px;
+
+.hero-p {
+    font-size: 1rem;
     line-height: 1.75;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -42,13 +44,10 @@ p {
 
 /* ------------------ DIVEN HVOR BEGGE KORTENE ER INNI ------------------ */
 .main-wrapper {
-    max-width: 1080px;
-    margin: 0;
+    max-width: 67.5rem;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
 }
 
@@ -58,11 +57,8 @@ p {
     background-repeat: no-repeat;
     object-fit: cover;
     height: max-content;
-    background-size: 100% 30rem;
-    /* background-position: center; */
     background-size: cover;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -73,20 +69,13 @@ p {
 .hero-text {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
     color: #ffffff;
     width: 52%;
     padding: 6rem 1rem;
     text-align: start;
 }
 
-    .hero-text p {
-        font-family: 'Varela Round', sans-serif;
-        font-weight: 6000;
-    }
-
-    /* ------------------ HØYRE KORT ------------------*/
+/* ------------------ HØYRE KORT ------------------*/
 .contact {
     display: flex;
     align-items: center;
@@ -99,7 +88,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -60px;
+    margin-top: -3.75rem;
 }
 
 .support-card { /* venstre kort*/
@@ -107,31 +96,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 540px;
-    padding: 32px 40px;
+    height: 33.75rem;
+    padding: 2rem 2.5rem;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: 1px solid #80868c;
     box-shadow: 0px 4px 10px rgba(64, 62, 62, 0.5);
-}
-
-/* ------------------ RESPONSIVITET ------------------ */
-@media (max-width: 768px) {
-    .hero-text {
-        width: 100%;
-    }
-
-    .supports {
-        display: block;
-    }
-
-    .support-card {
-        width: 100%;
-    }
-
-    .first {
-        margin-bottom: 4rem;
-    }
 }
 
 .support-card img {
@@ -140,49 +110,31 @@ p {
     margin-bottom: 24px;
 }
 
-a {
+.support-card-a {
     text-decoration: underline;
     color: rgb(20, 112, 216);
     font-weight: 1500;
+    margin-bottom: 2.5rem;
 }
 
 .support-card a {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 /* ------------------ KNAPPEN TIL SEND SKJEMA ------------------ */
 .btn-common { 
     text-decoration: none;
-    color: white;
+    color: #fff;
     background-color: rgb(161, 160, 160);
-    border-radius: 3px;
+    border-radius: 0.188rem;
     padding: 0.9em 1.388em;
     font-size: .9375rem;
     min-width: 8.555rem;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 .btn-common:hover{
-    background-color: rgb(109, 107, 107); /* Endre bakgrunnsfargen ved hover til svart */
-}
-.alert {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4caf50;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-
-@media (max-width:768px) {
-    .hero-content {
-        background-position: start;
-    }
+    background-color: rgb(109, 107, 107);
 }
 
 /* ------------------ DIVEN NEDERST ------------------ */
@@ -198,7 +150,6 @@ a {
 
 .title {
     font-size: 2rem;
-    font-weight: 1500;
     line-height: 1.38;
     color: #2e475d;
 }
@@ -221,21 +172,11 @@ a {
     width: calc(100% - 400px);
 }
 
-    .map-box img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-@media (max-width:1024px) {
-    .connect-body {
-        display: block;
-    }
-
-    .map-box {
-        width: 100%;
-    }
+.map-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .connect-body {
@@ -243,7 +184,7 @@ a {
 }
 
 .connect-detail {
-    width: 400px;
+    width: 25rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -266,42 +207,26 @@ a {
     color: black;
 }
 
-    .detail-item span {
-        margin-bottom: 5px;
-    }
+.detail-item span {
+    margin-bottom: 0.313rem;
+}
 
 .fax {
     display: flex;
     flex-direction: row;
 }
 
-.connect-detail h3 {
-    font-size: 1.5rem;
-    font-weight: 1500;
-    line-height: 1.42;
-}
-
 /* ------------------ SKJEMA ------------------ */
 .form-input { 
     width: 100%;
     margin-bottom: 8px;
-    width: 400px;
-    height: 60px;
+    width: 25rem;
+    height: 3.75rem;
 }
 
-    .form-input input { 
-        width: 100%;
-        padding: 0.5625rem 0.625rem;
-    }
-
-    .form-input textarea { 
-        width: 100%;
-        padding: 0.5625rem 0.625rem;
-    }
-
-.supports h4, .hero-heading {
-    font-family: 'Lato', sans-serif;
-    font-weight: 6000;
+.form-input input, .form-input textarea { 
+    width: 100%;
+    padding: 0.5625rem 0.625rem;
 }
 
 /* ------------------ HOVER FOR BEGGE KORTENE ------------------ */
@@ -310,6 +235,24 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
+/* ------------------ ALL MEDIA QUERIES AT THE END ------------------ */
+@media (max-width: 1024px) {
+    .connect-body {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text, .support-card {
+        width: 100%;
+    }
+    .supports {
+        display:block;
+    }
+    .first {
+        margin-bottom: 4rem;
+    }
+}
 
 @media (max-width: 450px) {
     .form-input input, .form-input textarea {
@@ -317,33 +260,26 @@ a {
     }
 }
 
-
 @media (max-width: 320px) {
     .form-input input, .form-input textarea {
         width: 60%;
     }
-
     .title {
         font-size: 1.5rem;
     }
-
-
     .btn-common {
         font-size: .7rem;
-        margin-top: 13px;
+        margin-top: 0.813rem;
     }
-
     .connect-title {
         margin-bottom: 2rem;
     }
-
-    h1 {
+    .hero-heading {
         font-size: 2rem;
     }
 }
 
-@media (max-width:280) {
-
+@media (max-width: 280px) {
     .form-input input, .form-input textarea {
         width: 50%;
     }

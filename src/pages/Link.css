@@ -1,120 +1,112 @@
-.accounting-deadlines h1 {
-    color: #244368;
-    font-weight: 600;
-    font-size: 3rem;
-    margin-bottom: 10px;
-    font-family: 'Lato', sans-serif;
-}
-
+/* General Styles */
 .accounting-deadlines {
     margin: 0;
     padding: 5.34em 6.67em;
 }
 
-    .accounting-deadlines p {
-        margin: 0;
-    }
-
-.mva-avsnitt {
-    padding-top: 20px;
+.accounting-deadlines-title {
+    color: #244368;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 0.6rem;
+    font-family: 'Lato', sans-serif;
 }
 
-.regnskap-boks {
+.accounting-box-text {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.mva-paragraph {
+    padding-top: 1.25rem;
+    margin: 0;
+}
+
+.accounting-box {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Justerer barna (innholdet) til venstre */
-    max-width: 800px; /* Setter maksimal bredde p? boksen */
-    margin: 0 auto; /* Sentrerer boksen horisontalt */
-    padding: 20px; /* Legger til litt padding for ? gi teksten plass innenfor boksen */
-    box-shadow: 0 12px 20px rgba(0,0,0,0.1); /* Legger til en enkel skyggeeffekt for ? l?fte boksen fra bakgrunnen */
-    background-color: #fff; /* Setter bakgrunnsfargen til hvit for å skille den fra siden */
-    border-radius: 8px;
+    align-items: flex-start; 
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);  
+    background-color: #fff; 
+    border-radius: 0.5rem;
 }
 
-    .regnskap-boks h3 {
-        font-size: 20px;
-    }
-    .regnskap-boks h2 {
-        font-size: 30px;
-        color:#000;
-    }
+.accounting-box-h3 {
+    font-size: 1.25rem;
+}
 
-    .regnskap-boks p {
-        font-size: 15px;
-    }
+.accounting-box-title {
+    font-size: 1.87rem;
+    color: #000;
+}
 
-
+/* Download Section Styles */
 .download-section {
-    background-color: #f4f4f4; /* Lys gr� bakgrunn */
-    padding: 20px; /* Litt plass rundt innholdet */
-    margin-bottom: 20px; /* Mellomrom mellom seksjoner */
-    margin-left: auto; /* Senterer seksjonen horisontalt */
-    margin-right: auto; /* Senterer seksjonen horisontalt */
-    border-radius: 5px; /* Avrundede hj�rner */
-    max-width: 600px; /* Maksimal bredde av seksjonen */
+    background-color: #f4f4f4; 
+    padding: 1.25rem;
+    margin: 0 auto 1.25rem;
+    border-radius: 0.3rem; 
+    max-width: 37.5rem;
 }
-.download-boks h2 {
+
+.download-boks-h3 {
     color: #244368;
     font-weight: 600;
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
-  
-
 .download-links {
-    list-style: none; /* Fjerner punkttegn */
+    list-style: none;
     padding: 0;
 }
 
-    .download-links li a {
-        text-decoration: none; /* Fjerner understreking */
-        background-color: white; /* Hvit bakgrunn for lenker */
-        display: block; /* Lenker tar opp hele bredden */
-        padding: 10px; /* Litt plass rundt lenketeksten */
-        border: 1px solid #ddd; /* Lett grense rundt lenkene */
-        margin-bottom: 5px; /* Mellomrom mellom lenkene */
-        border-radius: 5px; /* Avrundede hj�rner p� lenkene */
-    }
+.download-links li a {
+    text-decoration: none; 
+    background-color: #fff; 
+    display: block; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 0.3rem; 
+    border-radius: 0.3rem;
+}
 
-        .download-links li a:hover {
-            background-color: #e9ecef; /* Lysere gr� bakgrunn ved hover */
-            text-decoration: underline; /* Understrekning for � vise aktivitet */
-        }
+.download-links li a:hover {
+    background-color: #e9ecef; 
+    text-decoration: underline; 
+}
 
-/* Responsiv styling for mindre skjermer */
+/* Responsive Styling */
 @media screen and (max-width: 650px) {
     .accounting-deadlines {
-        padding: 2em 2em;
+        padding: 2em;
     }
 }
 
-/* Responsiv styling for store skjermer (f.eks. iPad Air) */
 @media screen and (max-width: 430px) {
-    .accounting-deadlines p {
-        font-size: 10px
-    }
-}
-
-/* Responsiv styling for st?rre skjermer som 912 x 1368 */
-@media screen and (max-width: 375px) {
-    .regnskap-boks h4 {
-        font-size: 15px;
-    }
-    .regnskap-boks h2 {
-        font-size: 16px;
+    .accounting-box-text {
+        font-size: 0.6rem;
     }
 
-    .regnskap-boks p {
-        font-size: 9px;
+    .accounting-box-h3, .accounting-box-title {
+        font-size: 0.9rem; 
     }
 
-    .regnskap-boks {
-        padding: 10px;
+    .accounting-box {
+        padding: 0.6rem;
     }
 
     .download-section {
-        max-width: 250px;
-        font-size: 12px;
+        max-width: 15.6rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .accounting-box-text {
+        font-size: 0.56rem;
     }
 }

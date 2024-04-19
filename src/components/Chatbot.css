@@ -1,35 +1,32 @@
-
-/*Styling n�r chatten er lukka*/
+/* Chat-knapp når chatten er lukket */
 .Chat {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 1.25rem;
+    bottom: 1.25rem;
     background: #fff;
-    z-index: 999;
     border-radius: 70%;
-
-
+    z-index: 999;
 }
 
 .chatButton {
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 3.4rem;;
+    height: 3.4rem;;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
-/*Styling n�r chatten er �pen*/
+/* Styling når chatten er åpen */
 .chatDialog {
     background-color: #fff;
-    width: 300px;
-    border-radius: 10px;
+    width: 18.75rem;
+    border-radius: 0.62rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
@@ -38,129 +35,105 @@
 .chatHeader {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e6e6e6;
-    justify-content: space-between;
-    justify-content: flex-start; /* Elementene starter fra venstre side */
+    justify-content: flex-start;
+    border-bottom: 1.5px solid #e6e6e6;
 }
 
 .chatLogo {
-    /* Størrelse og plassering av logoen */
-    height: 70px; 
+    height: 4.3rem;
 }
 
-.chatHeaderText span {
-    font-size: 14px;
-    color: #000;
-}
 .chatHeaderText {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    color: #000;
+    font-size: 0.8rem;
 }
 
-
 .chatheader-overskrift {
-    font-size: 19px;
+    font-size: 1.18rem;
     margin: 0;
     font-weight: bold;
 }
 
 .closeChat {
-    margin-left: auto; /* Skyver denne knappen til høyre kant av headeren */
+    margin-left: auto;
     background: transparent;
     border: none;
     color: black;
     cursor: pointer;
-    padding-right: 10px;
+    padding-right: 0.62rem;
 }
 
 /* Chat-body */
 .chatBody {
-    padding: 15px;
-    height: 300px;
-    overflow-y: auto;
-    margin: 0 auto; /* Sentrer containeren */
     display: flex;
     flex-direction: column;
+    padding: 0.9rem;
+    height: 18.75rem;
+    overflow-y: auto;
+    margin: 0 auto;
     background: #f7f7f7;
 }
 
 .chatMessage, .botMessage {
-    font-size: 14px;
-}
-
-.messageTime {
-    font-size: 0.75rem; /* Adjust font size as needed */
-    color: #666; /* A neutral color for timestamps */
-    padding: 0 10px; /* Adjust padding as needed */
+    margin-bottom: 10px;
+    padding: 0.5rem 0.6rem;
+    max-width: 65%;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%), 0rem 16px 16px -16px rgb(0 0 0 / 10%);
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 .chatMessage {
-    background-color: #000; /* Endret til svart */
-    color: #fff; /* Endret tekstfarge til hvit */
-
-    align-self: flex-end;
-    background: #333;
+    background-color: #333;
     color: #fff;
-    border-radius: 18px 18px 0 18px;
+    border-radius: 1.125rem 1.125rem 0 1.125rem;
+    align-self: flex-end;
 }
 
 .botMessage {
-    background-color: #e9ecef;
-    align-self: flex-start;
-    background: #fff;
+    background-color: #fff;
     color: #333;
-    border-radius: 18px 18px 18px 0;
+    border-radius: 1.125rem 1.125rem 1.125rem 0;
+    align-self: flex-start;
 }
-.botMessage, .chatMessage {
-    margin-bottom: 10px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    padding: 9px 10px;
 
-    max-width: 65%;
+.messageContent {
+    font-size: 0.7rem;
+    margin: 0.25rem 0;
+}
+
+.messageTime {
     font-size: 0.6rem;
-    box-shadow: 0 0 32px rgb(0 0 0 / 8%), 0rem 16px 16px -16px rgb(0 0 0 / 10%);
+    color: #666;
+    padding: 0 0.625rem;
 }
 
-/*Chat-footer*/
+/* Chat-footer */
 .chatFooter {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0.6rem;
     border-top: 1px solid #eee;
 }
 
 .messageInput {
     flex: 1;
-    padding: 10px 15px;
-    border: 2px solid #007bff;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-size: 16px;
-    color: #333;
-    transition: border-color 0.3s;
-}
-
-.messageInput {
-    width: 100%;
-    height: 45px;
-    width: calc(100% - 58px);
-    font-size: 16px;
-    padding: 0 13px;
+    padding: 0.6rem 15px;
     border: 1px solid #e6e6e6;
+    border-radius: 0.9rem 0 0 0.9rem;
+    margin-right: 0.6rem;
+    font-size: 1rem;
+    color: #333;
     outline: none;
-    border-radius: 5px 0 0 5px;
+    width: calc(100% - 58px);
+    height: 2.8rem;
 }
 
 .SendMessage {
-    color: black;
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px; /* Optional for styling */
 }
-
