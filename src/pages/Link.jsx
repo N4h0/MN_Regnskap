@@ -1,4 +1,6 @@
 ﻿import "./Link.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import en from "../languages/en.json"; // English language data
 import no from "../languages/no.json"; // Norwegian language data
 import { useContext } from "react";
@@ -66,7 +68,7 @@ function Frist() {
           <p className="accounting-box-text">
             <strong>{textData.who}</strong> {textData.VATDeadlineAnnualFor}
           </p>
-          <p>{textData.VATAnnualNote}</p>
+          <p className="accounting-box-text">{textData.VATAnnualNote}</p>
         </div>
         <div className="accounting-box">
           <h3 className="accounting-box-h3">{textData.employmentDeclarationTitle}</h3>
@@ -104,8 +106,8 @@ function Frist() {
               <li key={item.url}>
                 <a href={item.url} onClick={(event) => {
                   event.preventDefault();
-                  downloadFileAtURL(item.url);
                 }}>
+                  <FontAwesomeIcon icon={faDownload} /> {/* FontAwesome ikonet her */}
                   {item.label}
                 </a>
               </li>
