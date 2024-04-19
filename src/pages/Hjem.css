@@ -1,9 +1,4 @@
 /* ------------------- OVERSKRIFTER ------------------ -*/
-
-*{
-    font-family: 'Lato', sans-serif;
-}
-
 .picture-h1,.picture-h2{
     color:#edf3f7;
     font-weight: bold;
@@ -286,7 +281,7 @@
 }
 
 .contact-card-p {
-    font-size: 0.8rem; 
+    font-size: 1rem; 
 }
 
 /* --------------------------- KONTAKT OSS --------------------------- */
