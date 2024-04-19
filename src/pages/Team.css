@@ -1,36 +1,19 @@
 
 /* ------------------- OVERSKRIFTER ------------------ -*/
-.section-title,.team-item-heading,.aboutUs-title {
+* {
     font-family: Lato, sans-serif;
   
-}
-.aboutUs-text, .team-item-title, .team-info-text{
-    font-family: 'Varela Round', sans-serif;
 }
 
 
 /*OM OSS SEKSJONEN*/
 
 /* ------------------ HOVER FOR BEGGE KORTENE ------------------ */
-
-.aboutUs_box_hero_text:hover {
-    background-color: rgb(161, 160, 160);
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: translateX(6px);
-}
 .aboutUs_box_hero_image,.aboutUs_box_hero_right  {
     transition: background-color 0.3s ease;
     border-radius: 0.62rem;
     margin-right: 0.62rem;;
     padding: 0.62rem;
-}
-
-.aboutUs_box_hero_image:hover {
-    background-color: rgb(161, 160, 160);
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: translateX(6px);
 }
 
 /* ------------------ BILDET BOKS ------------------ */
@@ -102,6 +85,7 @@
 
 .section-title {
     color: #000;
+    font-weight: bolder;
 }
 
 .team-item {
@@ -117,8 +101,8 @@
 }
 
 .team-item:hover {
-    background: #000;
-    color: #fff;
+    background: rgb(161, 160, 160);;
+    color:  #000;
 }
 
 .team-item-heading {
@@ -145,11 +129,6 @@
 .team-info {
     display: block;
     margin-bottom: 0;
-}
-
-.team-item-title,.team-info-text{
-    color: #949090;
-    
 }
 
 .team-info::after {
