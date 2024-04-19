@@ -32,6 +32,9 @@
 .topnav .icon {
     display: none;
 }
+.navTekst.active {
+    color: #4064d7;
+}
 
 /* Hover effekter */
 .navTekst:hover, .dropDownContent button:hover {
