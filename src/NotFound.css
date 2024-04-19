@@ -1,22 +1,6 @@
-/* ---------------- HELE CONTAINER MED INNHOLD ------------------ */
-.container {
-    border-top: 6px solid rgb(144, 139, 139);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 150px;
-}
 
-/* ---------------- TEKST BOKS ------------------ */
-.text-container {
-    width: 500px;
-    height: 400;
-    margin: -40px;
-    margin-top: 70px;
-    margin-left: 20px;
-}
 
-    /* ----------------- PARAGRAF ---------------------- */
+  /* ----------------- PARAGRAF ---------------------- */
     .text-container p {
         font-size: 19px;
         text-align: left;
@@ -30,12 +14,12 @@
     .text-container h1 {
         font-size: 100px;
         text-align: left;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.9); /* Skygge med forskyvning */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.9); 
         color: rgb(192, 180, 180);
     }
 
 .text-container {
-    margin-bottom: 20px; /* Ekstra mellomrom under teksten */
+    margin-bottom: 20px; 
 }
 
 .with-line {
@@ -44,12 +28,12 @@
 }
 
     .with-line::after {
-        content: ''; /* Legger til et visuelt element (linje) etter teksten */
-        position: absolute; /* Posisjonerer linjen relativt til forelder (span) */
-        bottom: -2px; /* Plasserer linjen rett under teksten */
-        left: 0; /* Starter linjen fra venstre kant av teksten */
-        width: 100%; /* Strekker linjen over hele bredden av teksten */
-        border-bottom: 4px solid rgb(192, 180, 180); /* Definerer egenskaper for linjen (farge, tykkelse, stil) */
+        content: ''; 
+        position: absolute;
+        bottom: -2px; 
+        left: 0;
+        width: 100%; 
+        border-bottom: 4px solid rgb(192, 180, 180);
     }
 
 .uh-oh {
@@ -75,38 +59,90 @@
 
 .container {
     display: flex;
-    justify-content: space-around; /* Justerer innholdet horisontalt */
+    justify-content: space-around;
     align-items: center;
-    max-width: 1200px; /* Angi �nsket maksimal bredde for innholdet */
+    max-width: 1200px; 
     padding: 20px;
     box-sizing: border-box;
 }
 
 /* ---------------- FULL PAGE WRAPPER ------------------ */
-/* denne delen tillater et bakgrunnsbilde med innhold som et lag over */
 
 .full-page-wrapper {
-    position: relative; /* Posisjonerer barna relativt til denne */
-    width: 100vw; /* Fyller hele viewportens bredde */
-    height: 100vh; /* Fyller hele viewportens h�yde */
-    overflow: hidden; /* Skjuler overfl�dig innhold som strekker seg utover viewporten */
+    position: relative; 
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .background-image {
-    position: absolute; /* Posisjonerer bildet absolutt */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Fyller hele foreldreelementet uten � endre proporsjonene */
-    z-index: -1; /* Plasserer bildet helt bakerst */
+    object-fit: cover; 
+    z-index: -1; 
 }
 
 .content-container {
-    position: absolute; /* Posisjonerer innholdet absolutt */
-    top: 50%; /* Plasserer innholdet vertikalt i midten */
-    left: 50%; /* Plasserer innholdet horisontalt i midten */
-    transform: translate(-50%, -50%); /* Sentrerer innholdet i forhold til foreldreelementet */
-    text-align: center; /* Justerer teksten til sentrert */
-    z-index: 1; /* Plasserer innholdet foran bakgrunnsbildet */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    z-index: 1; }
+
+/* Base styles */
+.text-container {
+    width: 80%; 
+    margin: 2rem auto; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/* Medieforespørsler for ulike skjermstørrelser */
+@media (max-width: 768px) {
+    .text-container {
+        width: 90%; 
+    }
+
+    .text-container h1 {
+        font-size: calc(1rem + 2vw);
+    }
+
+    .text-container p {
+        font-size: calc(0.8rem + 1.5vw);
+    }
+}
+
+.logo1, .logo2, .logo3 {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; }
+
+@media (max-width: 768px) {
+    .logo1, .logo2, .logo3 {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Generelle responsivitetsjusteringer */
+.full-page-wrapper, .container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.content-container {
+    width: 90%; 
+    max-width: 500px;
 }
