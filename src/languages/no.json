@@ -3,6 +3,7 @@
   "about": "Om oss",
   "deadlines": "Nyttig informasjon",
   "contact_us": "Kontakt",
+  "tjenester": "Tjenester",
   "english": "Engelsk",
   "norwegian": "Norsk",
   "language": "Språk",
@@ -20,13 +21,14 @@
   "more_info": "Mer Info",
   "ambitions_expertise": "Dine ambisjoner, v\u00E5r ekspertise - Hvordan kan vi støtte deg?",
   "accounting": "Regnskap",
-  "accounting_description": "Løpende bokføring, årsoppgjør, Skattemelding og Rapportering til Altinn.",
+  "accounting_description": "Løpende bokføring, årsoppgjør og Rapportering til Altinn.",
   "advice": "Rådgivning",
   "advice_description": "Få assistanse fra regnskapseksperter for å få mest mulig ut av tiden og pengene dine.",
+  "salary": "Lønn",
+  "salary_description": "Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.",
   "tax_return": "Skattemelding",
-  "tax_return_description": "Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.",
-  "budgeting": "Budsjettlegging",
-  "budgeting_description": "Vi fakturerer på dine vegne, enten elektronisk eller per post.",
+  "tax_return_description": "Vi hjelper deg med dine private skattemeldinger enten elektronisk eller e-post.",
+
   "charted_accountant": "Statsautorisert  regnskapsfører",
   "our_partner": "Våre partnere",
   "focus_on": "Konsentrer deg om det du er god på - Vi tar oss av regnskapet! Kontakt oss for en uforpliktende samtale.",
@@ -134,7 +136,7 @@
 
   "CharteredAccountant": "Autorisert regnskapsfører",
   "Accountant": "Regnskapfører",
-  "assistant":"Regnskaps medarbeidere",
+  "assistant": "Regnskaps medarbeidere",
   "moosa_text": "Ferdig utdannet  revisor og statsautorisert regnskapsfører med over 19 års bransjeerfaring.Han er også en anerkjent kontrollør i Regnskap Norge,  og hans ekspertise og lidenskap for nøyaktighet gjenspeiles i hvert oppdrag han utfører. Moosa leverer skreddersydde regnskapsløsninger med fokus på kvalitet og etterlevelse av gjeldende regelverk. Med hans omfattende kompetanse kan du være trygg på at dine regnskapsmessige behov blir håndtert profesjonelt og effektivt.",
   "naila_text": "Naila har utdannelse fra Handelshøyskolen BI i Oslo. Hun er en dyktig revisor, og autorisert regnskapsfører med en imponerende karriere på over 24 år i bransjen. Hun har opparbeidet seg anerkjennelse, og hennes engasjement for nøyaktighet og kvalitet skinner gjennom i hvert oppdrag hun tar på seg. Naila er dedikert til å levere skreddersydde regnskapsløsninger som oppfyller høye standarder og følger gjeldende regelverk til punkt og prikke. Hun har spesialkompetanse innen regnskapsføring for leger og tannleger.",
   "haseeb_text": "Haseeb er en erfaren regnskapsfører med ni års erfaring i bransjen. Han bryr seg om presisjon og er særdeles dedikert, og utmerker seg i å utvikle skreddersydde regnskapsløsninger som møter strenge regulatoriske standarder.",
@@ -144,14 +146,16 @@
 
 
 
-"approvals":"Godkjenninger",
-"get_in_touch":"Ta kontakt",
-"copyright":"M&N regnskap. Opphavsrett ©",
+  "approvals": "Godkjenninger",
+  "get_in_touch": "Ta kontakt",
+  "copyright": "M&N regnskap. Opphavsrett ©",
 
-"welcome_message":"Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.",
- "chat":"Chat med oss!",
- "answer":"Vi svarer så fort vi kan.",
- "message_placeholder":"Skriv inn meldingen din ..."
+  "welcome_message": "Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.",
+  "chat": "Chat med oss!",
+  "answer": "Vi svarer så fort vi kan.",
+  "message_placeholder": "Skriv inn meldingen din ...",
+
+  "tjenesterHeading": "Hei, vi hjelper deg å vaske bilen. Gratis :D"
 }
 
 

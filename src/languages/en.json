@@ -3,6 +3,7 @@
   "about": "About us",
   "deadlines": "Useful information",
   "contact_us": "Contact",
+  "tjenester": "Services",
   "english": "English",
   "norwegian": "Norwegian",
   "language": "Language",
@@ -15,17 +16,18 @@
   "omOssBrødtekst4": "Focus on what you're good at – We'll take care of the accounting!",
   "omOssTeam": "Our team",
 
-  "regnskap": "ACOUNTING",
+  "regnskap": " M&N ACOUNTING",
   "home_page_text": "We take care of your accounting!",
   "ambitions_expertise": "Your Ambitions, Our Expertise - How Can We Support You?",
   "accounting": "Accounting",
   "accounting_description": "Continuous bookkeeping, Annual accounts, Tax return, and Reporting to Altinn.",
   "advice": "Advice",
   "advice_description": "Get assistance from accounting experts to make the most of your time and money.",
-  "tax_return": "Tax Return for Individuals",
-  "tax_return_description": "Do you have employees? Save time by letting us handle payroll and reporting to the A-message.",
-  "budgeting": "Budgeting",
-  "budgeting_description": "We invoice on your behalf, either electronically or by mail.",
+  "salary": "Salary",
+  "salary_description": "Do you have employees? Save time by letting us handle payroll processing and reporting to the A-ordningen.",
+  "tax_return": "Tax return",
+  "tax_return_description": "We assist you with your personal tax returns either electronically or by email.",
+
   "charted_accountant": "Chartered accountant",
   "our_partner": "Our partner",
   "focus_on": "Focus on what you're good at -We'll take care of the accounting! Contact us for a non-binding conversation",
@@ -121,7 +123,7 @@
   "email": "mn@mnregnskap.no",
 
   "CharteredAccountant": "Chartered accountant",
-  "assistant":"Accounting assistant",
+  "assistant": "Accounting assistant",
   "Accountant": "Accountant",
   "moosa_text": "Moosa is a fully qualified auditor and authorized accountant with over 19 years of industry experience. He is also a recognized auditor in Accounting Norway, and his expertise and passion for accuracy are reflected in every task he performs. Moosa delivers tailored accounting solutions with a focus on quality and compliance with current regulations. With his extensive expertise, you can rest assured that your accounting needs will be handled professionally and efficiently.",
   "naila_text": "Naila holds a degree from the BI Norwegian Business School in Oslo. She is a skilled accountant and authorized accountant with an impressive career spanning over 24 years in the industry. She has earned recognition, and her commitment to accuracy and quality shines through in every task she undertakes. Naila is dedicated to delivering tailored accounting solutions that meet high standards and adhere to current regulations down to the last detail. She specializes in accounting for doctors and dentists.",
@@ -131,17 +133,17 @@
   "nitasha_text": "Nitasha is our newest member and has been part of our team for 2 years. She is a breath of fresh air and is studying at the BI Norwegian Business School. She is particularly talented in financial analysis and internal auditing.",
 
 
-  "approvals":"Approvals",
-  "get_in_touch":"Get in touch",
-  "copyright":"M&N Accounting. Copyright ©",
+  "approvals": "Approvals",
+  "get_in_touch": "Get in touch",
+  "copyright": "M&N Accounting. Copyright ©",
 
 
   "welcome_message": "Hello there 👋! Welcome to the page. Let me know if you have any questions.",
   "chat": "Chat with us!",
   "answer": "We'll respond as soon as we can.",
-  "message_placeholder": "Enter your message..."
+  "message_placeholder": "Enter your message...",
 
-
+  "tjenesterHeading":  "Hello, we can help you wash your car. For free :D"
 
 
 

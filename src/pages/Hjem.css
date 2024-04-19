@@ -1,11 +1,7 @@
 /* ------------------- OVERSKRIFTER ------------------ -*/
 
-h1,h2,h3{
+*{
     font-family: 'Lato', sans-serif;
-}
-
-p, a{
-    font-family: Varela Round, sans-serif;
 }
 
 .picture-h1,.picture-h2{
@@ -157,7 +153,6 @@ p, a{
     height: 2.75rem;
     line-height: 1.15;
     padding: 0.93rem 1.87rem;
-    margin: 0 1.56rem 2.5rem 0;
     border: 2px solid rgb(55, 54, 54);
     background-color: transparent;
 }
@@ -323,9 +318,8 @@ p, a{
 
 
 .contact-pic-text h1 { /*Hovudtittel*/
-    font-size: 1.56rem;
+    font-size: 2.3rem;
     letter-spacing: 0.125rem;
-    line-height: 1.25rem;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bolder;
@@ -335,7 +329,7 @@ p, a{
     padding-top:1.25rem; 
     padding-bottom: 0.93rem;
     color: rgb(255, 255, 255);
-    font-size: 0.93rem;
+    font-size: 1.5rem;
     line-height: 2.519rem;
 }
     
@@ -364,6 +358,13 @@ p, a{
     /*CONTACT*/
     .contact-pic-text {
         width: 80%;
+    }
+    .contact-pic-text h1 {
+        font-size: 1.5rem;
+    }
+    .contact-pic-text p {
+        font-size: 1.3rem;
+     
     }
 }
 
