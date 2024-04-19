@@ -73,8 +73,6 @@
 }
 
 
-
-
 /* ------------------------REGNSKAP DELEN ---------------------------  */
 .regnskapsSeksjon {
     margin-top: 1.25rem;
@@ -88,7 +86,6 @@
     color: #000;
 }
 
-
 /* HELE BOKSEN MED KORTENE */
 .regnskapsBoks {
     display: flex;
@@ -96,7 +93,6 @@
     justify-content: center;
     margin-top: 1.8rem;
 }
-
 
 /* INNHOLD I KORTENE */
 .regnskapsKort {
@@ -209,6 +205,8 @@
     font-size: 2.5rem;
     padding: 1.87rem;
 }
+
+
 /* ------------------------------- MØT OSS ----------------------------- */
 
 .teamSeksjon h1 {
@@ -266,6 +264,7 @@
     font-size: 1rem; 
 }
 
+
 /* --------------------------- KONTAKT OSS --------------------------- */
 
 .contact-picture {
@@ -293,7 +292,6 @@
     width: 70%;
 }
 
-
 .contact-pic-text h1 { /*Hovudtittel*/
     font-size: 2.3rem;
     letter-spacing: 0.125rem;
@@ -310,20 +308,6 @@
     line-height: 2.519rem;
 }
     
-/*.kontaktKnapp { Kontakt oss-knapp
-    display: inline-block; 
-    border: 2.67px double #444749;
-    border-radius: 0.625rem;
-    background-color: #9ea6aa;
-    box-shadow: 0 0 0 1px rgb(0, 0, 0);
-    font-size: 1.06rem;
-    font-weight: bolder;
-    line-height: 2rem;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 0.93rem 0.87rem;
-}
-*/
 
 /* ---------------------------RESPONSIVITET ---------------------------*/
 @media (max-width: 790px) {
