@@ -13,17 +13,12 @@
     color: #fff;
     border: none;
     border-radius: 50%;
-<<<<<<< Updated upstream
     width: 5rem;
     height: 5rem;
-=======
-    width: 3.4rem;
-    height: 3.4rem;
->>>>>>> Stashed changes
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     cursor: pointer;
 }
 
@@ -147,24 +142,24 @@
 /* Stil for popup-container */
 .popup-container {
     position: fixed;
-    bottom: 80px; /* Plasser 80px fra bunnen av vinduet */
-    right: 20px; /* Plasser 20px fra høyre kant av vinduet */
+    bottom: 80px; 
+    right: 20px; 
     background-color: #ffffff;
     border: 2px solid #333;
     border-radius: 8px;
-    padding: 5px; /* Redusert padding */
-    max-width: 250px; /* Redusert bredde */
+    padding: 5px; 
+    max-width: 250px;
     text-align: center;
-    z-index: 1000; /* Sørg for at popup-container er foran andre elementer */
+    z-index: 1000; 
 }
 
 .popup-box h2 {
-    font-size: 0.9rem; /* Mindre skriftstørrelse for overskriften */
+    font-size: 0.9rem; 
     margin-bottom: 5px;
 }
 
 .popup-box p {
-    font-size: 0.8rem; /* Mindre skriftstørrelse for teksten */
+    font-size: 0.8rem;
     margin-bottom: 5px;
 }
 
@@ -172,8 +167,8 @@
     background-color: #007bff;
     color: #ffffff;
     border: none;
-    padding: 3px 8px; /* Mindre padding for knappen */
-    font-size: 0.8rem; /* Mindre skriftstørrelse for knappen */
+    padding: 3px 8px; 
+    font-size: 0.8rem; 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
