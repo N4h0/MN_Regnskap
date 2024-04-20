@@ -1,4 +1,4 @@
-/* ---------- HELE FØRSTE CONTAINEREN -------------*/
+/* Container for whole layout */
 .hel-container {
     display: flex;
     justify-content: space-between;
@@ -6,7 +6,23 @@
     margin-bottom: 1.25rem;
 }
 
-/* VENSTRE CONTAINER OG BILDE */
+.kortInnhold {
+    margin: 0.6rem;
+}
+
+.kortInnhold p, .kortInnhold h2 {
+    text-align: left;
+}
+
+/* Main container for all cards */
+.alleKort {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* Space between cards */
+    padding: 0.8rem;
+}
+
+/* Left container and image */
 .hel-venstre {
     flex: 1;
     padding: 1.25rem;
@@ -18,7 +34,13 @@
     display: block;
 }
 
-/* HØYRE CONTAINER */
+.HaseebTjenesterBilde {
+    height: 100%;
+    display: block;
+    height: 20rem;
+}
+
+/* Right container */
 .hel-høyre {
     flex: 1;
     text-align: left;
@@ -34,41 +56,36 @@
 .hel-høyre p {
     font-size: 1.2rem;
     font-weight: bold;
-}
-
-/* ALLE KORTENE */
-.alleKort {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.8rem;
-}
-
-.første-kort, .andre-kort, .tredje-kort, .fjerde-kort {
-    width: 68rem; /* Sett ønsket bredde for boksene */
-    height: 10rem; /* Sett ønsket høyde for boksene */
-    margin: 0.7rem; /* Legg til mellomrom mellom boksene (valgfritt) */
-    display: flex;
-    justify-content: left;
-    align-items: center;
     text-align: left;
-    padding: 7rem;
 }
 
-/* får ikke denne til å fungere
-.første-kort h1, .andre-kort h1, .tredje-kort h1, .fjerde-kort h1 {
-    font-weight: lighter;
+/* Styling for each card */
+.første-kort, .andre-kort, .tredje-kort, .fjerde-kort {
+    width: 100%; /* Full width */
+    max-width: 1400px; /* Maximum width */
+    height: auto; /* Auto height based on content */
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-*/
 
+/* Paragraph style within cards */
 .første-kort p, .andre-kort p, .tredje-kort p, .fjerde-kort p {
     margin-top: 1rem;
     font-size: 1.05rem;
 }
 
-/* FØRSTE KORT */
-.HaseebTjenesterBilde {
-    height: auto;
-    max-width: 100%;
-    display: block;
+/* Specific styles for first box (text and image side by side) */
+.førsteBoks {
+    display: flex;
+    gap: 1.25rem;
+}
+
+/* Specific styles for other boxes (text below image) */
+.andreBoks, .tredjeBoks, .fjerdeBoks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
 }

@@ -10,6 +10,7 @@ function Tjenester() {
 
     return (
         <>
+        {/* BILDET OG OVERSKRIFTEN TIL TJENESTER SIDEN */}
         <div className="hel-container">
             <div className="hel-venstre">
                 <img src="MoosaTjenesterBilde.JPG" alt="Bilde av Moosa på tjenester siden" className="MoosaTjenesterBilde" />
@@ -20,43 +21,57 @@ function Tjenester() {
             </div>
         </div>
 
+        {/* HER ER ALLE KORTENE SIN INFORMASJON */}
         <div className="alleKort">
-            <div className="første-kort">
-                <div className="kortInnhold">
-                    <h2>{textData.firstHeading}</h2>
-                    <p>{textData.firstHeadingP1}</p>
-                    <p>{textData.firstHeadingP2}</p>
-                </div>
-                <div className="første-andre">
-                    <img src="HaseebTjenester.JPG" alt="Haseeb bilde tjenester side" className="HaseebTjenesterBilde" />
-                </div>
-            </div>
-
-            <div className="andre-kort">
-                <div className="kortInnhold">
-                    <h2>{textData.secondHeading}</h2>
-                    <p>{textData.secondHeadingP1}</p>
-                    <p>{textData.secondHeadingP2}</p>                
+            {/* FØRSTE KORT */}
+            <div className="førsteBoks">
+                <div className="første-kort">
+                    <div className="kortInnhold">
+                        <h2>{textData.firstHeading}</h2>
+                        <p>{textData.firstHeadingP1}</p>
+                        <p>{textData.firstHeadingP2}</p>
+                    </div>
                 </div>
             </div>
 
-            <div className="tredje-kort">
-                <div className="kortInnhold">
-                    <h2>{textData.thirdHeading}</h2>
-                    <p>{textData.thirdHeadingP1}</p>
-                    <p>{textData.thirdHeadingP2}</p>
-                    <p>{textData.thirdHeadingP3}</p>
+            {/* ANDRE KORT */}
+            <div className="andreBoks">
+                <div className="andre-kort">
+                    <div className="kortInnhold">
+                        <h2>{textData.secondHeading}</h2>
+                        <p>{textData.secondHeadingP1}</p>
+                        <p>{textData.secondHeadingP2}</p>                
+                    </div>
                 </div>
             </div>
 
-            <div className="fjerde-kort">
-                <div className="kortInnhold">
-                    <h2>{textData.fourthHeading}</h2>
-                    <p>{textData.fourthHeadingP1}</p>
-                    <p>{textData.fourthHeadingP2}</p>
-                    <p>{textData.fourthHeadingP3}</p>           
+            {/* TREDJE KORT */}
+            <div className="tredjeBoks">
+                <div className="tredje-kort">
+                    <div className="kortInnhold">
+                        <h2>{textData.thirdHeading}</h2>
+                        <p>{textData.thirdHeadingP1}</p>
+                        <p>{textData.thirdHeadingP2}</p>
+                        <p>{textData.thirdHeadingP3}</p>
+                    </div> 
+                        <div className="første-andre">
+                            <img src="HaseebTjenester.JPG" alt="Haseeb bilde tjenester side" className="HaseebTjenesterBilde" />
+                        </div>
                 </div>
-            </div> 
+               
+            </div>
+
+            {/* FJERDE KORT */}
+            <div className="fjerdeBoks">
+                <div className="fjerde-kort">
+                    <div className="kortInnhold">
+                        <h2>{textData.fourthHeading}</h2>
+                        <p>{textData.fourthHeadingP1}</p>
+                        <p>{textData.fourthHeadingP2}</p>
+                        <p>{textData.fourthHeadingP3}</p>           
+                    </div>
+                </div>
+            </div>
         </div>
         </>
     );
