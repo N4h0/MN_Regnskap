@@ -6,9 +6,9 @@ import {
 } from "react-router-dom";
 import Hjem from "./pages/Hjem";
 import OmOss from "./pages/Team";
+import Tjenester from "./pages/Tjenester";
 import Frister from "./pages/Link";
 import Contact from "./pages/Contact";
-import Tjenester from "./pages/Tjenester";
 import Root from "./routes/root";
 import NotFound from "./NotFound";
 import { LanguageProvider } from './languages/LanguageContext'; // Adjust the path as necessary
@@ -31,12 +31,12 @@ const router = createBrowserRouter([
                 element: <OmOss />,
             },
             {
-                path: "/MN_Regnskap/frister",
-                element: <Frister />,
-            },
-            {
                 path: "/MN_Regnskap/tjenester",
                 element: <Tjenester />,
+            },
+            {
+                path: "/MN_Regnskap/frister",
+                element: <Frister />,
             },
             {
                 path: "/MN_Regnskap/kontakt",

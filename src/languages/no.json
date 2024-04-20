@@ -153,9 +153,29 @@
   "welcome_message": "Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.",
   "chat": "Chat med oss!",
   "answer": "Vi svarer så fort vi kan.",
-  "message_placeholder": "Skriv inn meldingen din ..."
+  "message_placeholder": "Skriv inn meldingen din ...",
 
-  
+
+  "tjenesterHeading": "Det burde ikke være slitsomt for deg å finne informasjon med oss tilstede!",
+  "tjenesterParagraph": "Derfor er vi her for å hjelpe deg. Alt det kjedelige kan du la være over for oss og vi vil gjøre vårt beste for å hjelpe deg.",
+
+  "firstHeading": "Regnskap",
+  "firstHeadingP1": "Løpende bokføring, årsoppgjør og rapportering til Altinn. Regnskapstjenester omfatter en rekke viktige oppgaver for å sikre god økonomistyring og rapportering for bedrifter og organisasjoner.",
+  "firstHeadingP2": "Dette inkluderer løpende bokføring, som er kontinuerlig registrering og oppdatering av økonomiske transaksjoner som kjøp, salg og betalinger. Årsoppgjør er en essensiell del av regnskapsprosessen, der regnskapsåret avsluttes og alle økonomiske data samles og analyseres for å lage årsregnskapet.",
+
+  "secondHeading": "Rådgivning",
+  "secondHeadingP1": "Få assistanse fra regnskapseksperter for å få mest mulig ut av tiden og pengene dine. Rådgivning innen regnskap gir deg muligheten til å få profesjonell assistanse fra erfarne regnskapseksperter.",
+  "secondHeadingP2": "Ved å benytte deg av regnskapsrådgivning kan du maksimere effektiviteten i bruk av både tid og ressurser. Ekspertrådgivning innen regnskap hjelper deg med å optimalisere din økonomiske situasjon og gjøre kloke beslutninger som sikrer best mulig utbytte av dine midler.",
+
+  "thirdHeading": "Lønn",
+  "thirdHeadingP1": "Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.",
+  "thirdHeadingP2": "Med våre tjenester tar vi oss av alle aspekter ved lønnsadministrasjonen, inkludert beregning av lønn, utbetaling, rapportering av skattetrekk og trygdeavgifter, samt innrapportering til A-meldingen.",
+  "thirdHeadingP3": "Du kan stole på våre regnskapseksperter for nøyaktig og effektiv håndtering av lønnsprosessen, slik at du kan fokusere på å drive virksomheten din.",
+
+  "fourthHeading": "Skattemelding",
+  "fourthHeadingP1": "Vi hjelper deg med dine private skattemeldinger enten elektronisk eller på digitalt.",
+  "fourthHeadingP2": "Skattemelding er en viktig del av personlig økonomi, og vi er her for å gjøre den prosessen enklere for deg. Enten det er elektronisk eller på papir, kan våre regnskapseksperter veilede deg gjennom dine private skattemeldinger.",
+  "fourthHeadingP3": "Ta kontakt med oss til enhver tid, og vi vil alltid sørge for at du er fornøyd."
 }
 
 

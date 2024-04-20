@@ -141,9 +141,29 @@
   "welcome_message": "Hello there 👋! Welcome to the page. Let me know if you have any questions.",
   "chat": "Chat with us!",
   "answer": "We'll respond as soon as we can.",
-  "message_placeholder": "Enter your message..."
+  "message_placeholder": "Enter your message...",
 
 
+  "tjenesterHeading": "You should never tire yourself by looking for information!",
+  "tjenesterParagraph": "Thats why we are here for you! Leave the boring part for us.",
+
+  "firstHeading": "Accounting",
+  "firstHeadingP1": "Continuous bookkeeping, annual accounts, and reporting to Altinn. Accounting services encompass a range of important tasks to ensure good financial management and reporting for businesses and organizations.",
+  "firstHeadingP2": "This includes continuous bookkeeping, which involves ongoing recording and updating of financial transactions such as purchases, sales, and payments. Annual accounts are an essential part of the accounting process, where the financial year is closed, and all financial data is gathered and analyzed to create the annual financial statements.",
+
+  "secondHeading": "Consultancy",
+  "secondHeadingP1": "Get assistance from accounting experts to make the most of your time and money. Accounting consultancy offers you the opportunity to receive professional assistance from experienced accounting experts.",
+  "secondHeadingP2": "By utilizing accounting consultancy, you can maximize efficiency in the use of both time and resources. Expert accounting advice helps you optimize your financial situation and make wise decisions to ensure the best possible return on your funds.",
+
+  "thirdHeading": "Payroll",
+  "thirdHeadingP1": "Do you have employees? Save time by letting us handle payroll and reporting to the tax authorities.",
+  "thirdHeadingP2": "With our services, we take care of all aspects of payroll administration, including salary calculation, payment, reporting of tax deductions and social security contributions, as well as reporting to the tax authorities.",
+  "thirdHeadingP3": "You can rely on our accounting experts for accurate and efficient management of the payroll process, allowing you to focus on running your business.",
+
+  "fourthHeading": "Tax Returns",
+  "fourthHeadingP1": "We assist you with your private tax returns, whether electronic or paper-based.",
+  "fourthHeadingP2": "Tax returns are a critical aspect of personal finance, and we are here to simplify that process for you. Whether electronic or paper-based, our accounting experts can guide you through your private tax returns.",
+  "fourthHeadingP3": "Feel free to contact us at any time, and we will always ensure your satisfaction."
 }
 
 
