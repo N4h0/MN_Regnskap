@@ -55,11 +55,20 @@
     padding: 7rem;
 }
 
+/* får ikke denne til å fungere
 .første-kort h1, .andre-kort h1, .tredje-kort h1, .fjerde-kort h1 {
-    font-weight: 120rem;
+    font-weight: lighter;
 }
+*/
 
 .første-kort p, .andre-kort p, .tredje-kort p, .fjerde-kort p {
     margin-top: 1rem;
     font-size: 1.05rem;
+}
+
+/* FØRSTE KORT */
+.HaseebTjenesterBilde {
+    height: auto;
+    max-width: 100%;
+    display: block;
 }

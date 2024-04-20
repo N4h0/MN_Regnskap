@@ -27,6 +27,9 @@ function Tjenester() {
                     <p>{textData.firstHeadingP1}</p>
                     <p>{textData.firstHeadingP2}</p>
                 </div>
+                <div className="første-andre">
+                    <img src="HaseebTjenester.JPG" alt="Haseeb bilde tjenester side" className="HaseebTjenesterBilde" />
+                </div>
             </div>
 
             <div className="andre-kort">
