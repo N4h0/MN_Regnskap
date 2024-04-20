@@ -7,13 +7,13 @@ function Chatbot() {
     const chatBodyRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([]);
+    const [showPopup, setShowPopup] = useState(true); // Legg til tilstand for å vise pop-up boksen
 
     const WELCOME_MESSAGE = {
         type: 'bot',
         content: 'Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.',
         time: new Date().toLocaleTimeString('nb-NO', { hour: '2-digit', minute: '2-digit' })
     };
-    
 
     const sendMessage = (content, type = 'user') => {
         if (content.trim()) {
@@ -21,6 +21,7 @@ function Chatbot() {
             setMessages(prev => [...prev, { type, content, time }]);
         }
     };
+
     useEffect(() => {
         if (isOpen && messages.length === 0) {
             setMessages([WELCOME_MESSAGE]);
@@ -30,9 +31,24 @@ function Chatbot() {
         }
     }, [isOpen, messages]);
 
+    // Legg til funksjon for å lukke pop-up boksen
+    const closePopup = () => {
+        setShowPopup(false);
+    };
 
     return (
         <div className="Chat">
+            {/* Legg til pop-up boks */}
+            {showPopup && (
+                <div className="popup-container">
+                    <div className="popup-box">
+                        <h2>Velkommen til vår chatbot!</h2>
+                        <p>Vi er her for å hjelpe deg. Spør oss gjerne om hva som helst!</p>
+                        <button onClick={() => { setShowPopup(false); setIsOpen(true); }}>Start Chat</button>
+                    </div>
+                </div>
+            )}
+
             {!isOpen && (
                 <button className="chatButton" onClick={() => setIsOpen(true)} aria-label="Start chat">
                     <FontAwesomeIcon icon={faCommentDots} />
@@ -106,7 +122,7 @@ function ChatFooter({ onSend }) {
         if (message.trim() !== '') {
             onSend(message);
             setMessage('');
-            const formattedTime = new Date().toLocaleTimeString('nb-NO', {hour: '2-digit', minute: '2-digit'});
+            const formattedTime = new Date().toLocaleTimeString('nb-NO', { hour: '2-digit', minute: '2-digit' });
 
             fetch('https://n4h0.pythonanywhere.com/api/chatbot', {
                 method: 'POST',
