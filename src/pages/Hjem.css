@@ -93,6 +93,10 @@
     justify-content: center;
     margin-top: 1.8rem;
 }
+.regnskapsKort:hover {
+    text-decoration: none; 
+    color: inherit; 
+  }
 
 /* INNHOLD I KORTENE */
 .regnskapsKort {
@@ -118,6 +122,8 @@
     margin-left: 2.5rem;
     margin-top: 3.12rem;
     margin-bottom: 4.37rem;
+    color: inherit; 
+
 }
 /* OVERSKRIFT I KORTENE */
 .regnskapsKort-h3{

@@ -52,9 +52,9 @@ export default class NavBar extends Component {
                 <div className="right-aligned-items">
                 <NavLink to="/MN_Regnskap/Hjem" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.home}</NavLink>
                     <NavLink to="/MN_Regnskap/om-oss" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.about}</NavLink>
+                    <NavLink to="/MN_Regnskap/tjenester" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.tjenester}</NavLink>
                     <NavLink to="/MN_Regnskap/frister" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.deadlines}</NavLink>
                     <NavLink to="/MN_Regnskap/kontakt" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.contact_us}</NavLink>
-                    <NavLink to="/MN_Regnskap/tjenester" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.tjenester}</NavLink>
                     <div className="dropDown" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
                         <a className="navTekst">
                             <img src={language === 'norsk' ? "/MN_Regnskap/norge.png" : "/MN_Regnskap/usa.png"} alt={language === 'norsk' ? "Norwegian Flag" : "US Flag"}  />
