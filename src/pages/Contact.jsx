@@ -3,14 +3,34 @@ import emailjs from '@emailjs/browser'; // Importer emailjs
 import './Contact.css';
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { LanguageContext } from '../languages/LanguageContext';
 
 function Contact() {
     const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
 
     // Funksjon for å sende e-post via emailjs
+    const textData = language === 'norsk' ? no : en;
+
+
     const sendEmail = (e) => {
+
+   
+        const name = document.querySelector('.input-name').value;
+        const email = document.querySelector('.input-email').value;
+        const message = document.querySelector('.textarea').value;
+
+        if (!name || !isValidEmail(email) || !message) {
+            alert(textData.alert_message);
+        } else {
+            alert(textData.success_message)
+        }
+
+        // Sjekk e-postformat
+        /*if (!isValidEmail(email)) {
+            alert(textData.validate_email);
+        } */
+
         e.preventDefault();
 
         emailjs
@@ -22,18 +42,25 @@ function Contact() {
                     setShowSuccessMessage(true);         //reset skjemaet etter vellykket sending
                     e.target.reset();
                     */
-
+  
                     console.log('Suksess!');
-                    e.target.user_name.value = '';
-                    e.target.user_email.value = '';
-                    e.target.user_message.value = '';
+
+                    if (name && isValidEmail(email) && message) {
+                        e.target.reset();
+                    }
+                   
                 },
                 (error) => {
                     console.log('Noe gikk galt:', error.text);
+                    alert(textData.notSuccess_message)
                 },
-            );
+        );
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
     };
-    const textData = language === 'norsk' ? no : en;
 
 
     return (
@@ -73,7 +100,7 @@ function Contact() {
                                         <input type="email" className="input-email" placeholder={textData.emailPlaceholder} name="user_email" />
                                     </div>
                                     <div className="form-input">
-                                        <textarea placeholder={textData.messagePlaceholder} name="user_message" />
+                                        <textarea placeholder={textData.messagePlaceholder} className="textarea" name="user_message" />
                                     </div>
                                     <button className="btn-common" type="submit">{textData.submit}</button>
                                 </form>

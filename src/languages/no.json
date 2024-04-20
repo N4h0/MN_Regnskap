@@ -129,7 +129,10 @@
   "organizationNumber": "Organisasjons nummer",
   "organizationNumberValue": "992 720 999",
   "email": "mn@mnregnskap.no",
-
+  "success_message": "Eposten har blitt sendt!",
+  "notSuccess_message": "Eposten har ikke blitt sendt!",
+  "alert_message": "Vennligst fyll ut alle feltene.",
+  "validate_email": "Vennligst oppgi en gyldig e-postadresse.",
 
 
 

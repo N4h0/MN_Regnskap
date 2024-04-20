@@ -103,6 +103,10 @@
   "cashBook": "Cash book (Excel)",
   "companyCar": "Company car benefit calculation (Excel)",
   "salesReport": "Sales report (Excel)",
+  "success_message": "Email has been sent!",
+  "notSuccess_message": "Email has not been sent!",
+  "alert_message": "Please fill out all fields.",
+  "validate_email": "Please provide a valid email address.",
 
   "contactPageTitle": "Got something on your mind?",
   "contactPageDescription": "We make our job harder so it's easier for you. Our dedicated team is ready to listen to your needs and give you the best experience.",
