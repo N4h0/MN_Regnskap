@@ -12,6 +12,11 @@
 
 .kortInnhold p, .kortInnhold h2 {
     text-align: left;
+    font-weight: bold;
+}
+
+.kortInnhold h2 {
+    font-weight: bolder;
 }
 
 /* Main container for all cards */
