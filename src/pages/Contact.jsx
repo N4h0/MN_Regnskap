@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser'; // Importer emailjs
 import './Contact.css';
 import en from '../languages/en.json'; // Engelsk språkdata
 import no from '../languages/no.json'; // Norsk språkdata
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { LanguageContext } from '../languages/LanguageContext';
 
 function Contact() {
@@ -11,27 +11,22 @@ function Contact() {
 
     // Funksjon for å sende e-post via emailjs
     const textData = language === 'norsk' ? no : en;
-
+    const [errorMessage, setErrorMessage] = useState("");
+    const [successMessage, setSucessMessage] = useState("");
 
     const sendEmail = (e) => {
-
+         e.preventDefault();
    
         const name = document.querySelector('.input-name').value;
         const email = document.querySelector('.input-email').value;
         const message = document.querySelector('.textarea').value;
 
         if (!name || !isValidEmail(email) || !message) {
-            alert(textData.alert_message);
+            setErrorMessage(textData.alert_message);
         } else {
-            alert(textData.success_message)
+            setErrorMessage("");
+            setSucessMessage(textData.success_message)
         }
-
-        // Sjekk e-postformat
-        /*if (!isValidEmail(email)) {
-            alert(textData.validate_email);
-        } */
-
-        e.preventDefault();
 
         emailjs
             .sendForm("desig4344.gmail.com", "template_6rs1lh8", e.target, { publicKey: "KyNlFb-WjIs15bWeo" })
@@ -46,7 +41,9 @@ function Contact() {
                     console.log('Suksess!');
 
                     if (name && isValidEmail(email) && message) {
+                      
                         e.target.reset();
+               
                     }
                    
                 },
@@ -104,6 +101,8 @@ function Contact() {
                                     </div>
                                     <button className="btn-common" type="submit">{textData.submit}</button>
                                 </form>
+                                {errorMessage && <div className="error-message" style={{ color: 'red' }}>{errorMessage}</div>}
+                                {successMessage && <div className="error-message" style={{ color: 'green' }}>{successMessage}</div>}
                             </div>
                         </div>
                     </div>
