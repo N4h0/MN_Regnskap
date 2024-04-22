@@ -1,6 +1,6 @@
 ﻿import React, { useEffect, useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCommentDots, faTimes, faPaperPlane, faRobot } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faPaperPlane, faRobot } from '@fortawesome/free-solid-svg-icons';
 import './Chatbot.css';
 
 function Chatbot() {
@@ -103,7 +103,7 @@ function ChatBody({ messages }) {
             {messages.map((msg, index) => (
                 <div key={index} className={msg.type === 'user' ? "chatMessage" : "botMessage"}>
                     {msg.type === 'bot' && (
-                        <FontAwesomeIcon icon={faRobot} className="botIcon"  />
+                            <FontAwesomeIcon icon={faRobot} className="botIcon" />
                     )}
                     <div className="messageContentWrapper">
                         <p className="messageContent">{msg.content}</p>
