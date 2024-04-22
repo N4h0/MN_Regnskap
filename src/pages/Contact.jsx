@@ -43,6 +43,7 @@ function Contact() {
                     if (name && isValidEmail(email) && message) {
                       
                         e.target.reset();
+                        setSucessMessage("");
                
                     }
                    
