@@ -116,17 +116,19 @@
 /* ------------------ KNAPPEN TIL SEND SKJEMA ------------------ */
 .btn-common { 
     text-decoration: none;
-    color: #fff;
-    background-color: rgb(161, 160, 160);
+    color: #000;
+    background-color: white; 
     border-radius: 0.188rem;
     padding: 0.9em 1.388em;
     font-size: .9375rem;
     min-width: 8.555rem;
+    font-weight: bold;
     margin-top: 1rem;
 }
 
 .btn-common:hover{
-    background-color: rgb(109, 107, 107);
+    background-color: grey;
+    color: white;
 }
 
 /* ------------------ DIVEN NEDERST ------------------ */

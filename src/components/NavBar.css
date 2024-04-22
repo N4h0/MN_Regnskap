@@ -92,6 +92,9 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    .navTekst.active {
+        padding-right: 35rem;
+    }
 
         .right-aligned-items .navTekst, .topnav .icon,
         .topnav a.icon, .topnav .icon {

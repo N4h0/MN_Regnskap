@@ -94,3 +94,10 @@
     flex-direction: column;
     gap: 0.65rem;
 }
+
+
+@media (max-width:855px) {
+    .tredje-kort {
+        flex-direction: column;
+    }
+}
