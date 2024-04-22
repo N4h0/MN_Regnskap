@@ -84,7 +84,7 @@ function Regnskap({ language }) {
         </Link>
       </div>
       <div className="siste-container">
-        <Link className="regnskapsKnapp" to="/MN_Regnskap/om-oss">
+        <Link className="regnskapsKnapp" to="/MN_Regnskap/tjenester">
           <span className="regnskapsKnappTekst" onClick={scrollToTop}>
             {textData.more_info}
           </span>
