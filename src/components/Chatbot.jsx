@@ -1,6 +1,6 @@
 ﻿import React, { useEffect, useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCommentDots, faTimes, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faCommentDots, faTimes, faPaperPlane, faRobot } from '@fortawesome/free-solid-svg-icons';
 import './Chatbot.css';
 
 function Chatbot() {
@@ -55,7 +55,7 @@ function Chatbot() {
 
             {!isOpen && (
                 <button className="chatButton" onClick={() => setIsOpen(true)} aria-label="Start chat">
-                    <FontAwesomeIcon icon={faCommentDots} />
+                    <FontAwesomeIcon icon={faRobot} />
                 </button>
             )}
             {isOpen && (
@@ -102,7 +102,12 @@ function ChatBody({ messages }) {
         <div className="chatBody" ref={chatBodyRef}>
             {messages.map((msg, index) => (
                 <div key={index} className={msg.type === 'user' ? "chatMessage" : "botMessage"}>
-                    <p className="messageContent">{msg.content}</p>
+                    {msg.type === 'bot' && (
+                        <FontAwesomeIcon icon={faRobot} className="botIcon"  />
+                    )}
+                    <div className="messageContentWrapper">
+                        <p className="messageContent">{msg.content}</p>
+                    </div>
                     <div className="messageTime">{msg.time}</div>
                 </div>
             ))}
