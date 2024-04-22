@@ -41,7 +41,11 @@ function Chatbot() {
             {/* Legg til pop-up boks */}
             {showPopup && (
                 <div className="popup-container">
+                  
                     <div className="popup-box">
+                        <button className="closeButton" onClick={closePopup}>
+                            <FontAwesomeIcon icon={faTimes} style={{ color: 'black', float: 'right' }} />
+                        </button>
                         <h2>Velkommen til vår chatbot!</h2>
                         <p>Vi er her for å hjelpe deg. Spør oss gjerne om hva som helst!</p>
                         <button onClick={() => { setShowPopup(false); setIsOpen(true); }}>Start Chat</button>

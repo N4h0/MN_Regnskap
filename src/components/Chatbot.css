@@ -23,6 +23,7 @@
 }
 
 
+
 /* Styling når chatten er åpen */
 .chatDialog {
     background-color: #fff;
@@ -174,6 +175,13 @@
     transition: background-color 0.3s;
 }
 
-    .popup-box button:hover {
-        background-color: #0056b3;
-    }
+.popup-box button:hover {
+    background-color: #0056b3;
+}
+        
+.closeButton{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+}
