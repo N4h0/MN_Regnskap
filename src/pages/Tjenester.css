@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.25rem;
+    flex-direction: row;  /* Standard innstilling for større skjermer */
+
+
 }
 
 .kortInnhold {
@@ -99,5 +102,20 @@
 @media (max-width:855px) {
     .tredje-kort {
         flex-direction: column;
+    }
+    .hel-container {
+        flex-direction: column;
+    }
+
+    .hel-høyre {
+        order: 1;  /* Tekstseksjonen kommer først */
+    }
+
+    .hel-venstre {
+        order: 2;  /* Bilde kommer etter tekstseksjonen */
+    }
+
+    .hel-venstre, .hel-høyre {
+        width: 100%;  
     }
 }
