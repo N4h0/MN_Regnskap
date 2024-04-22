@@ -77,8 +77,9 @@
 }
 
 .section-title {
-    color: #000;
+    color: #212529;
     font-weight: bolder;
+    font-size: 3rem;
 }
 
 .team-item {
