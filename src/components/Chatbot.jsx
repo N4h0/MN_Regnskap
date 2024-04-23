@@ -105,9 +105,9 @@ function ChatBody({ messages }) {
                     {msg.type === 'bot' && (
                             <FontAwesomeIcon icon={faRobot} className="botIcon" />
                     )}
-                    <div className="messageContentWrapper">
+               
                         <p className="messageContent">{msg.content}</p>
-                    </div>
+                    
                     <div className="messageTime">{msg.time}</div>
                 </div>
             ))}
