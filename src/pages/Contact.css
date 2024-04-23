@@ -5,7 +5,7 @@
 }
 
 .support-card-h2 { 
-    color: #2e475d;
+    color: black; /*#2e475d*/;
     margin-bottom: 1.5rem;  
     font-size: 1.5rem;
     font-weight: bold;
@@ -145,7 +145,7 @@
 .title {
     font-size: 2rem;
     line-height: 1.38;
-    color: #2e475d;
+    color: black; /*#2e475d*/;
     font-weight: bold;
 }
 
