@@ -53,7 +53,7 @@
 }
 
 .download-boks-h3 {
-    color: #244368;
+    color: black; /*#244368*/;
     font-weight: 600;
     font-size: 2rem;
     margin-bottom: 0.6rem;
