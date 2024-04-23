@@ -5,7 +5,7 @@
     align-items: center;
     margin-bottom: 1.25rem;
     flex-direction: row;  /* Standard innstilling for større skjermer */
-
+    background-color: rgb(241, 240, 240);
 
 }
 
