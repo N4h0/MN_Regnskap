@@ -138,7 +138,7 @@ function ChatFooter({ onSend }) {
             onSend(message);
             setMessage('');
             const formattedTime = new Date().toLocaleTimeString('nb-NO', { hour: '2-digit', minute: '2-digit' });
-
+    
             fetch('https://n4h0.pythonanywhere.com/api/chatbot', {
                 method: 'POST',
                 headers: {
@@ -146,18 +146,28 @@ function ChatFooter({ onSend }) {
                 },
                 body: JSON.stringify({ question: message }),
             })
-                .then(response => response.json())
-                .then(data => {
+            .then(response => response.json())
+            .then(data => {
+                // Håndterer tilfelle hvor serveren gir svar med forslag.
+                if (data.suggestions) {
+                    const suggestionsContent = `${data.message} ${data.suggestions.join(' | ')}`;
+                    onSend(suggestionsContent, 'bot');
+                } else if (typeof data === 'string') {
+                    // Når serveren gir et direkte svar som en streng, uten å bruke 'answer' nøkkelen.
                     const newBotResponse = { type: 'bot', content: data, time: formattedTime };
                     onSend(newBotResponse.content, 'bot');
-                })
-                .catch((error) => {
-                    console.error('Error fetching response from server:', error);
-                    const errorMessage = { type: 'bot', content: "Det skjedde en feil, kjører serveren?", time: formattedTime };
-                    onSend(errorMessage.content, 'bot');
-                });
+                } else {
+                    // Håndterer andre tilfeller, for eksempel feil eller uventet respons.
+                    onSend("Beklager, jeg forstod ikke det. Kan du prøve å formulere spørsmålet annerledes?", 'bot');
+                }
+            })
+            .catch((error) => {
+                console.error('Error fetching response from server:', error);
+                onSend("Det skjedde en feil, kjører serveren?", 'bot');
+            });
         }
     };
+    
 
     return (
         <div className="chatFooter">
