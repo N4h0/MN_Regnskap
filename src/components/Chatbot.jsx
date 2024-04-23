@@ -36,6 +36,13 @@ function Chatbot() {
         setShowPopup(false);
     };
 
+    const handleChatbotButtonClick = () => {
+        if (showPopup) {
+            setShowPopup(false);
+        }
+        setIsOpen(true);
+    };
+
     return (
         <div className="Chat">
             {/* Legg til pop-up boks */}
@@ -48,13 +55,12 @@ function Chatbot() {
                         </button>
                         <h2>Velkommen til vår chatbot!</h2>
                         <p>Vi er her for å hjelpe deg. Spør oss gjerne om hva som helst!</p>
-                        <button onClick={() => { setShowPopup(false); setIsOpen(true); }}>Start Chat</button>
                     </div>
                 </div>
             )}
 
             {!isOpen && (
-                <button className="chatButton" onClick={() => setIsOpen(true)} aria-label="Start chat">
+                <button className="chatButton" onClick={handleChatbotButtonClick} aria-label="Start chat">
                     <FontAwesomeIcon icon={faRobot} />
                 </button>
             )}
