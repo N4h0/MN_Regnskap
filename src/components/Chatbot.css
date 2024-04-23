@@ -32,7 +32,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 590px;
-    background: #f7f7f7;
+    /*background: #f7f7f7;*/
     position: fixed;
     bottom: 0;
     right: 0;
@@ -77,19 +77,18 @@
     display: flex;
     flex-direction: column;
     padding: 0.9rem;
-    height: 15.75rem;
+    height: 28.45rem; /* det som fakka opp*/
     overflow-y: auto;
     margin: 0 auto;
     background: #f7f7f7;
     /*  position: relative;
     left: 70px; Flytt chatten 20 piksler mot høyre */
     position:relative;
-    left: 25px;
 }
 
 
 .chatMessage, .botMessage {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 0.5rem 0.6rem;
     max-width: 65%;
     box-shadow: 0 0 32px rgb(0 0 0 / 8%), 0rem 16px 16px -16px rgb(0 0 0 / 10%);
@@ -124,11 +123,14 @@
 
 /* Chat-footer */
 .chatFooter {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0.6rem;
     border-top: 1px solid #eee;
-    margin-top: 12.3rem;
 }
 
 .messageInput {
