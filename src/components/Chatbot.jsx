@@ -132,22 +132,37 @@ function ChatBody({ messages }) {
   return (
     <div className="chatBody" ref={chatBodyRef}>
       {messages.map((msg, index) => (
-        <div
-          key={index}
-          className={msg.type === "user" ? "chatMessage" : "botMessage"}
-        >
+        // Using a ternary operator to change the class of the container based on message type
+        <div key={index} className={`messageContainer ${msg.type === "suggestion" ? "suggestionContainer" : msg.type === "user" ? "userContainer" : "botContainer"}`}>
           {msg.type === "bot" && (
             <FontAwesomeIcon icon={faRobot} className="botIcon" />
           )}
-
-          <p className="messageContent">{msg.content}</p>
-
-          <div className="messageTime">{msg.time}</div>
+          {msg.type === "suggestion" ? (
+            // This is a suggestion type message
+            <div className="suggestionBubble">
+              <button
+                className="suggestionButton"
+                onClick={() => onSend(msg.content)}
+              >
+                {msg.content}
+              </button>
+            </div>
+          ) : (
+            // This is a bot or user type message
+            <div className={msg.type === "user" ? "chatMessage userMessage" : "chatMessage botMessage"}>
+              <p className="messageContent">{msg.content}</p>
+              <div className="messageTime">{msg.time}</div>
+            </div>
+          )}
         </div>
       ))}
     </div>
   );
+  
 }
+
+
+
 
 function ChatFooter({ onSend }) {
   const [message, setMessage] = useState("");
@@ -179,16 +194,16 @@ function ChatFooter({ onSend }) {
       })
         .then((response) => response.json())
         .then((data) => {
-          // Håndterer tilfelle hvor serveren gir svar med forslag.
-          if (data.suggestions && data.suggestions.length > 0) {
-            // Sender den innledende meldingen fra serveren
-            onSend(data.message, "bot");
-            // Deretter sender hver av forslagsmeldingene med score
-            data.suggestions.forEach((suggestion) => {
-              const suggestionMessage = `${
-                suggestion.question
-              } (Likhet: ${suggestion.CoSim.toFixed(2)})`;
-              onSend(suggestionMessage, "bot");
+        // Håndterer tilfelle hvor serveren gir svar med forslag.
+         if (data.suggestions && data.suggestions.length > 0) {
+    // Sender den innledende meldingen fra serveren
+    onSend(data.message, "bot");
+
+    // Deretter sender hvert av forslagene som separate meldinger
+    data.suggestions.forEach((suggestion) => {
+      const suggestionMessage = `${suggestion.question} (Likhet: ${suggestion.CoSim.toFixed(2)})`;
+      onSend(suggestionMessage, "suggestion"); // Send meldingen med riktig type "suggestion"
+
             });
           } else if (typeof data === "string") {
             // Når serveren gir et direkte svar som en streng, uten å bruke 'answer' nøkkelen.

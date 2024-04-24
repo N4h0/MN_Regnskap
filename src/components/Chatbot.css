@@ -77,7 +77,7 @@
     display: flex;
     flex-direction: column;
     padding: 0.9rem;
-    height: 28.45rem; /* det som fakka opp*/
+    height: 31rem;
     overflow-y: auto;
     margin: 0 auto;
     background: #f7f7f7;
@@ -108,11 +108,15 @@
     color: #333;
     border-radius: 1.125rem 1.125rem 1.125rem 0;
     align-self: flex-start;
+    padding-left: 0;
+    position: relative;
+    align-items: center;
 }
 
 .messageContent {
     font-size: 0.8rem;
     margin: 0.25rem 0;
+    padding: 0.2rem 0.5rem;
 }
 
 .messageTime {
@@ -199,23 +203,45 @@
     font-size: 1.5rem;
 }
 
-/* styling for bot */
-
-.botMessage {
-    position: relative;
+.messageContainer {
     display: flex;
     align-items: center;
-    margin-left: 10px; /* Legg til et lite gap mellom ikonet og meldingen */
-}
-
-.botIcon {
-    position: absolute;
-    left: -24px;
-    font-size: 1.5rem; /* Gjenoppretter størrelsen */
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: 12px;
-    right: 28px; /* Legg til et gap mellom ikonet og meldingen */
-}
-
-
+    width: 100%; /* Ensure container takes full width */
+  }
+  
+  .userContainer {
+    justify-content: flex-end; /* Position user messages to the right */
+  }
+  
+  .botContainer {
+    justify-content: flex-start; /* Position bot messages to the left */
+  }
+  
+  .suggestionContainer {
+    justify-content: center; /* Center suggestion messages if needed */
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Suggestion container takes full width */
+  }
+  
+  .suggestionBubble {
+    width: 100%; /* Suggestion bubble takes full width */
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 8px 16px;
+    position: relative;
+    display: flex; /* Ensures flexbox properties apply to the button */
+    justify-content: center; /* Center button horizontally */
+    margin-top: 5px;
+  }
+  
+  .suggestionButton {
+    background: none;
+    border: none;
+    text-align: center; /* Center text inside the button */
+    cursor: pointer;
+    width: 100%; /* Button takes full width of the bubble */
+  }
+  
+  /* Add your other CSS for botIcon, chatMessage, userMessage, botMessage as it is */
+  
