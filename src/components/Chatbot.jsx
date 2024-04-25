@@ -94,11 +94,11 @@ function Chatbot() {
 
 function ChatDialog({ onSend, onClose, messages }) {
   return (
-    <div className="chatDialog">
-      <ChatHeader onClose={onClose} />
-      <ChatBody messages={messages} />
-      <ChatFooter onSend={onSend} />
-    </div>
+      <div className="chatDialog">
+          <ChatHeader onClose={onClose} />
+          <ChatBody messages={messages} onSend={onSend} />  
+          <ChatFooter onSend={onSend} />
+      </div>
   );
 }
 
@@ -120,45 +120,76 @@ function ChatHeader({ onClose }) {
     </div>
   );
 }
-
-function ChatBody({ messages }) {
+function ChatBody({ messages, onSend }) {
   const chatBodyRef = useRef(null);
   useEffect(() => {
-    if (chatBodyRef.current) {
-      chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
-    }
+      if (chatBodyRef.current) {
+          chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
+      }
   }, [messages]);
 
+  const handleSuggestionClick = (suggestionContent) => {
+    // Simulate sending the suggestion content as a new user message
+    onSend(suggestionContent, 'user');
+    
+    // After updating the UI with the user's selected suggestion,
+    // I need to send this suggestion to the server just like a normal message
+    fetch("https://n4h0.pythonanywhere.com/api/chatbot", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ question: suggestionContent }),
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        // Process and display the server's response just like a normal message
+        const formattedTime = new Date().toLocaleTimeString("nb-NO", {
+            hour: "2-digit",
+            minute: "2-digit",
+        });
+        const newBotResponse = {
+            type: 'bot',
+            content: data.answer || data,  
+            time: formattedTime
+        };
+        onSend(newBotResponse.content, 'bot');
+    })
+    .catch((error) => {
+        console.error("Error fetching response from server:", error);
+        onSend("Det skjedde en feil, kjører serveren?", 'bot');
+    });
+};
+
+
   return (
-    <div className="chatBody" ref={chatBodyRef}>
-      {messages.map((msg, index) => (
-        // Using a ternary operator to change the class of the container based on message type
-        <div key={index} className={`messageContainer ${msg.type === "suggestion" ? "suggestionContainer" : msg.type === "user" ? "userContainer" : "botContainer"}`}>
-          {msg.type === "bot" && (
-            <FontAwesomeIcon icon={faRobot} className="botIcon" />
-          )}
-          {msg.type === "suggestion" ? (
-            // This is a suggestion type message
-            <div className="suggestionBubble">
-              <button
-                className="suggestionButton"
-                onClick={() => onSend(msg.content)}
-              >
-                {msg.content}
-              </button>
-            </div>
-          ) : (
-            // This is a bot or user type message
-            <div className={msg.type === "user" ? "chatMessage userMessage" : "chatMessage botMessage"}>
-              <p className="messageContent">{msg.content}</p>
-              <div className="messageTime">{msg.time}</div>
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
+      <div className="chatBody" ref={chatBodyRef}>
+          {messages.map((msg, index) => (
+              <div key={index} className={`messageContainer ${msg.type === "suggestion" ? "suggestionContainer" : msg.type === "user" ? "userContainer" : "botContainer"}`}>
+                  {msg.type === "bot" && (
+                      <FontAwesomeIcon icon={faRobot} className="botIcon" />
+                  )}
+                  {msg.type === "suggestion" ? (
+                      // This is a suggestion type message
+                      <div className="suggestionBubble">
+                          <button
+                              className="suggestionButton"
+                              onClick={() => handleSuggestionClick(msg.content)}
+                          >
+                              {msg.content}
+                          </button>
+                      </div>
+                  ) : (
+                      // This is a bot or user type message
+                      <div className={msg.type === "user" ? "chatMessage userMessage" : "chatMessage botMessage"}>
+                          <p className="messageContent">{msg.content}</p>
+                          <div className="messageTime">{msg.time}</div>
+                      </div>
+                  )}
+              </div>
+          ))}
+      </div>
   );
-  
 }
 
 
