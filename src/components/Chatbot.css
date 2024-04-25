@@ -114,15 +114,16 @@
 }
 
 .messageContent {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0.25rem 0;
     padding: 0.2rem 0.5rem;
 }
 
 .messageTime {
     font-size: 0.6rem;
-    color: #666;
+    color: #95a1ac;
     padding: 0 0.625rem;
+    font-weight: bold;
 }
 
 /* Chat-footer */
@@ -243,5 +244,27 @@
     width: 100%; /* Button takes full width of the bubble */
   }
   
-  /* Add your other CSS for botIcon, chatMessage, userMessage, botMessage as it is */
+  .botIcon{
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 450px) {
+    .chatDialog{
+        width: 25rem;
+    }
+    .chatBody{
+        height: 31rem;
+    }
+  }
   
+  @media (max-width: 390px) {
+    .chatDialog{
+        width: 23.5rem;
+        height: 520px;
+    }
+    .chatBody{
+        height: 25rem;
+    }
+
+  }
+
