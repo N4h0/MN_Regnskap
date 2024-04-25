@@ -122,44 +122,77 @@ function ChatHeader({ onClose }) {
 }
 function ChatBody({ messages, onSend }) {
   const chatBodyRef = useRef(null);
+  const [showSuggestions, setShowSuggestions] = useState(true); // State to track whether suggestions should be shown or not
+
   useEffect(() => {
-      if (chatBodyRef.current) {
-          chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
-      }
+    if (chatBodyRef.current) {
+      chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
+    }
   }, [messages]);
 
   const handleSuggestionClick = (suggestionContent) => {
     // Simulate sending the suggestion content as a new user message
     onSend(suggestionContent, 'user');
-    
+
     // After updating the UI with the user's selected suggestion,
     // I need to send this suggestion to the server just like a normal message
     fetch("https://n4h0.pythonanywhere.com/api/chatbot", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ question: suggestionContent }),
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ question: suggestionContent }),
     })
-    .then((response) => response.json())
-    .then((data) => {
+      .then((response) => response.json())
+      .then((data) => {
         // Process and display the server's response just like a normal message
         const formattedTime = new Date().toLocaleTimeString("nb-NO", {
-            hour: "2-digit",
-            minute: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
         });
         const newBotResponse = {
-            type: 'bot',
-            content: data.answer || data,  
-            time: formattedTime
+          type: 'bot',
+          content: data.answer || data,  
+          time: formattedTime
         };
         onSend(newBotResponse.content, 'bot');
-    })
-    .catch((error) => {
+
+        // Hide suggestions after user selects one
+        setShowSuggestions(false);
+      })
+      .catch((error) => {
         console.error("Error fetching response from server:", error);
         onSend("Det skjedde en feil, kjører serveren?", 'bot');
-    });
-};
+      });
+  };
+
+  return (
+    <div className="chatBody" ref={chatBodyRef}>
+      {messages.map((msg, index) => (
+        <div key={index} className={`messageContainer ${msg.type === "suggestion" ? "suggestionContainer" : msg.type === "user" ? "userContainer" : "botContainer"}`}>
+          {msg.type === "bot" && (
+            <FontAwesomeIcon icon={faRobot} className="botIcon" />
+          )}
+          {msg.type === "suggestion" && showSuggestions ? ( // Check if it's a suggestion message and suggestions should be shown
+            <div className="suggestionBubble">
+              <button
+                className="suggestionButton"
+                onClick={() => handleSuggestionClick(msg.content)}
+              >
+                {msg.content}
+              </button>
+            </div>
+          ) : msg.type !== "suggestion" ? ( // Only render if it's not a suggestion message
+            <div className={msg.type === "user" ? "chatMessage userMessage" : "chatMessage botMessage"}>
+              <p className="messageContent">{msg.content}</p>
+              <div className="messageTime">{msg.time}</div>
+            </div>
+          ) : null} {/* If it's a suggestion message but suggestions should not be shown, render nothing */}
+        </div>
+      ))}
+    </div>
+  );
+
 
 
   return (
