@@ -12,6 +12,7 @@ function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [showPopup, setShowPopup] = useState(true); // Legg til tilstand for å vise pop-up boksen
+  const [showSuggestions, setShowSuggestions] = useState(true); // Ny tilstand for å vise forslag
 
   const WELCOME_MESSAGE = {
     type: "bot",
@@ -82,26 +83,35 @@ function Chatbot() {
         </button>
       )}
       {isOpen && (
-        <ChatDialog
-          onSend={sendMessage}
-          onClose={() => setIsOpen(false)}
-          messages={messages}
-        />
+      <ChatDialog
+      onSend={sendMessage}
+      onClose={() => setIsOpen(false)}
+      messages={messages}
+      showSuggestions={showSuggestions} // Pass denne propen
+      setShowSuggestions={setShowSuggestions} // Og denne propen
+    />
       )}
     </div>
   );
 }
 
-function ChatDialog({ onSend, onClose, messages }) {
+function ChatDialog({ onSend, onClose, messages, showSuggestions, setShowSuggestions }) {
   return (
-      <div className="chatDialog">
-          <ChatHeader onClose={onClose} />
-          <ChatBody messages={messages} onSend={onSend} />  
-          <ChatFooter onSend={onSend} />
-      </div>
+    <div className="chatDialog">
+      <ChatHeader onClose={onClose} />
+      <ChatBody 
+        messages={messages} 
+        onSend={onSend} 
+        showSuggestions={showSuggestions} // Send ned som prop
+        setShowSuggestions={setShowSuggestions} // Send ned som prop
+      />  
+      <ChatFooter 
+        onSend={onSend} 
+        setShowSuggestions={setShowSuggestions} // Send ned som prop
+      />
+    </div>
   );
 }
-
 function ChatHeader({ onClose }) {
   return (
     <div className="chatHeader">
@@ -120,7 +130,7 @@ function ChatHeader({ onClose }) {
     </div>
   );
 }
-function ChatBody({ messages, onSend }) {
+function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
   const chatBodyRef = useRef(null);
   useEffect(() => {
     if (chatBodyRef.current) {
@@ -128,12 +138,16 @@ function ChatBody({ messages, onSend }) {
     }
   }, [messages]);
 
-  const handleSuggestionClick = (suggestionContent) => {
-    // Simulate sending the suggestion content as a new user message
-    onSend(suggestionContent, 'user');
 
-    // After updating the UI with the user's selected suggestion,
-    // I need to send this suggestion to the server just like a normal message
+
+  const handleSuggestionClick = (suggestionContent) => {
+    onSend(suggestionContent, 'user');
+    setShowSuggestions(false); 
+ 
+    console.log('Forslag skal være skjult: ', !showSuggestions);
+
+    //After updating the UI with the user's selected suggestion,
+    //I need to send this suggestion to the server just like a normal message
     fetch("https://n4h0.pythonanywhere.com/api/chatbot", {
       method: "POST",
       headers: {
@@ -164,39 +178,44 @@ function ChatBody({ messages, onSend }) {
 
  
   return (
-      <div className="chatBody" ref={chatBodyRef}>
-          {messages.map((msg, index) => (
-              <div key={index} className={`messageContainer ${msg.type === "suggestion" ? "suggestionContainer" : msg.type === "user" ? "userContainer" : "botContainer"}`}>
-                  {msg.type === "bot" && (
-                      <FontAwesomeIcon icon={faRobot} className="botIcon" />
-                  )}
-                  {msg.type === "suggestion" ? (
-                      // This is a suggestion type message
-                      <div className="suggestionBubble">
-                          <button
-                              className="suggestionButton"
-                              onClick={() => handleSuggestionClick(msg.content)}
-                          >
-                              {msg.content}
-                          </button>
-                      </div>
-                  ) : (
-                      // This is a bot or user type message
-                      <div className={msg.type === "user" ? "chatMessage userMessage" : "chatMessage botMessage"}>
-                          <p className="messageContent">{msg.content}</p>
-                          <div className="messageTime">{msg.time}</div>
-                      </div>
-                  )}
+    <div className="chatBody" ref={chatBodyRef}>
+      {messages.map((msg, index) => {
+        if (msg.type === "suggestion" && showSuggestions) {
+          // Dette er et forslagstype melding
+          return (
+            <div key={index} className="messageContainer suggestionContainer">
+              <div className="suggestionBubble">
+                <button
+                  className="suggestionButton"
+                  onClick={() => handleSuggestionClick(msg.content)}
+                >
+                  {msg.content}
+                </button>
               </div>
-          ))}
-      </div>
+            </div>
+          );
+        } else {
+          // Dette er en bot- eller brukertype melding
+          return (
+            <div key={index} className={`messageContainer ${msg.type === "user" ? "userContainer" : "botContainer"}`}>
+              {msg.type === "bot" && (
+                <FontAwesomeIcon icon={faRobot} className="botIcon" />
+              )}
+              <div className={msg.type === "user" ? "chatMessage userMessage" : "chatMessage botMessage"}>
+                <p className="messageContent">{msg.content}</p>
+                <div className="messageTime">{msg.time}</div>
+              </div>
+            </div>
+          );
+        }
+      })}
+    </div>
   );
 }
 
 
 
-
-function ChatFooter({ onSend }) {
+function ChatFooter({ onSend, setShowSuggestions }) {
   const [message, setMessage] = useState("");
 
   const handleInputChange = (e) => setMessage(e.target.value);
@@ -235,7 +254,7 @@ function ChatFooter({ onSend }) {
     data.suggestions.forEach((suggestion) => {
       const suggestionMessage = `${suggestion.question} (Likhet: ${suggestion.CoSim.toFixed(2)})`;
       onSend(suggestionMessage, "suggestion"); // Send meldingen med riktig type "suggestion"
-
+      setShowSuggestions(true);
             });
           } else if (typeof data === "string") {
             // Når serveren gir et direkte svar som en streng, uten å bruke 'answer' nøkkelen.
@@ -245,6 +264,7 @@ function ChatFooter({ onSend }) {
               time: formattedTime,
             };
             onSend(newBotResponse.content, "bot");
+            setShowSuggestions(false);
           } else {
             // Håndterer andre tilfeller, for eksempel feil eller uventet respons.
             onSend(
@@ -256,6 +276,7 @@ function ChatFooter({ onSend }) {
         .catch((error) => {
           console.error("Error fetching response from server:", error);
           onSend("Det skjedde en feil, kjører serveren?", "bot");
+          setShowSuggestions(true);
         });
     }
   };
