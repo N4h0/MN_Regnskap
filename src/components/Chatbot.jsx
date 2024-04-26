@@ -138,16 +138,10 @@ function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
     }
   }, [messages]);
 
-
-
   const handleSuggestionClick = (suggestionContent) => {
     onSend(suggestionContent, 'user');
-    setShowSuggestions(false); 
- 
-    console.log('Forslag skal være skjult: ', !showSuggestions);
+    setShowSuggestions(false);
 
-    //After updating the UI with the user's selected suggestion,
-    //I need to send this suggestion to the server just like a normal message
     fetch("https://n4h0.pythonanywhere.com/api/chatbot", {
       method: "POST",
       headers: {
@@ -157,18 +151,11 @@ function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
     })
       .then((response) => response.json())
       .then((data) => {
-        // Process and display the server's response just like a normal message
         const formattedTime = new Date().toLocaleTimeString("nb-NO", {
           hour: "2-digit",
           minute: "2-digit",
         });
-        const newBotResponse = {
-          type: 'bot',
-          content: data.answer || data,  
-          time: formattedTime
-        };
-        onSend(newBotResponse.content, 'bot');
-
+        onSend(data.answer || data, 'bot', formattedTime);
       })
       .catch((error) => {
         console.error("Error fetching response from server:", error);
@@ -176,39 +163,38 @@ function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
       });
   };
 
- 
+  const renderMessages = () => {
+    return messages.map((msg, index) => {
+      if (msg.type === "suggestion") {
+        return showSuggestions ? (
+          <div key={index} className="messageContainer suggestionContainer">
+            <div className="suggestionBubble">
+              <button
+                className="suggestionButton"
+                onClick={() => handleSuggestionClick(msg.content)}
+              >
+                {msg.content}
+              </button>
+            </div>
+          </div>
+        ) : null;
+      } else {
+        return (
+          <div key={index} className={`messageContainer ${msg.type === "user" ? "userContainer" : "botContainer"}`}>
+            {msg.type === "bot" && <FontAwesomeIcon icon={faRobot} className="botIcon" />}
+            <div className={`${msg.type === "user" ? "userMessage" : "botMessage"} chatMessage`}>
+              <p className="messageContent">{msg.content}</p>
+              <div className="messageTime">{msg.time}</div>
+            </div>
+          </div>
+        );
+      }
+    });
+  };
+
   return (
     <div className="chatBody" ref={chatBodyRef}>
-      {messages.map((msg, index) => {
-        if (msg.type === "suggestion" && showSuggestions) {
-          // Dette er et forslagstype melding
-          return (
-            <div key={index} className="messageContainer suggestionContainer">
-              <div className="suggestionBubble">
-                <button
-                  className="suggestionButton"
-                  onClick={() => handleSuggestionClick(msg.content)}
-                >
-                  {msg.content}
-                </button>
-              </div>
-            </div>
-          );
-        } else {
-          // Dette er en bot- eller brukertype melding
-          return (
-            <div key={index} className={`messageContainer ${msg.type === "user" ? "userContainer" : "botContainer"}`}>
-              {msg.type === "bot" && (
-                <FontAwesomeIcon icon={faRobot} className="botIcon" />
-              )}
-              <div className={msg.type === "user" ? "chatMessage userMessage" : "chatMessage botMessage"}>
-                <p className="messageContent">{msg.content}</p>
-                <div className="messageTime">{msg.time}</div>
-              </div>
-            </div>
-          );
-        }
-      })}
+      {renderMessages()}
     </div>
   );
 }
