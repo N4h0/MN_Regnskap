@@ -208,32 +208,32 @@
 .messageContainer {
     display: flex;
     align-items: center;
-    width: 100%;
-  }
-  
-  .userContainer {
-    justify-content: flex-end; 
-  }
-  
-  .botContainer {
-    justify-content: flex-start; 
-  }
-  
-  .suggestionContainer {
-    justify-content: center;
-    flex-direction: column;
     width: 100%; 
   }
   
-  .suggestionBubble {
+  .userContainer {
+    justify-content: flex-end; /* bruker melding til høyre*/
+  }
+  
+  .botContainer {
+    justify-content: flex-start; /* bot melding til venster */
+  }
+  
+  .suggestionContainer {
+    justify-content: center; 
+    flex-direction: column; 
     width: 100%;
+  }
+  
+  .suggestionBubble {
+    width: 100%; 
     background-color: #fff;
     color: #333;
     border-radius: 15px;
     padding: 8px 16px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     margin-top: 5px;
   }
   
@@ -250,23 +250,27 @@
   }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) { 
     .chatDialog {
-        width: 100vw;
-        height: 100vh;
-        right: 0;
+        position: fixed; 
+        overflow: hidden; 
+        border-radius: 0;
         bottom: 0; 
-        border-radius: 0; 
+        right: 0; 
+        width: 100%; 
+        height: 100vh; 
+  
     }
 
     .chatBody {
         height: calc(100vh - 140px);
         overflow-y: auto; 
     }
+
     .chatFooter {
         position: fixed;
         bottom: 0;
-        width: 100vw;
-        padding: 0.6rem 0.6rem;
+        width: 100%; 
+        padding: 0.6rem; 
     }
 }
