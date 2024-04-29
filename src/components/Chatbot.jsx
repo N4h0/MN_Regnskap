@@ -238,11 +238,10 @@ function ChatFooter({ onSend, setShowSuggestions }) {
 
     // Deretter sender hvert av forslagene som separate meldinger
     data.suggestions.forEach((suggestion) => {
-      // Removed the similarity score from the suggestion message
-      const suggestionMessage = suggestion.question;
+      const suggestionMessage = `${suggestion.question} (Likhet: ${suggestion.CoSim.toFixed(2)})`;
       onSend(suggestionMessage, "suggestion"); // Send meldingen med riktig type "suggestion"
       setShowSuggestions(true);
-    });
+            });
           } else if (typeof data === "string") {
             // Når serveren gir et direkte svar som en streng, uten å bruke 'answer' nøkkelen.
             const newBotResponse = {
