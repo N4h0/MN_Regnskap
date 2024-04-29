@@ -238,7 +238,7 @@ function ChatFooter({ onSend, setShowSuggestions }) {
 
     // Deretter sender hvert av forslagene som separate meldinger
     data.suggestions.forEach((suggestion) => {
-      const suggestionMessage = `${suggestion.question} (Likhet: ${suggestion.CoSim.toFixed(2)})`;
+      const suggestionMessage = `${suggestion.question} )`;
       onSend(suggestionMessage, "suggestion"); // Send meldingen med riktig type "suggestion"
       setShowSuggestions(true);
             });
