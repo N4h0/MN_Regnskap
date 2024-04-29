@@ -1,8 +1,9 @@
 /* ------------------- OVERSKRIFTER ------------------ -*/
 .picture-h1,.picture-h2{
     color:#edf3f7;
-    font-weight: bold;
+    font-weight: 500;
 }
+
 .partner-tittel,.contact-header-h2{
     color: #000;
     font-weight: bold;
@@ -48,6 +49,7 @@
     font-size: 3.75rem;
     line-height: 3.4rem;
     text-align: center;
+    text-shadow: 1.5px 1.5px rgb(77, 76, 76), -2px -2px rgb(161, 160, 160);
 }
 
 .picture-h2 {
