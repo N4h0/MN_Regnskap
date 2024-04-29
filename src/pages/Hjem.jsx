@@ -47,7 +47,7 @@ function Bildet({ language }) {
         <h2 className="picture-h2">{textData.home_page_text}</h2>
         <Link to="/MN_Regnskap/om-oss">
           <button className="picture-button" onClick={scrollToTop}>
-            {textData.more_info}
+            {textData.about_us}
           </button>
         </Link>
       </div>
