@@ -23,7 +23,6 @@
 }
 
 
-
 /* Styling når chatten er åpen */
 .chatDialog {
     background-color: #fff;
@@ -86,6 +85,14 @@
     position:relative;
 }
 
+.chatTopMessage {
+    flex: 1; /* Tar opp all plassen på toppen av chatbotten */
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.7rem;
+    padding: 0.5rem; /* Add padding to give some spacing */
+    text-align: center;
+}
 
 .chatMessage, .botMessage {
     margin-bottom: 5px;
