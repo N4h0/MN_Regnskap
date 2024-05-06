@@ -3,36 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\components\\Chatbot.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Chatbot.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\components\\Chatbot.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Chatbot.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Hjem.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Hjem.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Hjem.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Hjem.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Contact.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Contact.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\languages\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\NotFound.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\NotFound.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\no.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\languages\\no.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Contact.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Contact.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Hjem.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Hjem.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Team.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Team.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\languages\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\LanguageContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\languages\\LanguageContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Link.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Link.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Link.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Link.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Tjenester.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Tjenester.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\components\\Chatbot.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Chatbot.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\components\\Chatbot.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Chatbot.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Hjem.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Hjem.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -41,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Team.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Team.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Team.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Team.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\LanguageContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\languages\\LanguageContext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -66,17 +82,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "NotFound.jsx",
+              "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\NotFound.jsx",
+              "RelativeDocumentMoniker": "src\\NotFound.jsx",
+              "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\NotFound.jsx",
+              "RelativeToolTip": "src\\NotFound.jsx",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-06T10:03:25.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Link.css",
+              "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Link.css",
+              "RelativeDocumentMoniker": "src\\pages\\Link.css",
+              "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Link.css",
+              "RelativeToolTip": "src\\pages\\Link.css",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-23T17:38:20.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Link.jsx",
+              "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Link.jsx",
+              "RelativeDocumentMoniker": "src\\pages\\Link.jsx",
+              "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Link.jsx",
+              "RelativeToolTip": "src\\pages\\Link.jsx",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-04-23T17:37:52.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Tjenester.jsx",
+              "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Tjenester.jsx",
+              "RelativeDocumentMoniker": "src\\pages\\Tjenester.jsx",
+              "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Tjenester.jsx",
+              "RelativeToolTip": "src\\pages\\Tjenester.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-04-23T17:37:14.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Hjem.css",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Hjem.css",
               "RelativeDocumentMoniker": "src\\pages\\Hjem.css",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Hjem.css",
               "RelativeToolTip": "src\\pages\\Hjem.css",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-22T19:59:45.547Z",
               "EditorCaption": ""
@@ -89,40 +157,40 @@
               "RelativeDocumentMoniker": "src\\pages\\Contact.css",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Contact.css",
               "RelativeToolTip": "src\\pages\\Contact.css",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAJMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-20T00:00:27.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Chatbot.css",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\components\\Chatbot.css",
               "RelativeDocumentMoniker": "src\\components\\Chatbot.css",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\components\\Chatbot.css",
               "RelativeToolTip": "src\\components\\Chatbot.css",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAFMAAAAbAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAAJAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-19T22:47:01.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "Chatbot.jsx",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\components\\Chatbot.jsx",
               "RelativeDocumentMoniker": "src\\components\\Chatbot.jsx",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\components\\Chatbot.jsx",
               "RelativeToolTip": "src\\components\\Chatbot.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA2AAAA",
+              "ViewState": "AQIAAPEAAAAAAAAAAAAAACYBAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-04-19T22:46:47.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "main.jsx",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\main.jsx",
               "RelativeDocumentMoniker": "src\\main.jsx",
@@ -135,20 +203,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Contact.jsx",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Contact.jsx",
               "RelativeDocumentMoniker": "src\\pages\\Contact.jsx",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Contact.jsx",
               "RelativeToolTip": "src\\pages\\Contact.jsx",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAC0AAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-04-19T14:53:49.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Team.css",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Team.css",
               "RelativeDocumentMoniker": "src\\pages\\Team.css",
@@ -161,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "LanguageContext.jsx",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\LanguageContext.jsx",
               "RelativeDocumentMoniker": "src\\languages\\LanguageContext.jsx",
@@ -169,7 +237,8 @@
               "RelativeToolTip": "src\\languages\\LanguageContext.jsx",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-04-14T19:46:39.482Z"
+              "WhenOpened": "2024-04-14T19:46:39.482Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -179,40 +248,40 @@
               "RelativeDocumentMoniker": "src\\languages\\en.json",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\en.json",
               "RelativeToolTip": "src\\languages\\en.json",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAG0AAAAAAAAA",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAAAK4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-14T19:45:00.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "no.json",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\no.json",
               "RelativeDocumentMoniker": "src\\languages\\no.json",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\languages\\no.json",
               "RelativeToolTip": "src\\languages\\no.json",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAswIcAAAAAAAAA",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAAALYAAACuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-14T19:42:45.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "Team.jsx",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Team.jsx",
               "RelativeDocumentMoniker": "src\\pages\\Team.jsx",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Team.jsx",
               "RelativeToolTip": "src\\pages\\Team.jsx",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAQwHEAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-04-14T19:35:35.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "vite.config.js",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\vite.config.js",
               "RelativeDocumentMoniker": "vite.config.js",
@@ -230,14 +299,14 @@
               "RelativeDocumentMoniker": "src\\pages\\Hjem.jsx",
               "ToolTip": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\src\\pages\\Hjem.jsx",
               "RelativeToolTip": "src\\pages\\Hjem.jsx",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAgwPEAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPEAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-04-14T19:31:04.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "nuget.config",
               "DocumentMoniker": "C:\\Users\\nisha\\source\\repos\\MN_Regnskap\\nuget.config",
               "RelativeDocumentMoniker": "nuget.config",
