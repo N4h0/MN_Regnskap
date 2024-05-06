@@ -235,6 +235,9 @@
     .connect-body {
         display: block;
     }
+    .hero-content {
+        background-position: 70% center; /* Shows more of the right side */
+    }
 }
 
 @media (max-width: 768px) {
@@ -252,6 +255,9 @@
 @media (max-width: 450px) {
     .form-input input, .form-input textarea {
         width: 70%;
+    }
+    .hero-content {
+        background-position: 90% center; /* Focus more on the right side where the person might be */
     }
 }
 
@@ -272,6 +278,7 @@
     .hero-heading {
         font-size: 2rem;
     }
+ 
 }
 
 @media (max-width: 280px) {
