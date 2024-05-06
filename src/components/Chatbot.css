@@ -39,13 +39,10 @@
 
 /* Chat-header */
 .chatHeader {
-    width: 100%; /* Sørger for at headeren alltid er like bred som chat-dialogen */
     display: flex;
     align-items: center;
     justify-content: flex-start;
     border-bottom: 1.5px solid #e6e6e6;
-    z-index: 1050;
-    width: 100%; 
 }
 
 .chatLogo {
@@ -271,6 +268,9 @@
  
     }
   
+    .chatHeader{
+        position: fixed;
+    }
   
     .chatBody {
         overflow-y: auto; 
