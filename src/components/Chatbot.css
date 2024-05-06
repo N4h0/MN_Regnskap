@@ -263,10 +263,14 @@
         height: 100vh;
         border-radius: 0;
         right: 0; 
-        bottom: 0; 
+        bottom: 0;
+        overflow: hidden; /* Forhindrer scrolling utenfor chatvinduet */
+ 
     }
     
+  
     .chatBody {
-        height: calc(100vh - 140px);
+        overflow-y: auto; /* Tillater scrolling innenfor meldingsområdet */
+        height: calc(100vh - 140px); /* Justert høyde basert på tidligere endringer */
     }
 }
