@@ -31,14 +31,32 @@
 
 .topnav .icon {
     display: none;
+    padding: 0.8rem 1rem;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
 }
+
 .navTekst.active {
     color: #4064d7;
 }
 /*Gjør at endre-språk-knappene fyller ut hele boksen*/
-.dropDownContent button { 
+.dropDownContent button {
     display: block;
     width: 100%;
+}
+
+.navLink {
+    width: 100%;
+}
+
+.navTekst {
+    padding: 0.8rem 1rem;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 /* Hover effekter */
@@ -85,18 +103,24 @@
 }
 
 
+
 /* Media Queries */
 @media screen and (max-width: 1031px) {
     .topnav, .topnav.responsive {
         justify-content: space-between;
         flex-direction: column;
         align-items: flex-start;
+
+    }
+
+    .right-aligned-items {
+        width: 100%
     }
     .navTekst.active {
         padding-right: 35rem;
     }
 
-        .right-aligned-items .navTekst, .topnav .icon,
+        .right-aligned-items, .topnav .icon,
         .topnav a.icon, .topnav .icon {
             display: none;
         }
