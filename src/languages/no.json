@@ -159,7 +159,8 @@
   "message_placeholder": "Skriv inn meldingen din ...",
   "popup_chat": "Velkommen til vår chatbot!",
   "popup_message": "Vi er her for å hjelpe deg. Spør oss gjerne om hva som helst!",
-
+  "chat_mona": "The robot Mona can answer questions about accounting in general or the company M&N Accounting specifically. The robot is built on the model",
+  "aboutchat": "Alle spørsmål sendt inn blir lagret.",
   "tjenesterHeading": "Det burde ikke være slitsomt for deg å finne informasjon med oss tilstede!",
   "tjenesterParagraph": "Derfor er vi her for å hjelpe deg. Alt det kjedelige kan du la være over for oss og vi vil gjøre vårt beste for å hjelpe deg.",
 

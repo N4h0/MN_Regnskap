@@ -198,11 +198,11 @@ function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
         });
     };
 
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+    const textData = language === 'norsk' ? no : en;
     const welcomeMessage = (
         <div className="chatTopMessage">
-            <p>Robotten Mona kan svare på spørsmål om regnskap generelt eller firmaet M&N regnskap spesifikt.
-                Robotten er bygget på modellen <a href="https://huggingface.co/NbAiLab/nb-sbert-base" target="_blank">NB-SBER-BASE</a>.
-                Alle spørsmål sendt inn blir lagret.
+            <p> {textData.chat_mona}&nbsp; <a href="https://huggingface.co/NbAiLab/nb-sbert-base" target="_blank">NB-SBER-BASE</a>. &nbsp;{textData.aboutChat}
             </p>
         </div>
     );
