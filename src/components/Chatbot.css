@@ -270,8 +270,18 @@
     }
 
     .chatBody {
-        height: calc(100vh - 140px);
+        height: calc(110vh - 140px);
         overflow-y: auto; 
+    }
+    .chatHeader {
+        position: fixed; /* Endre posisjon til fast */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2; /* Sørg for at de er foran chatboksen */
+    }
+    .chatTopMessage {
+        margin-top: 4rem;
     }
 
     .chatFooter {

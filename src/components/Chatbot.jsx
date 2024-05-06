@@ -19,11 +19,11 @@ function Chatbot() {
     const [messages, setMessages] = useState([]);
     const [showPopup, setShowPopup] = useState(true); // Legg til tilstand for å vise pop-up boksen
     const [showSuggestions, setShowSuggestions] = useState(true); // Ny tilstand for å vise forslag
-
+    //welcome_message
     const WELCOME_MESSAGE = {
         type: "bot",
         content:
-            "Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.",
+            textData.welcome_message,
         time: new Date().toLocaleTimeString("nb-NO", {
             hour: "2-digit",
             minute: "2-digit",
@@ -119,6 +119,8 @@ function ChatDialog({ onSend, onClose, messages, showSuggestions, setShowSuggest
     );
 }
 function ChatHeader({ onClose }) {
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+    const textData = language === 'norsk' ? no : en;
     return (
         <div className="chatHeader">
             <img
@@ -127,8 +129,8 @@ function ChatHeader({ onClose }) {
                 className="chatLogo"
             />
             <div className="chatHeaderText">
-                <h7 className="chatheader-overskrift">Chat med oss!</h7>
-                <span>Vi svarer så fort vi kan.</span>
+                <h7 className="chatheader-overskrift">{textData.chatWithUs}</h7>
+                <span>{textData.respondFast}</span>
             </div>
             <button className="closeChat" onClick={onClose}>
                 <FontAwesomeIcon icon={faTimes} />
@@ -283,13 +285,14 @@ function ChatFooter({ onSend, setShowSuggestions }) {
                 });
         }
     };
-
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+    const textData = language === 'norsk' ? no : en;
     return (
         <div className="chatFooter">
             <input
                 type="text"
                 className="messageInput"
-                placeholder="Skriv inn meldingen din ..."
+                placeholder={textData.writeMessage}
                 value={message}
                 onChange={handleInputChange}
                 onKeyDown={handleKeyPress}
