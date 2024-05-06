@@ -269,10 +269,12 @@
         overflow: hidden; 
  
     }
-  
+  .chatHeader{
+    position: fixed;
+  }
   
     .chatBody {
         overflow-y: auto; 
-        height: calc(100vh - 140px);
+        height: calc(110vh - 140px);
     }
 }
