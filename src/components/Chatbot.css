@@ -39,8 +39,7 @@
 
 /* Chat-header */
 .chatHeader {
-    width: 100%; 
-
+    width: 100%; /* Sørger for at headeren alltid er like bred som chat-dialogen */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -269,12 +268,10 @@
         overflow: hidden; 
  
     }
-  .chatHeader{
-    position: fixed;
-  }
+  
   
     .chatBody {
         overflow-y: auto; 
-        height: calc(110vh - 140px);
+        height: calc(100vh - 140px);
     }
 }
