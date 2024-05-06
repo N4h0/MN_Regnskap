@@ -274,6 +274,6 @@
   
     .chatBody {
         overflow-y: auto; 
-        height: calc(110vh - 140px);
+        
     }
 }
