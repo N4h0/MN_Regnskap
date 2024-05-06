@@ -46,6 +46,20 @@
     max-width: 100%;
     height: auto;
 }
+/* Adjustment of picture of Haseeb */
+@media (min-width: 768px) {
+    .første-andre {
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .første-andre {
+        max-width: 80%; 
+        height: auto;
+    }
+}
 
 /* Right container */
 .hel-høyre {
