@@ -19,11 +19,11 @@ function Chatbot() {
     const [messages, setMessages] = useState([]);
     const [showPopup, setShowPopup] = useState(true); // Legg til tilstand for å vise pop-up boksen
     const [showSuggestions, setShowSuggestions] = useState(true); // Ny tilstand for å vise forslag
-
+    //welcome_message
     const WELCOME_MESSAGE = {
         type: "bot",
         content:
-            "Hei der 👋! Velkommen til siden. Gi meg beskjed dersom du har noen spørsmål.",
+            textData.welcome_message,
         time: new Date().toLocaleTimeString("nb-NO", {
             hour: "2-digit",
             minute: "2-digit",
