@@ -283,13 +283,14 @@ function ChatFooter({ onSend, setShowSuggestions }) {
                 });
         }
     };
-
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+    const textData = language === 'norsk' ? no : en;
     return (
         <div className="chatFooter">
             <input
                 type="text"
                 className="messageInput"
-                placeholder="Skriv inn meldingen din ..."
+                placeholder={textData.writeMessage}
                 value={message}
                 onChange={handleInputChange}
                 onKeyDown={handleKeyPress}
