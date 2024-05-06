@@ -114,7 +114,49 @@
         order: 2;  /* Bilde kommer etter tekstseksjonen */
     }
 
-    .hel-venstre, .hel-høyre {
-        width: 100%;  
+
+        .tredje-kort {
+            flex-direction: column;
+        }
+    
+        .hel-container {
+            flex-direction: column;
+        }
+    
+        .hel-venstre, .hel-høyre {
+            width: 100%;
+        }
+    
+        .alleKort {
+            padding: 0; /* Remove padding to avoid horizontal overflow */
+        }
+    
+        .førsteBoks,
+        .andreBoks,
+        .tredjeBoks,
+        .fjerdeBoks {
+            width: 100%; /* Full width for all boxes */
+        }
+    
+        .førsteBoks,
+        .fjerdeBoks {
+            margin-left: 0; /* Remove margin for boxes at the edges */
+            margin-right: 0;
+        }
     }
-}
+    
+    @media (max-width: 300px) {
+        .alleKort {
+            padding: 0; /* Remove padding to avoid horizontal overflow */
+        }
+    
+        .førsteBoks,
+        .andreBoks,
+        .tredjeBoks,
+        .fjerdeBoks {
+            width: 100%; /* Full width for all boxes */
+            margin-left: 0; /* Remove margin for boxes at the edges */
+            margin-right: 0;
+        }
+    }
+    
