@@ -157,7 +157,8 @@
   "chat": "Chat med oss!",
   "answer": "Vi svarer så fort vi kan.",
   "message_placeholder": "Skriv inn meldingen din ...",
-
+  "popup_chat": "Velkommen til vår chatbot!",
+  "popup_message": "Vi er her for å hjelpe deg. Spør oss gjerne om hva som helst!",
 
   "tjenesterHeading": "Det burde ikke være slitsomt for deg å finne informasjon med oss tilstede!",
   "tjenesterParagraph": "Derfor er vi her for å hjelpe deg. Alt det kjedelige kan du la være over for oss og vi vil gjøre vårt beste for å hjelpe deg.",

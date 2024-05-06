@@ -6,8 +6,14 @@ import {
     faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Chatbot.css";
+import { LanguageContext } from '../languages/LanguageContext';
+import { useContext } from "react";
+import en from "../languages/en.json"; // Engelsk språkdata
+import no from "../languages/no.json"; // Norsk språkdata
 
 function Chatbot() {
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+    const textData = language === 'norsk' ? no : en;
     const chatBodyRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([]);
@@ -67,8 +73,8 @@ function Chatbot() {
                                 style={{ color: "black", float: "right" }}
                             />
                         </button>
-                        <h2>Velkommen til vår chatbot!</h2>
-                        <p>Vi er her for å hjelpe deg. Spør oss gjerne om hva som helst!</p>
+                        <h2>{textData.popup_chat}</h2>
+                        <p>{textData.popup_message}</p>
                     </div>
                 </div>
             )}
