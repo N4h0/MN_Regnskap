@@ -11,11 +11,18 @@ export default class NavBar extends Component {
     static contextType = LanguageContext;
     state = {
         isMenuOpen: false,
+        isLanguageMenuOpen: false,
     };
 
     toggleMenu = () => {
         this.setState((prevState) => ({
             isMenuOpen: !prevState.isMenuOpen,
+        }));
+    };
+
+    toggleLanguageMenu = () => {
+        this.setState((prevState) => ({
+            isLanguageMenuOpen: !prevState.isLanguageMenuOpen,
         }));
     };
 
@@ -25,16 +32,18 @@ export default class NavBar extends Component {
         });
     };
 
-    handleMouseEnter = () => {
+    closeLanguageMenu = () => {
         this.setState({
-            isMenuOpen: true,
+            isLanguageMenuOpen: false,
         });
     };
 
+    handleMouseEnter = () => {
+        this.setState({ isLanguageMenuOpen: true });
+    };
+
     handleMouseLeave = () => {
-        this.setState({
-            isMenuOpen: false,
-        });
+        this.setState({ isLanguageMenuOpen: false });
     };
 
     render() {
@@ -50,22 +59,22 @@ export default class NavBar extends Component {
                 </div>
 
                 <div className="right-aligned-items">
-                <NavLink to="/MN_Regnskap/Hjem" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.home}</NavLink>
+                    <NavLink to="/MN_Regnskap/Hjem" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.home}</NavLink>
                     <NavLink to="/MN_Regnskap/om-oss" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.about}</NavLink>
                     <NavLink to="/MN_Regnskap/tjenester" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.tjenester}</NavLink>
-                    <NavLink to="/MN_Regnskap/frister" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.deadlines}</NavLink>
-                    <NavLink to="/MN_Regnskap/kontakt" activeClassName="active" className="navTekst" onClick={this.closeMenu}>{labels.contact_us}</NavLink>
-                    <div className="dropDown" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-                        <a className="navTekst">
-                            <img src={language === 'norsk' ? "/MN_Regnskap/norge.png" : "/MN_Regnskap/usa.png"} alt={language === 'norsk' ? "Norwegian Flag" : "US Flag"}  />
+                    <NavLink to="/MN_Regnskap/frister" activeClassName="active" className="navTekst" onClick={this.closeMenu} href="/MN_Regnskap/frister">{labels.deadlines}</NavLink>
+                    <NavLink to="/MN_Regnskap/kontakt" activeClassName="active" className="navTekst" onClick={this.closeMenu} href="/MN_Regnskap/kontakt">{labels.contact_us}</NavLink>
+                    <div className="dropDown" onClick={this.openLanguageMenu} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+                        <button className="navTekst">
+                            <img src={language === 'norsk' ? "/MN_Regnskap/norge.png" : "/MN_Regnskap/usa.png"} alt={language === 'norsk' ? "Norwegian Flag" : "US Flag"} />
                             {language === 'norsk' ? 'Norsk' : 'English'} <FontAwesomeIcon icon={this.state.isMenuOpen ? faChevronUp : faChevronDown} />
-                        </a>
-                        {this.state.isMenuOpen && (
+                        </button>
+                        {this.state.isLanguageMenuOpen && (
                             <div className="dropDownContent">
-                                <button onClick={() => { this.context.setLanguage('english'); this.closeMenu();}}>
-                                    <img  src="/MN_Regnskap/usa.png" alt="US Flag"/> {labels.english}
+                                <button onClick={() => { this.context.setLanguage('english'); this.closeLanguageMenu(); }}>
+                                    <img src="/MN_Regnskap/usa.png" alt="US Flag" /> {labels.english}
                                 </button>
-                                <button onClick={() => { this.context.setLanguage('norsk'); this.closeMenu();}}>
+                                <button onClick={() => { this.context.setLanguage('norsk'); this.closeLanguageMenu(); }}>
                                     <img src="/MN_Regnskap/norge.png" alt="Norwegian Flag" /> {labels.norwegian}
                                 </button>
                             </div>
@@ -73,9 +82,9 @@ export default class NavBar extends Component {
                     </div>
                 </div>
 
-                <a href="javascript:void(0);" className="icon" onClick={this.toggleMenu}>
+                <button className="icon" onClick={this.toggleMenu}>
                     <FontAwesomeIcon icon={faBars} />
-                </a>
+                </button>
             </div>
         );
     }
