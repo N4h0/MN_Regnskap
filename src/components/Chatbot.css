@@ -257,37 +257,16 @@
   }
 
 
-@media (max-width: 768px) { 
+  @media (max-width: 768px) {
     .chatDialog {
-        position: fixed; 
-        overflow: hidden; 
+        width: 100%; 
+        height: 100vh;
         border-radius: 0;
-        bottom: 0; 
         right: 0; 
-        width: 100%; 
-        height: 100vh; 
-  
+        bottom: 0; 
     }
-
+    
     .chatBody {
-        height: calc(110vh - 140px);
-        overflow-y: auto; 
-    }
-    .chatHeader {
-        position: fixed; /* Endre posisjon til fast */
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 2; /* Sørg for at de er foran chatboksen */
-    }
-    .chatTopMessage {
-        margin-top: 4rem;
-    }
-
-    .chatFooter {
-        position: fixed;
-        bottom: 0;
-        width: 100%; 
-        padding: 0.6rem; 
+        height: calc(100vh - 140px);
     }
 }
