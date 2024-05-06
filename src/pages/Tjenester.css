@@ -5,14 +5,14 @@
     align-items: center;
     margin-bottom: 1.25rem;
     flex-direction: row; /* Standard innstilling for større skjermer */
-    background: linear-gradient(to bottom, #f1f0f0, #fff);
+    background: linear-gradient(to bottom, #dccfcb, #fff);
 }
 .andreBoks {
-    background: linear-gradient(to top, #f1f0f0, #fff);
+    background: linear-gradient(to top, #dccfcb, #fff);
 }
 
 .fjerdeBoks {
-    background: linear-gradient(to bottom, #f1f0f0, #fff);
+    background: linear-gradient(to bottom, #dccfcb, #fff);
 }
 
 .kortInnhold {
