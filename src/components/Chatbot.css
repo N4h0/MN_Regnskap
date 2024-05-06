@@ -39,6 +39,8 @@
 
 /* Chat-header */
 .chatHeader {
+    width: 100%; 
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -264,13 +266,13 @@
         border-radius: 0;
         right: 0; 
         bottom: 0;
-        overflow: hidden; /* Forhindrer scrolling utenfor chatvinduet */
+        overflow: hidden; 
  
     }
-    
+  
   
     .chatBody {
-        overflow-y: auto; /* Tillater scrolling innenfor meldingsområdet */
-        height: calc(100vh - 140px); /* Justert høyde basert på tidligere endringer */
+        overflow-y: auto; 
+        height: calc(100vh - 140px);
     }
 }
