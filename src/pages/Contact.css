@@ -257,7 +257,7 @@
         width: 70%;
     }
     .hero-content {
-        background-position: 90% center; /* Focus more on the right side where the person might be */
+        background-position: 50% center; 
     }
 }
 
