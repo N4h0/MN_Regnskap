@@ -335,6 +335,9 @@
         font-size: 1.3rem;
      
     }
+    .picture-h1{
+        font-size: 4.75rem;
+    }
 }
 
 @media (max-width: 675px) {
