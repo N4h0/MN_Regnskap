@@ -152,6 +152,8 @@
   "chat_mona": "The robot Mona can answer questions about accounting in general or the company M&N Accounting specifically. The robot is built on the model",
   "aboutChat": "All submitted questions will be saved.",
   "writeMessage": "Write your message...",
+  "chatWithUs": "Chat with us!",
+  "respondFast": "We will respond as soon as possible.",
 
   "tjenesterHeading": "You should never tire yourself by looking for information!",
   "tjenesterParagraph": "Thats why we are here for you! Leave the boring part for us.",

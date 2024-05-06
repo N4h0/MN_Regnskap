@@ -119,6 +119,8 @@ function ChatDialog({ onSend, onClose, messages, showSuggestions, setShowSuggest
     );
 }
 function ChatHeader({ onClose }) {
+    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+    const textData = language === 'norsk' ? no : en;
     return (
         <div className="chatHeader">
             <img
@@ -127,8 +129,8 @@ function ChatHeader({ onClose }) {
                 className="chatLogo"
             />
             <div className="chatHeaderText">
-                <h7 className="chatheader-overskrift">Chat med oss!</h7>
-                <span>Vi svarer så fort vi kan.</span>
+                <h7 className="chatheader-overskrift">{textData.chatWithUs}</h7>
+                <span>{textData.respondFast}</span>
             </div>
             <button className="closeChat" onClick={onClose}>
                 <FontAwesomeIcon icon={faTimes} />
