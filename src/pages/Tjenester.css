@@ -63,6 +63,13 @@
     }
 }
 
+@media (min-width: 1025px) {
+    .første-andre {
+        max-width: 50%;
+        height: auto;
+    }
+}
+
 /* Right container */
 .hel-høyre {
     flex: 1;
