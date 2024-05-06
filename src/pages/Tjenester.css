@@ -1,18 +1,14 @@
 /* Container for whole layout */
+/*background: linear-gradient(to bottom, #dccfcb, #fff);*/
 .hel-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.25rem;
     flex-direction: row; /* Standard innstilling for større skjermer */
-    background: linear-gradient(to bottom, #dccfcb, #fff);
-}
-.andreBoks {
-    background: linear-gradient(to top, #dccfcb, #fff);
-}
-
-.fjerdeBoks {
-    background: linear-gradient(to bottom, #dccfcb, #fff);
+    background: linear-gradient(to bottom, #dddddd, #fff);
+    padding: 0.8rem;
+    margin: 20px;
 }
 
 .kortInnhold {
@@ -31,8 +27,10 @@
 .alleKort {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem; /* Space between cards */
     padding: 0.8rem;
+    gap: 1.25rem; /* Space between cards */
+    margin: 20px;
+    background: linear-gradient(to top, #dddddd, #fff);
 }
 
 /* Left container and image */
