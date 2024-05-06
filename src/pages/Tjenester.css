@@ -4,9 +4,15 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.25rem;
-    flex-direction: row;  /* Standard innstilling for større skjermer */
-    background-color: rgb(241, 240, 240);
+    flex-direction: row; /* Standard innstilling for større skjermer */
+    background: linear-gradient(to bottom, #f1f0f0, #fff);
+}
+.andreBoks {
+    background: linear-gradient(to top, #f1f0f0, #fff);
+}
 
+.fjerdeBoks {
+    background: linear-gradient(to bottom, #f1f0f0, #fff);
 }
 
 .kortInnhold {
