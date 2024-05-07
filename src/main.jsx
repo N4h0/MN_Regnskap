@@ -1,9 +1,6 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom/client'
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
+import * as React from 'react';
+import * as ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Hjem from "./pages/Hjem";
 import OmOss from "./pages/Team";
 import Tjenester from "./pages/Tjenester";
@@ -11,44 +8,44 @@ import Frister from "./pages/Link";
 import Contact from "./pages/Contact";
 import Root from "./routes/root";
 import NotFound from "./NotFound";
-import { LanguageProvider } from './languages/LanguageContext'; // Adjust the path as necessary
+import { LanguageProvider } from './languages/LanguageContext';
 
 const router = createBrowserRouter([
     {
-        path: "/MN_Regnskap/",
+        path: "/",
         element: <Root />,
         children: [
             {
                 index: true,
-                element: <Hjem />, 
-            },
-            {
-                path: "/MN_Regnskap/hjem",
                 element: <Hjem />,
             },
             {
-                path: "/MN_Regnskap/om-oss",
+                path: "/hjem",
+                element: <Hjem />,
+            },
+            {
+                path: "/om-oss",
                 element: <OmOss />,
             },
             {
-                path: "/MN_Regnskap/tjenester",
+                path: "/tjenester",
                 element: <Tjenester />,
             },
             {
-                path: "/MN_Regnskap/frister",
+                path: "/frister",
                 element: <Frister />,
             },
             {
-                path: "/MN_Regnskap/kontakt",
+                path: "/kontakt",
                 element: <Contact />,
             },
             {
-                path: "/MN_Regnskap/*",
+                path: "*",
                 element: <NotFound />,
             }
         ]
     },
-])
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -56,4 +53,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <RouterProvider router={router} />
         </LanguageProvider>
     </React.StrictMode>,
-)
+);
