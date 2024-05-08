@@ -126,7 +126,7 @@ function ChatHeader({ onClose }) {
     return (
         <div className="chatHeader">
             <img
-                src="/MN_Regnskap/mn-regnskap-logo.webp"
+                src="/mn-regnskap-logo.webp"
                 alt="Logo"
                 className="chatLogo"
             />
@@ -218,8 +218,6 @@ function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
         </div>
     );
 }
-
-
 
 function ChatFooter({ onSend, setShowSuggestions }) {
     const [message, setMessage] = useState("");

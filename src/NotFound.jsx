@@ -26,10 +26,7 @@ const NotFound = () => {
             <Link to="/MN_Regnskap/hjem">
               <img src="./logo1.png" alt="Hjem" className="logo1" />
             </Link>
-            <Link to="/MN_Regnskap/chatbot">
-              <img src="./logo2.png" alt="logo 2" className="logo2" />
-            </Link>
-            <Link to="/MN_Regnskap/kontakt">
+            <Link to="/kontakt">
               <img src="./logo3.png" alt="logo 3" className="logo3" />
             </Link>
           </div>

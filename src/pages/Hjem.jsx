@@ -45,7 +45,7 @@ function Bildet({ language }) {
       <div className="picture-text">
         <h1 className="picture-h1">{textData.regnskap}</h1>
         <h2 className="picture-h2">{textData.home_page_text}</h2>
-        <Link to="/MN_Regnskap/om-oss">
+        <Link to="/om-oss">
           <button className="picture-button" onClick={scrollToTop}>
             {textData.about_us}
           </button>
@@ -62,29 +62,29 @@ function Regnskap({ language }) {
     <>
       <h2>{textData.ambitions_expertise}</h2>
       <div className="regnskapsBoks">
-        <Link to="/MN_Regnskap/tjenester" className="regnskapsKort">
+        <Link to="/tjenester" className="regnskapsKort">
           <img src="./HjemKort1.WebP" alt="" loading="lazy" />
           <h3 className="regnskapsKort-h3">{textData.accounting}</h3>
           <p className="regnskapsKort-p">{textData.accounting_description}</p>
         </Link>
-        <Link to="/MN_Regnskap/tjenester" className="regnskapsKort">
+        <Link to="/tjenester" className="regnskapsKort">
           <img src="./HjemKort2.WebP" alt="" loading="lazy" />
           <h3 className="regnskapsKort-h3">{textData.advice}</h3>
           <p className="regnskapsKort-p">{textData.advice_description}</p>
         </Link>
-        <Link to="/MN_Regnskap/tjenester" className="regnskapsKort">
+        <Link to="/tjenester" className="regnskapsKort">
           <img src="./HjemKort3.Webp" alt="" loading="lazy" />
           <h3 className="regnskapsKort-h3">{textData.salary}</h3>
           <p className="regnskapsKort-p">{textData.salary_description}</p>
         </Link>
-        <Link to="/MN_Regnskap/tjenester" className="regnskapsKort">
+        <Link to="/tjenester" className="regnskapsKort">
           <img src="./HjemKort4.WebP" alt="" loading="lazy" />
           <h3 className="regnskapsKort-h3">{textData.tax_return}</h3>
           <p className="regnskapsKort-p">{textData.tax_return_description}</p>
         </Link>
       </div>
       <div className="siste-container">
-        <Link className="regnskapsKnapp" to="/MN_Regnskap/tjenester">
+        <Link className="regnskapsKnapp" to="/tjenester">
           <span className="regnskapsKnappTekst" onClick={scrollToTop}>
             {textData.more_info}
           </span>
@@ -247,7 +247,7 @@ function Kontakt({ language }) {
         <div className="contact-pic-text">
           <h1>{textData.join_us}</h1>
           <p>{textData.focus_on}</p>
-          <Link to="/MN_Regnskap/kontakt">
+          <Link to="/kontakt">
             <button className="kontaktKnapp" onClick={scrollToTop}>
               {textData.contact_us}
             </button>

@@ -10,8 +10,8 @@
 
   "omOssOverskrift1": "Vår historie",
   "omOssOverskrift2": "Bak tallene står vi, din pålitelige partner for økonomisk suksess!",
-  "omOssBrødtekst1": "M&N Regnskap har en sentral beliggenhet på Alna og har omfattende erfaring med regnskapsførsel, i ulike bransjer. Vi betjener kunder i Oslo, og andre deler av Norge.",
-  "omOssBrødtekst2": "Vårt team består av høyt utdannede medarbeidere med lang erfaring innen feltet. Selskapet ble grunnlagt i 2008 av Moosa Ali Rashid og Naila Sohail Khokhar, begge med utdanning innen revisjon. Med årene har vi vokst i takt med vårt klientnettverk.",
+  "omOssBrødtekst1": "M&N Regnskap har en sentral beliggenhet på Alna og har omfattende erfaring med regnskapsførsel i ulike bransjer. Vi betjener kunder i Oslo, og andre deler av Norge.",
+  "omOssBrødtekst2": "Vårt team består av høyt utdannede medarbeidere med lang erfaring innen feltet. Selskapet ble grunnlagt av Moosa Ali Rashid og Naila Sohail Khokhar i 2008, begge med utdanning innen revisjon.",
   "omOssBrødtekst3": "M&N Regnskap har en høy faglig standard og gode rutiner for kvalitetssikring, da vi er oppmerksomme på at regnskapsføring er forbundet med strenge krav og stramme tidsfrister. Vi tilbyr tjenester fra A til Å og jobber i dag i stor grad digitalt, men vi tilpasser oss også klientenes ønsker om papirbaserte løsninger. La oss ta oss av regnskapet, slik at du kan fokusere på det du er best på!",
   "omOssBrødtekst4": "Konsentrer deg om det du er god på – Vi tar oss av regnskapet!",
   "omOssTeam": "Vårt team",
@@ -36,12 +36,10 @@
 
   "history": "Historie",
   "about_us_text": "M&N Accounting er et personlig regnskapsfirma som kommuniserer godt med sine kunder, kjenner deres økonomiske historie og situasjon, og tilbyr tjenester som optimaliserer kundens økonomiske situasjon. Målet vårt er å være en viktig bidragsyter for våre kunder som regnskapsfører og rådgiver. Vi har et bredt nettverk av kontakter innen revisjon og juridiske tjenester",
-  "history_text": "M&N Accounting ligger sentralt på Frogner. Vi har omfattende erfaring innen regnskap i de fleste bransjer. Vi tilbyr regnskapstjenester for kunder i Oslo og resten av Norge. Vi har ansatte med høy utdannelse og omfattende erfaring..",
+  "history_text": "M&N Accounting ligger sentralt på Frogner. Vi har omfattende erfaring innen regnskap i de fleste bransjer. Vi tilbyr regnskapstjenester for kunder i Oslo og resten av Norge. Vi har ansatte med høy utdannelse og omfattende erfaring.",
   "the_team_behind": "Teamet bak M&N Regnskap",
-  "about_mosa": "Vi trenger hjelp med hva vi skal skrive her.",
   "chartered_accountant": "Statsautorisert revisor",
   "accountant": "Revisor",
-  "message": "Trenger inspirasjon til hva jeg skal skrive her",
 
   "MN_accountant": "M&N REGNSKAPSFØRER",
   "we_take_care_of_accounting": "Vi tar vare på regnskapet!",
@@ -140,7 +138,7 @@
   "CharteredAccountant": "Autorisert regnskapsfører",
   "Accountant": "Regnskapfører",
   "assistant": "Regnskaps medarbeidere",
-  "moosa_text": "Ferdig utdannet  revisor og statsautorisert regnskapsfører med over 19 års bransjeerfaring.Han er også en anerkjent kontrollør i Regnskap Norge,  og hans ekspertise og lidenskap for nøyaktighet gjenspeiles i hvert oppdrag han utfører. Moosa leverer skreddersydde regnskapsløsninger med fokus på kvalitet og etterlevelse av gjeldende regelverk. Med hans omfattende kompetanse kan du være trygg på at dine regnskapsmessige behov blir håndtert profesjonelt og effektivt.",
+  "moosa_text": "Ferdig utdannet revisor og statsautorisert regnskapsfører med over 19 års bransjeerfaring. Han er også en anerkjent kontrollør i Regnskap Norge, og hans ekspertise og lidenskap for nøyaktighet gjenspeiles i hvert oppdrag han utfører. Moosa leverer skreddersydde regnskapsløsninger med fokus på kvalitet og etterlevelse av gjeldende regelverk. Med hans omfattende kompetanse kan du være trygg på at dine regnskapsmessige behov blir håndtert profesjonelt og effektivt.",
   "naila_text": "Naila har utdannelse fra Handelshøyskolen BI i Oslo. Hun er en dyktig revisor, og autorisert regnskapsfører med en imponerende karriere på over 24 år i bransjen. Hun har opparbeidet seg anerkjennelse, og hennes engasjement for nøyaktighet og kvalitet skinner gjennom i hvert oppdrag hun tar på seg. Naila er dedikert til å levere skreddersydde regnskapsløsninger som oppfyller høye standarder og følger gjeldende regelverk til punkt og prikke. Hun har spesialkompetanse innen regnskapsføring for leger og tannleger.",
   "haseeb_text": "Haseeb er en erfaren regnskapsfører med ni års erfaring i bransjen. Han bryr seg om presisjon og er særdeles dedikert, og utmerker seg i å utvikle skreddersydde regnskapsløsninger som møter strenge regulatoriske standarder.",
   "ibrahim_text": "Ibrahim har over åtte års erfaring med prosjektledelse og strategisk planlegging. Hans ekspertise i å lede tverrfaglige team og hans detaljfokus gjør ham uvurderlig i håndtering av komplekse forretningsutfordringer.",
@@ -177,14 +175,14 @@
   "secondHeadingP2": "Ved å benytte deg av regnskapsrådgivning kan du maksimere effektiviteten i bruk av både tid og ressurser. Ekspertrådgivning innen regnskap hjelper deg med å optimalisere din økonomiske situasjon og gjøre kloke beslutninger som sikrer best mulig utbytte av dine midler.",
 
   "thirdHeading": "Lønn",
-  "thirdHeadingP1": "Har du ansatte? Spar tid ved å la oss håndtere lønnsbehandling og rapportering til A-meldingen.",
+  "thirdHeadingP1": "Har du ansatte? Spar tid ved å overlate lønnsbehandlingen og rapporteringen til A-meldingen til oss.",
   "thirdHeadingP2": "Med våre tjenester tar vi oss av alle aspekter ved lønnsadministrasjonen, inkludert beregning av lønn, utbetaling, rapportering av skattetrekk og trygdeavgifter, samt innrapportering til A-meldingen.",
   "thirdHeadingP3": "Du kan stole på våre regnskapseksperter for nøyaktig og effektiv håndtering av lønnsprosessen, slik at du kan fokusere på å drive virksomheten din.",
 
   "fourthHeading": "Skattemelding",
-  "fourthHeadingP1": "Vi hjelper deg med dine private skattemeldinger enten elektronisk eller på digitalt.",
+  "fourthHeadingP1": "Vi hjelper deg med dine private skattemeldinger, enten elektronisk eller på papir.",
   "fourthHeadingP2": "Skattemelding er en viktig del av personlig økonomi, og vi er her for å gjøre den prosessen enklere for deg. Enten det er elektronisk eller på papir, kan våre regnskapseksperter veilede deg gjennom dine private skattemeldinger.",
-  "fourthHeadingP3": "Ta kontakt med oss til enhver tid, og vi vil alltid sørge for at du er fornøyd.",
+  "fourthHeadingP3": "Ta kontakt med oss når som helst – vi sikrer alltid din tilfredshet.",
 
   "notFound": "Ser ut som at noen har bokført denne siden på feil konto! Men fortvil ikke, vi hjelper deg med å balansere bøkene igjen. Bruk menyen for å finne veien tilbake:"
 }
