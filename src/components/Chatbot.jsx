@@ -157,7 +157,7 @@ function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ question: suggestionContent }),
+            body: JSON.stringify({ question: suggestionContent,  language: language }),
         })
             .then((response) => response.json())
             .then((data) => {
@@ -206,7 +206,7 @@ function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
     const textData = language === 'norsk' ? no : en;
     const welcomeMessage = (
         <div className="chatTopMessage">
-            <p> {textData.chat_mona}&nbsp; <a href="https://huggingface.co/NbAiLab/nb-sbert-base" target="_blank">NB-SBER-BASE</a>. &nbsp;{textData.aboutChat}
+            <p> {textData.chat_mona}&nbsp; <a href="https://huggingface.co/NbAiLab/nb-sbert-base" target="_blank">NB-SBERT-BASE</a>. &nbsp;{textData.aboutChat}
             </p>
         </div>
     );
@@ -245,7 +245,10 @@ function ChatFooter({ onSend, setShowSuggestions }) {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ question: message }),
+                body: JSON.stringify({
+                    question: message,
+                    language: language // 'english' eller 'norsk'
+                }),
             })
                 .then((response) => response.json())
                 .then((data) => {
