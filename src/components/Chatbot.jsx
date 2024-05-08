@@ -206,7 +206,7 @@ function ChatBody({ messages, onSend, showSuggestions, setShowSuggestions }) {
     const textData = language === 'norsk' ? no : en;
     const welcomeMessage = (
         <div className="chatTopMessage">
-            <p> {textData.chat_mona}&nbsp; <a href="https://huggingface.co/NbAiLab/nb-sbert-base" target="_blank">NB-SBER-BASE</a>. &nbsp;{textData.aboutChat}
+            <p> {textData.chat_mona}&nbsp; <a href="https://huggingface.co/NbAiLab/nb-sbert-base" target="_blank">NB-SBERT-BASE</a>. &nbsp;{textData.aboutChat}
             </p>
         </div>
     );
