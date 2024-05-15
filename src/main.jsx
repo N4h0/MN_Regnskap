@@ -1,6 +1,9 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import * as React from 'react'
+import * as ReactDOM from 'react-dom/client'
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
 import Hjem from "./pages/Hjem";
 import OmOss from "./pages/Team";
 import Tjenester from "./pages/Tjenester";
@@ -8,11 +11,11 @@ import Frister from "./pages/Link";
 import Contact from "./pages/Contact";
 import Root from "./routes/root";
 import NotFound from "./NotFound";
-import { LanguageProvider } from './languages/LanguageContext';
+import { LanguageProvider } from './languages/LanguageContext'; // Adjust the path as necessary
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/MN_Regnskap/",
         element: <Root />,
         children: [
             {
@@ -20,32 +23,32 @@ const router = createBrowserRouter([
                 element: <Hjem />,
             },
             {
-                path: "/hjem",
+                path: "/MN_Regnskap/hjem",
                 element: <Hjem />,
             },
             {
-                path: "/om-oss",
+                path: "/MN_Regnskap/om-oss",
                 element: <OmOss />,
             },
             {
-                path: "/tjenester",
+                path: "/MN_Regnskap/tjenester",
                 element: <Tjenester />,
             },
             {
-                path: "/frister",
+                path: "/MN_Regnskap/frister",
                 element: <Frister />,
             },
             {
-                path: "/kontakt",
+                path: "/MN_Regnskap/kontakt",
                 element: <Contact />,
             },
             {
-                path: "*",
+                path: "/MN_Regnskap/*",
                 element: <NotFound />,
             }
         ]
     },
-]);
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -53,4 +56,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <RouterProvider router={router} />
         </LanguageProvider>
     </React.StrictMode>,
-);
+)
