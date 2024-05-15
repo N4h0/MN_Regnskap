@@ -260,14 +260,14 @@
   @media (max-width: 768px) {
     .chatDialog {
         width: 100%; 
-        height: 100vh;
+        height: 100vh; 
         border-radius: 0;
-        right: 0; 
+        position: fixed;
+        right: 0;
         bottom: 0;
-        overflow: hidden; 
- 
+        top: env(safe-area-inset-top); /* Adjust the top to respect safe areas */
+        overflow: hidden;
     }
-  
   
     .chatBody {
         overflow-y: auto; 
