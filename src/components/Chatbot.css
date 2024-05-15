@@ -277,6 +277,6 @@
     .chatBody {
         overflow-y: auto;
         /* Dynamically calculate the available height, subtracting the header and footer */
-        height: calc(100vh - env(safe-area-inset-top) - 120px); /* Adjust '120px' to your header and footer total height */
+        height: calc(90vh - env(safe-area-inset-top) - 120px); /* Adjust '120px' to your header and footer total height */
     }
 }
