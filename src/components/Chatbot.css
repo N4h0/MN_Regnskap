@@ -265,12 +265,18 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        top: env(safe-area-inset-top); /* Adjust the top to respect safe areas */
-        overflow: hidden;
+        top: env(safe-area-inset-top); /* Respect safe areas */
+        overflow: hidden; /* Hide any overflow */
+    }
+
+    .chatHeader, .chatFooter {
+        /* Make sure these have fixed heights, or use JavaScript to calculate their heights dynamically */
+        height: 60px; /* Example fixed height */
     }
   
     .chatBody {
-        overflow-y: auto; 
-        height: calc(100vh - 140px);
+        overflow-y: auto;
+        /* Dynamically calculate the available height, subtracting the header and footer */
+        height: calc(100vh - env(safe-area-inset-top) - 120px); /* Adjust '120px' to your header and footer total height */
     }
 }
