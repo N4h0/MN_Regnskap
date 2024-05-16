@@ -269,5 +269,9 @@
         z-index: 999!important;  /* Sørger for at chat-vinduet er over andre elementer */
         border-radius: 0!important;  /* Fjerner avrundede hjørner for å fylle hele skjermen */
     }
-   
+  
+    .chatBody {
+        height: calc(100% - 60px); /* Juster 60px til faktisk høyde av chatFooter */
+        overflow-y: auto; /* Gjør innholdet rullbart */
+    }
 }
