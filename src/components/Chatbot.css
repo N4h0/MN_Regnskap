@@ -22,8 +22,7 @@
     cursor: pointer;
 }
 
-
-/* Styling når chatten er åpen */
+/* Styling when chat is open */
 .chatDialog {
     background-color: #fff;
     width: 21.75rem;
@@ -31,13 +30,12 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 585px;
-    /*background: #f7f7f7;*/
     position: fixed;
     bottom: 0;
     right: 0;
 }
 
-/* Chat-header */
+/* Chat header */
 .chatHeader {
     display: flex;
     align-items: center;
@@ -71,12 +69,12 @@
     padding-right: 0.62rem;
 }
 
-/* Chat-body */
+/* Chat body */
 .chatBody {
     display: flex;
     flex-direction: column;
     padding: 0.9rem;
-    height: calc(100% - 4.2rem); /* Juster høyden for å ta høyde for footer */
+    height: calc(100% - 4.2rem); /* Adjust height to account for footer */
     overflow-y: auto;
     margin: 0 auto;
     background: #f7f7f7;
@@ -84,7 +82,7 @@
 }
 
 .chatTopMessage {
-    flex: 1; /* Tar opp all plassen på toppen av chatbotten */
+    flex: 1; /* Takes up all the space at the top of the chat bot */
     display: flex;
     align-items: flex-start;
     font-size: 0.7rem;
@@ -131,7 +129,7 @@
     font-weight: bold;
 }
 
-/* Chat-footer */
+/* Chat footer */
 .chatFooter {
     position: absolute;
     bottom: 0;
@@ -143,7 +141,6 @@
     border-top: 1px solid #eee;
     background-color: #fff;
 }
-
 
 .messageInput {
     flex: 1;
@@ -166,7 +163,7 @@
     background-color: #eee;
 }
 
-/* Stil for popup-container */
+/* Style for popup-container */
 .popup-container {
     position: fixed;
     bottom: 80px; 
@@ -204,8 +201,8 @@
 .popup-box button:hover {
     background-color: gray;
 }
-        
-.closeButton{
+
+.closeButton {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -216,23 +213,23 @@
     display: flex;
     align-items: center;
     width: 100%; 
-  }
-  
-  .userContainer {
-    justify-content: flex-end; /* bruker melding til høyre*/
-  }
-  
-  .botContainer {
-    justify-content: flex-start; /* bot melding til venster */
-  }
-  
-  .suggestionContainer {
+}
+
+.userContainer {
+    justify-content: flex-end; /* User message to the right */
+}
+
+.botContainer {
+    justify-content: flex-start; /* Bot message to the left */
+}
+
+.suggestionContainer {
     justify-content: center; 
     flex-direction: column; 
     width: 100%;
-  }
-  
-  .suggestionBubble {
+}
+
+.suggestionBubble {
     width: 100%; 
     background-color: #fff;
     color: #333;
@@ -242,25 +239,25 @@
     display: flex;
     justify-content: center; 
     margin-top: 5px;
-  }
-  
-  .suggestionButton {
+}
+
+.suggestionButton {
     background: none;
     border: none;
     text-align: center;
     cursor: pointer;
     width: 100%; 
-  }
-  
-  .botIcon{
+}
+
+.botIcon {
     margin-right: 0.5rem;
-  }
+}
 
-
-  @media (max-width: 768px) {
+/* Mobile specific styles */
+@media (max-width: 768px) {
     .chatDialog {
-        width: 100vw; /* Full skjerm bredde */
-        height: 100vh; /* Full skjerm høyde */
+        width: 100vw; /* Full screen width */
+        height: 100vh; /* Full screen height */
         position: fixed;
         top: 0;
         left: 0;
@@ -274,21 +271,18 @@
     .chatBody {
         flex-grow: 1;
         overflow-y: auto;
-        padding-bottom: 4.2rem; /* Legg til padding for å unngå overlapp med footer */
+        padding-bottom: 4.2rem; /* Add padding to avoid overlap with footer */
     }
 
     .chatFooter {
         position: fixed;
         bottom: 0;
         width: 100%;
-        box-shadow: 0 -1px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
         z-index: 1010;
         background-color: #fff;
     }
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
+
