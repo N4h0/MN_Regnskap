@@ -267,24 +267,23 @@
         overflow: hidden; 
         display: flex;
         flex-direction: column;
-        justify-content: flex-start; /* Endret fra 'space-between' til 'flex-start' */
+        justify-content: space-between; 
         z-index: 1000; 
-        padding-bottom: 60px; /* Sørger for at det er nok plass for footeren */
+        padding-bottom: 60px; 
     }
 
     .chatBody {
-        flex-grow: 1;
+        flex-grow: 1; 
         overflow-y: auto;
-        margin-bottom: 60px; /* Legger til margin nederst for å unngå overlapping med footeren */
     }
-
     .chatFooter {
-        position: fixed; /* Endret fra 'absolute' til 'fixed' */
-        bottom: 0; /* Sikrer at footeren er på bunnen av skjermen */
-        left: 0;
-        width: 100%; /* Full bredde */
-        background: white; /* Gir en distinkt bakgrunn for bedre synlighet */
-        padding: 10px 0; /* Gir ekstra padding for visuell plass */
-        box-shadow: 0 -1px 10px rgba(0,0,0,0.1); /* Gir en subtil skygge for å skille footeren fra chatBody */
+        position: fixed;
+   
+        z-index: 1010;  /* Høyere enn chatDialog */
     }
+    
+
+   
 }
+
+
