@@ -276,8 +276,7 @@
     .chatBody {
         flex-grow: 1; 
         overflow-y: auto;
-        height: calc(100vh - 60px); /* Justerer høyden basert på footer-høyden */
-
+        margin-bottom: 50px; 
     }
     .chatFooter {
         position: fixed;
