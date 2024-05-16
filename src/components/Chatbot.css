@@ -264,21 +264,27 @@
         position: fixed;
         top: 0;
         left: 0;
-        overflow: hidden; /* Hindrer scrolling utenfor dette elementet */
+        overflow: hidden; 
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* Sørger for at header og footer er på sine plasser */
-        z-index: 1000; /* Sørger for at den ligger over andre elementer */
+        justify-content: space-between;
+        z-index: 1000; 
+        padding-bottom: 60px; 
     }
 
     .chatBody {
-        flex-grow: 1; /* Tar opp all tilgjengelig plass mellom header og footer */
-        overflow-y: auto; /* Gjør innholdet rullbart */
+        flex-grow: 1; 
+        overflow-y: auto;
     }
 
     .chatFooter {
-        position: static; /* Gjør at den følger flowen til flexbox, tryggere enn 'absolute' */
-        width: 100%; /* Full bredde */
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+        width: 100%; 
+        background: white; 
+        padding: 10px 0; 
+/
     }
 }
 
