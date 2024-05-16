@@ -144,7 +144,7 @@ function ChatHeader({ onClose }) {
     return (
         <div className="chatHeader">
             <img
-                src="/mn-regnskap-logo.webp"
+              src="/MN_Regnskap/mn-regnskap-logo.webp"              
                 alt="Logo"
                 className="chatLogo"
             />
