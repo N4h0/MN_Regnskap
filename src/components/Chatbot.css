@@ -267,7 +267,7 @@
         overflow: hidden; 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between; 
         z-index: 1000; 
         padding-bottom: 60px; 
     }
@@ -278,13 +278,13 @@
     }
 
     .chatFooter {
-        position: absolute;
-        bottom: 0; 
+        position: absolute; /* Fester footeren til bunnen av chatDialog */
+        bottom: 0; /* Sikrer at footeren er på bunnen av chat-vinduet */
         left: 0;
-        width: 100%; 
-        background: white; 
-        padding: 10px 0; 
-/
+        width: 100%; /* Full bredde */
+        background: white; /* Gir en distinkt bakgrunn for bedre synlighet */
+        padding: 10px 0; /* Gir ekstra padding for visuell plass */
+        box-shadow: 0 -1px 10px rgba(0,0,0,0.1); /* Gir en subtil skygge for å skille footeren fra chatBody */
     }
 }
 
