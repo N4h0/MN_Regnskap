@@ -259,19 +259,27 @@
 
   @media (max-width: 768px) {
     .chatDialog {
-        width: 100%!important;
-        height: 100vh!important;  /* Gjør at dialogboksen dekker hele skjermhøyden */
-        top: 0!important;
-        right: 0!important;
-        bottom: 0!important;
-        left: 0!important;
-        position: fixed!important;
-        z-index: 999!important;  /* Sørger for at chat-vinduet er over andre elementer */
-        border-radius: 0!important;  /* Fjerner avrundede hjørner for å fylle hele skjermen */
+        width: 100vw; /* Full skjerm bredde */
+        height: 100vh; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden; /* Hindrer scrolling utenfor dette elementet */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Sørger for at header og footer er på sine plasser */
+        z-index: 1000; /* Sørger for at den ligger over andre elementer */
     }
-  
+
     .chatBody {
-        height: calc(100% - 60px); /* Juster 60px til faktisk høyde av chatFooter */
+        flex-grow: 1; /* Tar opp all tilgjengelig plass mellom header og footer */
         overflow-y: auto; /* Gjør innholdet rullbart */
     }
+
+    .chatFooter {
+        position: static; /* Gjør at den følger flowen til flexbox, tryggere enn 'absolute' */
+        width: 100%; /* Full bredde */
+    }
 }
+
+
