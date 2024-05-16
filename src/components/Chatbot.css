@@ -276,6 +276,7 @@
     .chatBody {
         flex-grow: 1; 
         overflow-y: auto;
+        padding-bottom: 70px; 
     }
     .chatFooter {
         position: fixed;
