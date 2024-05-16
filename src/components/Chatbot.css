@@ -260,7 +260,7 @@
   @media (max-width: 768px) {
     .chatDialog {
         width: 100vw; /* Full skjerm bredde */
-        height: calc(100vh - 75px); /* Juster høyden for å unngå overlapp med inputfeltet */
+        height: 100vh; /* Full skjerm høyde */
         position: fixed;
         top: 0;
         left: 0;
@@ -274,7 +274,7 @@
     .chatBody {
         flex-grow: 1;
         overflow-y: auto;
-        padding-bottom: 40px;
+        padding-bottom: 4.2rem; /* Legg til padding for å unngå overlapp med footer */
     }
 
     .chatFooter {
@@ -283,8 +283,12 @@
         width: 100%;
         box-shadow: 0 -1px 10px rgba(0,0,0,0.1);
         z-index: 1010;
-        background-color: #fff; /* Sørg for at bakgrunnen til footer matcher resten av chatten */
+        background-color: #fff;
     }
 }
 
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
