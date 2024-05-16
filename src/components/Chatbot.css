@@ -275,11 +275,11 @@
     .chatBody {
         flex-grow: 1; 
         overflow-y: auto;
+        margin-bottom: 60px; 
     }
     .chatFooter {
         position: fixed;
-   
-        z-index: 1010;  /* Høyere enn chatDialog */
+        z-index: 1010;  
     }
     
 
