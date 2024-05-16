@@ -31,7 +31,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 585px;
-    /*background: #f7f7f7;*/
     position: fixed;
     bottom: 0;
     right: 0;
@@ -269,22 +268,15 @@
         flex-direction: column;
         justify-content: space-between;
         z-index: 1000; 
-        padding-bottom: 60px; 
     }
-
+   
     .chatBody {
         flex-grow: 1; 
         overflow-y: auto;
     }
 
-    .chatFooter {
-        position: absolute;
-        bottom: 0; 
-        left: 0;
-        width: 100%; 
-        background: white; 
-        padding: 10px 0; 
-
-    }
+   
+  
+    
 }
 
