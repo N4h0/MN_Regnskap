@@ -20,17 +20,6 @@ function Chatbot() {
     const [showPopup, setShowPopup] = useState(true); // Legg til tilstand for å vise pop-up boksen
     const [showSuggestions, setShowSuggestions] = useState(true); // Ny tilstand for å vise forslag
 
-    //welcome_message
-
-    const WELCOME_MESSAGE = {
-        type: "bot",
-        content:
-            textData.welcome_message,
-        time: new Date().toLocaleTimeString("nb-NO", {
-            hour: "2-digit",
-            minute: "2-digit",
-        }),
-    };
 
     const sendMessage = (content, type = "user") => {
         if (content.trim()) {
@@ -42,14 +31,43 @@ function Chatbot() {
         }
     };
 
+    //Effekt for håndtering av velkomstmelding og åpning/lukking av chat
     useEffect(() => {
-        if (isOpen && messages.length === 0) {
-            setMessages([WELCOME_MESSAGE]);
-        }
+        const WELCOME_MESSAGE = {
+        type: "bot",
+        content: textData.welcome_message,
+        time: new Date().toLocaleTimeString("nb-NO", {
+            hour: "2-digit",
+            minute: "2-digit",
+        }),
+    };
+
+    if (isOpen && messages.length === 0) {
+        setMessages([WELCOME_MESSAGE]);
+    }
+    }, [isOpen, textData.welcome_message]);
+
+    //Effekt for håndtering av språkendringer
+    useEffect(() => {
+        if (language) {
+            const WELCOME_MESSAGE = {
+                type: "bot",
+                content: textData.welcome_message,
+                time: new Date().toLocaleTimeString("nb-NO", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+             }),
+            };
+        setMessages([WELCOME_MESSAGE]);
+            }
+        }, [language]);// Dette tilbakestilles kun ved språkendring
+
+    // legg til funksjon for å opprettholde scroll posisjon
+    useEffect(() => {
         if (chatBodyRef.current) {
-            chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
-        }
-    }, [isOpen, messages]);
+        chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
+            }
+        },  [messages]);
 
     // Legg til funksjon for å lukke pop-up boksen
     const closePopup = () => {
@@ -110,12 +128,12 @@ function ChatDialog({ onSend, onClose, messages, showSuggestions, setShowSuggest
             <ChatBody
                 messages={messages}
                 onSend={onSend}
-                showSuggestions={showSuggestions} // Send ned som prop
-                setShowSuggestions={setShowSuggestions} // Send ned som prop
+                showSuggestions={showSuggestions} 
+                setShowSuggestions={setShowSuggestions} 
             />
             <ChatFooter
                 onSend={onSend}
-                setShowSuggestions={setShowSuggestions} // Send ned som prop
+                setShowSuggestions={setShowSuggestions} 
             />
         </div>
     );
@@ -126,7 +144,7 @@ function ChatHeader({ onClose }) {
     return (
         <div className="chatHeader">
             <img
-                src="/MN_Regnskap/mn-regnskap-logo.webp"
+                src="/mn-regnskap-logo.webp"
                 alt="Logo"
                 className="chatLogo"
             />
