@@ -11,15 +11,16 @@ import { useContext } from "react";
 import en from "../languages/en.json"; // Engelsk språkdata
 import no from "../languages/no.json"; // Norsk språkdata
 
+
 function Chatbot() {
-    const { language } = useContext(LanguageContext); // Bruk useContext for å få tilgang til det nåværende språket
+    const { language } = useContext(LanguageContext); // Use useContext to get the current language
     const textData = language === 'norsk' ? no : en;
     const chatBodyRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([]);
-    const [showPopup, setShowPopup] = useState(true); // Legg til tilstand for å vise pop-up boksen
-    const [showSuggestions, setShowSuggestions] = useState(true); // Ny tilstand for å vise forslag
-
+    const [showPopup, setShowPopup] = useState(true); // State for showing the pop-up box
+    const [showSuggestions, setShowSuggestions] = useState(true); // New state for showing suggestions
+    const messageInputRef = useRef(null);
 
     const sendMessage = (content, type = "user") => {
         if (content.trim()) {
@@ -31,23 +32,23 @@ function Chatbot() {
         }
     };
 
-    //Effekt for håndtering av velkomstmelding og åpning/lukking av chat
+    // Effect for handling welcome message and opening/closing chat
     useEffect(() => {
         const WELCOME_MESSAGE = {
-        type: "bot",
-        content: textData.welcome_message,
-        time: new Date().toLocaleTimeString("nb-NO", {
-            hour: "2-digit",
-            minute: "2-digit",
-        }),
-    };
+            type: "bot",
+            content: textData.welcome_message,
+            time: new Date().toLocaleTimeString("nb-NO", {
+                hour: "2-digit",
+                minute: "2-digit",
+            }),
+        };
 
-    if (isOpen && messages.length === 0) {
-        setMessages([WELCOME_MESSAGE]);
-    }
+        if (isOpen && messages.length === 0) {
+            setMessages([WELCOME_MESSAGE]);
+        }
     }, [isOpen, textData.welcome_message]);
 
-    //Effekt for håndtering av språkendringer
+    // Effect for handling language changes
     useEffect(() => {
         if (language) {
             const WELCOME_MESSAGE = {
@@ -56,20 +57,20 @@ function Chatbot() {
                 time: new Date().toLocaleTimeString("nb-NO", {
                     hour: "2-digit",
                     minute: "2-digit",
-             }),
+                }),
             };
-        setMessages([WELCOME_MESSAGE]);
-            }
-        }, [language]);// Dette tilbakestilles kun ved språkendring
+            setMessages([WELCOME_MESSAGE]);
+        }
+    }, [language]); // Reset only on language change
 
-    // legg til funksjon for å opprettholde scroll posisjon
+    // Add function to maintain scroll position
     useEffect(() => {
         if (chatBodyRef.current) {
-        chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
-            }
-        },  [messages]);
+            chatBodyRef.current.scrollTop = chatBodyRef.current.scrollHeight;
+        }
+    }, [messages]);
 
-    // Legg til funksjon for å lukke pop-up boksen
+    // Add function to close pop-up box
     const closePopup = () => {
         setShowPopup(false);
     };
@@ -81,17 +82,41 @@ function Chatbot() {
         setIsOpen(true);
     };
 
+    // Adjust chat dialog height on input focus to avoid being covered by keyboard
+    useEffect(() => {
+        const handleFocus = () => {
+            if (window.innerHeight < 500) { // Assume keyboard is open if height is less than 500px
+                chatBodyRef.current.style.height = (window.innerHeight - 100) + 'px';
+            }
+        };
+
+        const handleBlur = () => {
+            chatBodyRef.current.style.height = '100vh'; // Reset to full height when input loses focus
+        };
+
+        const inputField = messageInputRef.current;
+
+        if (inputField) {
+            inputField.addEventListener('focus', handleFocus);
+            inputField.addEventListener('blur', handleBlur);
+        }
+
+        return () => {
+            if (inputField) {
+                inputField.removeEventListener('focus', handleFocus);
+                inputField.removeEventListener('blur', handleBlur);
+            }
+        };
+    }, []);
+
     return (
         <div className="Chat">
-            {/* Legg til pop-up boks */}
+            {/* Add pop-up box */}
             {showPopup && (
                 <div className="popup-container">
                     <div className="popup-box">
                         <button className="closeButton" onClick={closePopup}>
-                            <FontAwesomeIcon
-                                icon={faTimes}
-                                style={{ color: "black", float: "right" }}
-                            />
+                            <FontAwesomeIcon icon={faTimes} style={{ color: "black", float: "right" }} />
                         </button>
                         <h2>{textData.popup_chat}</h2>
                         <p>{textData.popup_message}</p>
@@ -100,11 +125,7 @@ function Chatbot() {
             )}
 
             {!isOpen && (
-                <button
-                    className="chatButton"
-                    onClick={handleChatbotButtonClick}
-                    aria-label="Start chat"
-                >
+                <button className="chatButton" onClick={handleChatbotButtonClick} aria-label="Start chat">
                     <FontAwesomeIcon icon={faRobot} />
                 </button>
             )}
@@ -113,14 +134,14 @@ function Chatbot() {
                     onSend={sendMessage}
                     onClose={() => setIsOpen(false)}
                     messages={messages}
-                    showSuggestions={showSuggestions} // Pass denne propen
-                    setShowSuggestions={setShowSuggestions} // Og denne propen
+                    showSuggestions={showSuggestions} // Pass this prop
+                    setShowSuggestions={setShowSuggestions} // And this prop
+                    messageInputRef={messageInputRef} // Pass input ref
                 />
             )}
         </div>
     );
 }
-
 function ChatDialog({ onSend, onClose, messages, showSuggestions, setShowSuggestions }) {
     return (
         <div className="chatDialog">

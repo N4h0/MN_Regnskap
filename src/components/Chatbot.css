@@ -1,4 +1,4 @@
-/* Chat-knapp når chatten er lukket */
+/* Chat button when chat is closed */
 .Chat {
     position: fixed;
     right: 1.25rem;
@@ -33,6 +33,9 @@
     position: fixed;
     bottom: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Chat header */
@@ -74,8 +77,8 @@
     display: flex;
     flex-direction: column;
     padding: 0.9rem;
-    height: calc(100% - 4.2rem); /* Adjust height to account for footer */
     overflow-y: auto;
+    flex-grow: 1;
     margin: 0 auto;
     background: #f7f7f7;
     position: relative;
@@ -131,7 +134,7 @@
 
 /* Chat footer */
 .chatFooter {
-    position: absolute;
+    position: relative; /* Changed from absolute to relative */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -284,5 +287,8 @@
     }
 }
 
-
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
